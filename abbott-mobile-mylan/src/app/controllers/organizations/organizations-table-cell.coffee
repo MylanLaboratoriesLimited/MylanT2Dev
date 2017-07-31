@@ -6,7 +6,7 @@ class OrganizationsTableCell extends Spine.Controller
   elements:
     ".account-name": "elAccountName"
     ".account-record-type": "elAccountRecordType"
-    ".specialty": "elSpecialty"
+  
     ".billing-address": "elBillingAddress"
     ".global-priority": "elGlobalPriority"
     ".city": "elCity"
@@ -28,7 +28,7 @@ class OrganizationsTableCell extends Spine.Controller
     @html @template()
     @elAccountName.html @organization.name
     @elAccountRecordType.html @organization.recordType
-    @elSpecialty.html @organization.specialty1
+    #@elSpecialty.html @organization.specialty1
     @elGlobalPriority.html @organization.globalPriority
     @elCity.html @organization.city
     @elBillingAddress.html "#{@organization.address ? ''} #{@organization.city ? ''}"

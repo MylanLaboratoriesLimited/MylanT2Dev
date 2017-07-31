@@ -1107,14 +1107,16 @@ body.android .ordinary-header .back {
 }
 .organizations .col:first-of-type,
 .organizations .col:nth-of-type(2) {
-  width: 15%;
+  width: 18%;
 }
 .organizations .col:nth-of-type(4) {
-  width: 10%;
+  width: 15%;
 }
-.organizations .col:nth-of-type(3),
-.organizations .col:nth-of-type(5) {
+.organizations .col:nth-of-type(3) {
   width: 12%;
+}
+.organizations .col:nth-of-type(5) {
+  width: 25%;
 }
 .organizations .col:nth-of-type(6) {
   width: 25%;

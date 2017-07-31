@@ -48207,7 +48207,6 @@ Released under the MIT License
     OrganizationsTableCell.prototype.elements = {
       ".account-name": "elAccountName",
       ".account-record-type": "elAccountRecordType",
-      ".specialty": "elSpecialty",
       ".billing-address": "elBillingAddress",
       ".global-priority": "elGlobalPriority",
       ".city": "elCity",
@@ -48238,7 +48237,6 @@ Released under the MIT License
       this.html(this.template());
       this.elAccountName.html(this.organization.name);
       this.elAccountRecordType.html(this.organization.recordType);
-      this.elSpecialty.html(this.organization.specialty1);
       this.elGlobalPriority.html(this.organization.globalPriority);
       this.elCity.html(this.organization.city);
       this.elBillingAddress.html(((ref = this.organization.address) != null ? ref : '') + " " + ((ref1 = this.organization.city) != null ? ref1 : ''));
@@ -48329,7 +48327,7 @@ Released under the MIT License
     };
 
     Organizations.prototype.createTableHeaderItemsForModel = function(model) {
-      return [new SortingTableHeaderItem(Locale.value('common:names.AccountName'), model.sfdc.name), new SortingTableHeaderItem(Locale.value('common:names.AccountRecordType'), model.sfdc.recordType), new SortingTableHeaderItem(Locale.value('common:names.Specialty'), model.sfdc.specialty1), new SortingTableHeaderItem(Locale.value('common:names.GlobalPriority'), model.sfdc.globalPriority), new SortingTableHeaderItem(Locale.value('common:names.City'), model.sfdc.city), new SortingTableHeaderItem(Locale.value('common:names.BillingAddress'), model.sfdc.address), new TableHeaderItem(Locale.value('common:names.Phone'))];
+      return [new SortingTableHeaderItem(Locale.value('common:names.AccountName'), model.sfdc.name), new SortingTableHeaderItem(Locale.value('common:names.AccountRecordType'), model.sfdc.recordType), new SortingTableHeaderItem(Locale.value('common:names.GlobalPriority'), model.sfdc.globalPriority), new SortingTableHeaderItem(Locale.value('common:names.City'), model.sfdc.city), new SortingTableHeaderItem(Locale.value('common:names.BillingAddress'), model.sfdc.address), new TableHeaderItem(Locale.value('common:names.Phone'))];
     };
 
     Organizations.prototype.cellForObjectOnTable = function(object, table) {
@@ -75116,10 +75114,10 @@ jade_debug.shift();
 buf.push("</div>");
 jade_debug.shift();
 jade_debug.unshift(new jade.DebugItem( 5, "/Users/mylanpharma/Desktop/Tier2CRM/abbott-mobile-mylan/src/app/views/organizations/organizations-table-cell.jade" ));
-buf.push("<div class=\"col v-centered\">");
+buf.push("<div class=\"col v-centered h-centered\">");
 jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
 jade_debug.unshift(new jade.DebugItem( 6, "/Users/mylanpharma/Desktop/Tier2CRM/abbott-mobile-mylan/src/app/views/organizations/organizations-table-cell.jade" ));
-buf.push("<div class=\"ellipsis specialty\">");
+buf.push("<div class=\"ellipsis global-priority\">");
 jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
 jade_debug.shift();
 buf.push("</div>");
@@ -75128,10 +75126,10 @@ jade_debug.shift();
 buf.push("</div>");
 jade_debug.shift();
 jade_debug.unshift(new jade.DebugItem( 7, "/Users/mylanpharma/Desktop/Tier2CRM/abbott-mobile-mylan/src/app/views/organizations/organizations-table-cell.jade" ));
-buf.push("<div class=\"col v-centered h-centered\">");
+buf.push("<div class=\"col v-centered\">");
 jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
 jade_debug.unshift(new jade.DebugItem( 8, "/Users/mylanpharma/Desktop/Tier2CRM/abbott-mobile-mylan/src/app/views/organizations/organizations-table-cell.jade" ));
-buf.push("<div class=\"ellipsis global-priority\">");
+buf.push("<div class=\"ellipsis city\">");
 jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
 jade_debug.shift();
 buf.push("</div>");
@@ -75143,7 +75141,7 @@ jade_debug.unshift(new jade.DebugItem( 9, "/Users/mylanpharma/Desktop/Tier2CRM/a
 buf.push("<div class=\"col v-centered\">");
 jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
 jade_debug.unshift(new jade.DebugItem( 10, "/Users/mylanpharma/Desktop/Tier2CRM/abbott-mobile-mylan/src/app/views/organizations/organizations-table-cell.jade" ));
-buf.push("<div class=\"ellipsis city\">");
+buf.push("<div class=\"ellipsis billing-address\">");
 jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
 jade_debug.shift();
 buf.push("</div>");
@@ -75155,18 +75153,6 @@ jade_debug.unshift(new jade.DebugItem( 11, "/Users/mylanpharma/Desktop/Tier2CRM/
 buf.push("<div class=\"col v-centered\">");
 jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
 jade_debug.unshift(new jade.DebugItem( 12, "/Users/mylanpharma/Desktop/Tier2CRM/abbott-mobile-mylan/src/app/views/organizations/organizations-table-cell.jade" ));
-buf.push("<div class=\"ellipsis billing-address\">");
-jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
-jade_debug.shift();
-buf.push("</div>");
-jade_debug.shift();
-jade_debug.shift();
-buf.push("</div>");
-jade_debug.shift();
-jade_debug.unshift(new jade.DebugItem( 13, "/Users/mylanpharma/Desktop/Tier2CRM/abbott-mobile-mylan/src/app/views/organizations/organizations-table-cell.jade" ));
-buf.push("<div class=\"col v-centered\">");
-jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
-jade_debug.unshift(new jade.DebugItem( 14, "/Users/mylanpharma/Desktop/Tier2CRM/abbott-mobile-mylan/src/app/views/organizations/organizations-table-cell.jade" ));
 buf.push("<div class=\"ellipsis phone\">");
 jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
 jade_debug.shift();
@@ -75177,7 +75163,7 @@ buf.push("</div>");
 jade_debug.shift();
 jade_debug.shift();;return buf.join("");
 } catch (err) {
-  jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, ".col.v-centered\n  .ellipsis.account-name\n.col.v-centered\n  .ellipsis.account-record-type\n.col.v-centered\n  .ellipsis.specialty\n.col.v-centered.h-centered\n  .ellipsis.global-priority\n.col.v-centered\n  .ellipsis.city\n.col.v-centered\n  .ellipsis.billing-address\n.col.v-centered\n  .ellipsis.phone");
+  jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, ".col.v-centered\n  .ellipsis.account-name\n.col.v-centered\n  .ellipsis.account-record-type\n.col.v-centered.h-centered\n  .ellipsis.global-priority\n.col.v-centered\n  .ellipsis.city\n.col.v-centered\n  .ellipsis.billing-address\n.col.v-centered\n  .ellipsis.phone");
 }
 };}, "views/pe-card/pe-card": function(exports, require, module) {module.exports = function template(locals) {
 var jade_debug = [ new jade.DebugItem( 1, "/Users/mylanpharma/Desktop/Tier2CRM/abbott-mobile-mylan/src/app/views/pe-card/pe-card.jade" ) ];
