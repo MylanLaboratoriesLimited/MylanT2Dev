@@ -14,6 +14,7 @@ ContactCard = require 'controllers/contact-card/contact-card'
 OrganizationCard = require 'controllers/organization-card/organization-card'
 AppointmentCard = require 'controllers/appointment-card/appointment-card'
 CallReportCard = require 'controllers/call-report-card/call-report-card'
+Controller = require 'controllers/lazy-table-controller'
 
 class Contacts extends RootPanelScreen
   className: 'table-view contacts'
@@ -96,7 +97,8 @@ class Contacts extends RootPanelScreen
     [
       new SortingTableHeaderItem Locale.value('common:names.Contact'), model.sfdc.contactLastName, model.sfdc.contactFirstName
       new SortingTableHeaderItem Locale.value('common:names.Priority'), 'priority'
-      new SortingTableHeaderItem Locale.value('common:names.Specialty'), 'abbottSpecialty'
+      new SortingTableHeaderItem Locale.value('common:names.Specialty'), 'specialty'
+      new SortingTableHeaderItem Locale.value('common:names.BU_Specialty'), 'abbottSpecialty'
       new SortingTableHeaderItem Locale.value('common:names.AtCalls'), 'atCalls'
       new SortingTableHeaderItem Locale.value('common:names.LastCall'), 'lastCall'
       new SortingTableHeaderItem Locale.value('common:names.Organization'), model.sfdc.organizationName, model.sfdc.id

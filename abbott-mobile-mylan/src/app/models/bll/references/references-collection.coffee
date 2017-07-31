@@ -101,6 +101,7 @@ class ReferencesCollection extends EntitiesCollection
 
   _updateAbbottSpecialtyForReference: (reference, contact) ->
     reference.abbottSpecialty = contact.abbottSpecialty if contact?.abbottSpecialty
+    reference.specialty = contact.specialty if contact?.specialty
     reference
 
 module.exports = ReferencesCollection

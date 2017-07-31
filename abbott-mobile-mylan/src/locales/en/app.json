@@ -306,6 +306,7 @@
             "GeneralInfoFields": {
                 "KOL": "KOL:",
                 "AbbottSpecialty": "Abbott Specialty:",
+                "BU_Specialty": "BU Specialty:",
                 "MobilePhone": "Mobile Phone:",
                 "Email": "Email:"
             }

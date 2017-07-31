@@ -9,7 +9,8 @@ class ContactsTableCell extends Spine.Controller
   elements:
     '.contact': 'elContact'
     '.priority': 'elPriority'
-    '.specialty': 'elSpecialty'
+    '.Specialty': 'elSpecialty'
+    '.BUSpecialty': 'elBUSpecialty'
     '.at-calls': 'elAtCalls'
     '.last-call': 'elLastCall'
     '.organization': 'elOrganization'
@@ -54,7 +55,8 @@ class ContactsTableCell extends Spine.Controller
         @elAtCalls.html lastDateTargetFrequency.atCalls()
         @elLastCall.html lastDateTargetFrequency.lastCall()
       @elPriority.html contact.priority
-      @elSpecialty.html contact.abbottSpecialty
+      @elSpecialty.html contact.specialty
+      @elBUSpecialty.html contact.abbottSpecialty
     @
 
   _showCreateVisitsButtons: =>

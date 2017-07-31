@@ -84,7 +84,7 @@ class ContactCard extends PanelScreen
     @contact.getOrganization()
     .then (organization) =>
       @elStatus.html organization.status
-      @elSpecialty.html organization.specialty1
+      @elSpecialty.html @contact.specialty
 
   _createReferencesTable: ->
     @referencesTable = new ContactCardReferencesTable

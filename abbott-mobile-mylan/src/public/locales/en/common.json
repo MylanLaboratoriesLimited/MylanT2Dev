@@ -53,6 +53,7 @@
         "DateTimeOfVisit": "Date/Time of Visit",
         "Customer": "Customer",
         "Specialty": "Specialty",
+        "BU_Specialty":"BU Specialty",
         "User": "User",
         "Status": "Status",
         "Owner": "Owner",

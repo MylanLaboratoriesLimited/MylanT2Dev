@@ -29,6 +29,7 @@ class Contact extends Entity
       {local:'homePhone',       sfdc:'HomePhone'}
       {local:'email',           sfdc:'Email'}
       {local:'kol',             sfdc:'KOL__c'}
+      {local:'specialty',       sfdc:'Account.C_Specialty_1__c'}
       {local:'description',     sfdc:'Description'}
       {local:'priority'}
       {local:'isTargetCustomer',indexWithType:'string'}

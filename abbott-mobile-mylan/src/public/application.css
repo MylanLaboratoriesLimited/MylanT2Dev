@@ -1073,22 +1073,26 @@ body.android .ordinary-header .back {
   padding-left: 0.1em;
 }
 .contacts .col:nth-of-type(3) {
-  width: 13%;
+  width: 8%;
+  padding-left: 0.1em;
 }
 .contacts .col:nth-of-type(4) {
-  width: 7%;
+  width: 13%;
 }
 .contacts .col:nth-of-type(5) {
-  width: 14%;
+  width: 7%;
 }
 .contacts .col:nth-of-type(6) {
-  width: 29%;
+  width: 14%;
 }
 .contacts .col:nth-of-type(7) {
+  width: 21%;
+}
+.contacts .col:nth-of-type(8) {
   padding: 0;
   width: 6%;
 }
-.contacts .col:nth-of-type(8) {
+.contacts .col:nth-of-type(9) {
   padding: 0;
   width: 6.5%;
 }

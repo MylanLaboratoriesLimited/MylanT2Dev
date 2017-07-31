@@ -10,6 +10,7 @@ class ContactsCollection extends EntitiesCollection
   parseModel: (result) ->
     TargetFrequenciesCollection = require 'models/bll/target-frequencies-collection'
     result[@model.sfdc.recordType] = result.Account?.RecordType.Name
+    result[@model.sfdc.specialty] = result.Account?.C_Specialty_1__c
     tfsCollection = new TargetFrequenciesCollection
     if result.TMF1__r
       lastDateTargetFrequency = tfsCollection.parseModel result.TMF1__r
