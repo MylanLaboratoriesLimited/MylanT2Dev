@@ -1,0 +1,117 @@
+.media
+  &.table-view
+    .tbody-holder
+      top 0
+
+    .row
+      height 5em
+      border-bottom solid 1px #ccc
+
+      &:nth-of-type(even)
+        background none
+
+      &.inited
+        .progress,
+        .size
+          display none !important
+        .general
+          .pr-version
+            display none !important
+      &.downloading
+        .general
+          width 15%
+          .pr-version
+            display none !important
+
+      &.downloaded
+        .progress,
+        .size
+          display none !important
+    .col
+      height 5em
+      .icon
+        height 80%
+        display -webkit-box
+
+      &:first-of-type
+        width 10%
+
+      &.general
+        width 75%
+        padding 0
+
+      &.progress
+        width 40%
+        padding 0
+        border-radius 16px
+
+        .progress-bar
+          border-radius 16px
+          margin-top 5px
+          .progress-fill-wrapper
+            border-radius 16px
+            .progress-fill
+              border-radius 16px
+
+          .progress-value
+            display none
+
+      &.size
+        width 20%
+        font-size 110%
+        -webkit-box-orient vertical
+
+        > div
+          text-align left
+
+      &.buttons-panel
+        width 15%
+        padding 1.2em 1em
+        -webkit-box-pack end
+
+        .media-buttons-stack
+          height 100%
+
+          .ctrl-btn
+            margin 0
+            width 7em
+            &:nth-of-type(3)
+              background #fe5950
+            &:active
+              box-shadow 0 0 6px #fff
+              position relative
+              z-index 3
+
+          .ctrl-btn:not(.active),
+          .done-icon:not(.active)
+            display none
+
+          .done-icon
+            position relative
+            margin 0 5px
+            height 100%
+            width 8em
+            background url("img/media/done-icon.png")
+            background-repeat no-repeat
+            background-position-x 50%
+            background-position-y 50%
+            background-size contain
+
+.media.table-view
+  .tbody
+    .col
+      &:after
+        display none
+
+  .general
+    -webkit-box-orient vertical
+    color #333
+    .pr-name
+      font-weight bold
+      font-size 140%
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
+
+  .progress
+    -webkit-box-orient vertical

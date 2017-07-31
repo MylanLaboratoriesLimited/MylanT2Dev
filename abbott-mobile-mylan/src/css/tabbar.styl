@@ -1,0 +1,44 @@
+.stage.tabbar
+  > footer
+    height $header-height
+    background #f7f7f7
+    border-top 1px solid #b7b7bb
+    display -webkit-box
+    -webkit-box-pack center
+    .tab-button
+      height 100%
+      // min-width 80px
+      -webkit-box-pack center
+      -webkit-box-flex 1
+      padding 0.5% 0
+      box-sizing border-box
+      z-index 1
+      position relative
+      .tab-icon
+        height 69%
+        width 100px
+        overflow hidden
+        margin 0 auto
+      .tab-title
+        font-size 90%
+        height 30%
+        display -webkit-box
+        -webkit-box-align center
+        -webkit-box-pack center
+      *
+        pointer-events none
+      &.active
+        .tab-title
+          color #21b4f3
+        .tab-icon
+          background-color #21b4f3
+      &:not(.active)
+        .tab-title
+          color #454545
+        .tab-icon
+          background-color #454545
+
+.stage.stage-tabbar-item
+  > footer
+    height 0
+    background none

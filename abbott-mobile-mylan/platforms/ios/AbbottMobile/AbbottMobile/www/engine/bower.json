@@ -1,0 +1,33 @@
+{
+  "name": "cobalt",
+  "version": "0.10.0",
+  "description": "",
+  "authors": [
+    "Alexey Raspopov"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rivets": "0.6.8",
+    "modular": "0.5.3",
+    "touch": "cobalt/touch#~0.0.12",
+    "extension": "cobalt/extension#~0.1.10",
+    "utils": "cobalt/utils#~0.0.10",
+    "translate": "cobalt/translate#~0.0.3",
+    "normalize-css": "3.0.0",
+    "dom-parser": "0.2.0",
+    "nav": "cobalt/nav#~0.0.15",
+    "orientation-fix": "cobalt/orientation-fix#~0.0.1",
+    "save-state": "cobalt/save-state#~0.0.1",
+    "chapter": "cobalt/chapter#~0.0.3",
+    "slide": "cobalt/slide#~0.1.1",
+    "polyfills": "cobalt/polyfill#~0.0.2",
+    "android-fixes": "cobalt/android-fixes#~0.0.0"
+  }
+}

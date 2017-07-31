@@ -1,0 +1,127 @@
+.trade-module
+  .promotion-details
+
+    .navigation-panel
+      display -webkit-box
+      position relative
+      -webkit-box-pack end
+      -webkit-box-align center
+      color gray
+      padding-right 20px
+
+      .check-box
+        position relative
+        margin 0.5em
+        width 18px
+        height 18px
+        z-index 1
+
+        &:after
+          width 100%
+          height 100%
+          -webkit-mask-size 90% auto
+
+      p
+        position relative
+        z-index 1
+
+    .table-view
+      display block
+      position relative
+      display -webkit-box
+      -webkit-box-orient vertical
+      -webkit-box-flex 1
+
+      .scroll-container
+        -webkit-box-flex 1
+
+    .disabled
+      opacity 1
+      pointer-events none
+
+      input.placeholder-mode
+        color transparent !important
+
+      .btn-select
+        border-color rgba(0, 0, 0, 0.2)
+        background-color rgba(0, 0, 0, 0.04)
+        color #808080
+        &:after
+          border-color transparent
+
+    .col
+      -webkit-box-flex 1
+      width 17%
+
+      &:first-of-type
+        -webkit-box-flex initial
+
+    .tactics-table-cell
+      height 3em
+
+  .page-control
+    display -webkit-box
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    height 100%
+    -webkit-box-align center
+    -webkit-box-pack center
+
+    .page-control-item
+      display block
+      width 15px
+      height 15px
+      border solid 1px #959499
+      border-radius 50%
+      margin 0 6px
+
+      &.active
+        background #21b4f3
+        border none
+        -webkit-transform scale(1.15)
+
+  .tactics
+  .skus
+    .tactics-table-cell.row,
+    .skus-table-cell.row
+      height initial
+
+    .product-name
+      -webkit-box-align center
+
+    .tactic
+    .skus
+      display -webkit-box
+      -webkit-box-align center
+      padding 0
+
+      .border-value
+      .main-data
+        display -webkit-box
+        -webkit-box-align center
+        -webkit-box-pack center
+        -webkit-box-flex 1
+        width 100%
+        height 100%
+        padding 0 0.5em
+
+    &.hide-border-value
+      .border-value
+        display none
+
+    .border-value
+      position relative
+      color #21b4f3
+
+      &:after
+        content ''
+        position absolute
+        top 15%
+        bottom 15%
+        left 100%
+        width 1px
+        background-color #21b4f3
+        opacity 0.1

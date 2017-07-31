@@ -1,0 +1,97 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.9.+'
+ 	 }
+}	
+	
+apply plugin: 'android'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+def computeVersionName() {
+    if(project.hasProperty('VersionName'))
+    {
+      return "$VersionName"
+    }   
+    return null
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
+
+	
+	sourceSets {
+		main {
+		manifest {
+	                srcFile 'AndroidManifest.xml'
+	            }
+	            java {
+	                srcDir 'src'
+	            }
+	            res {
+	                srcDir 'res'
+	            }
+	            assets {
+	                srcDir 'assets'
+	            }
+	            resources {
+	                srcDir 'src'
+	            }
+        }
+	}
+		
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 16
+        versionName computeVersionName()
+  	}
+    
+    dependencies {
+        compile project(':SmartStore')
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+    lintOptions {
+      quiet true
+      abortOnError false
+  }
+}
+
+task updateMainProject(type: Exec) {
+  workingDir '.'
+  commandLine 'android', 'update', 'project', '-p', '.'
+}
+
+task updateSalesforceSDKProject(type: Exec) {
+  workingDir '../forcedroid/native/SalesforceSDK'
+  commandLine 'android', 'update', 'project', '-p', '.'
+}
+
+task updateSmartStoreProject(type: Exec) {
+  workingDir '../forcedroid/hybrid/SmartStore'
+  commandLine 'android', 'update', 'project', '-p', '.'
+}
+
+task update() {
+  dependsOn updateMainProject
+  dependsOn updateSalesforceSDKProject
+  dependsOn updateSmartStoreProject
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name.equals("lint")) {
+        task.enabled = false
+    }
+}
+

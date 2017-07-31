@@ -1,0 +1,171 @@
+task installSpineDependencies(type: Exec) {
+  workingDir 'src'
+  commandLine 'npm', 'install', '.'
+}
+
+installSpineDependencies
+{
+  doFirst
+  {
+     println "Install Spine Dependencies..."
+  }
+}
+
+task buildSpine(type: Exec) {
+  dependsOn installSpineDependencies
+  workingDir 'src'
+  commandLine 'hem', 'build', '-d'
+}
+
+buildSpine
+{
+  doFirst
+  {
+     println "Building Spine project..."
+  }
+  doLast
+  {
+     println "Copy locales to public folder..."
+     tasks.copyLocales.execute() 
+  }
+}
+
+task test(type: Exec) {
+  dependsOn installSpineDependencies
+  workingDir 'src'
+  commandLine 'hem', 'test'
+}
+
+test{
+  doFirst
+  {
+     println "Testing Spine project..."
+  }
+}
+
+task testResults(type: Exec) {
+  workingDir 'src/test/public'
+  commandLine 'open', 'index.html'
+}
+
+task copyLocales(type:Copy) {
+    from 'src/locales'
+    into 'src/public/locales'
+}
+
+task shareSpineWithIOS(type:Copy) {
+    from('src/public') {
+        include 'application.css'
+        include 'application.js'
+        include 'fonts/**'
+        include 'img/**'
+        include 'locales/**'
+     }
+    into 'platforms/ios/AbbottMobile/AbbottMobile/www'
+}
+
+task shareSpineWithAndroid(type:Copy) {
+    from('src/public') {
+        include 'application.css'
+        include 'application.js'
+        include 'fonts/**'
+        include 'img/**'
+        include 'locales/**'
+     }
+    into 'platforms/android/AbbottMobile/assets/www'
+}
+
+task shareSpine {
+    dependsOn buildSpine
+    dependsOn shareSpineWithIOS
+    dependsOn shareSpineWithAndroid
+}
+
+shareSpine{
+  doFirst
+  {
+     println "Copy Spine sources to Phonegap..."
+  }
+}
+
+task buildIOS(type: Exec){
+   workingDir 'platforms/ios/AbbottMobile'
+   commandLine 'gradle', 'clean', 'ipa'
+}
+
+task buildAndroid(type: Exec){
+  workingDir 'platforms/android/AbbottMobile'
+  commandLine 'gradle', 'build', '-b', 'buildm.gradle'
+}
+
+task build {
+  dependsOn shareSpine
+}
+
+build
+{
+  doFirst
+  {
+     println "Building Phonegap project..."
+  }
+  doLast
+  {
+    if(!project.hasProperty('os') || "$os"=="android")
+    {
+      tasks.buildAndroid.execute()
+    }
+    if(!project.hasProperty('os') || "$os"=="ios")
+    {
+      tasks.buildIOS.execute() 
+    }  
+  }
+}
+
+task server(type: Exec) {
+  dependsOn buildSpine
+  workingDir 'src'
+  commandLine 'hem', 'server', '-d'
+}
+
+task installAndroid(type: Exec) {
+  workingDir 'platforms/android/AbbottMobile'
+  commandLine 'gradle', 'install', '-b', 'buildm.gradle'
+}
+
+task installIOS(type: Exec) {
+  workingDir 'platforms/ios/AbbottMobile'
+  commandLine 'gradle', 'install', '-b', 'build.gradle'
+}
+
+task install {
+  doFirst
+  {
+     println "Install Phonegap project..."
+  }
+  doLast
+  {
+    if(!project.hasProperty('os') || "$os"=="android")
+    {
+      tasks.installAndroid.execute()
+    }
+    if(!project.hasProperty('os') || "$os"=="ios")
+    {
+      tasks.installIOS.execute() 
+    }  
+  }
+}
+
+task update(type: Exec) {
+  workingDir 'platforms/android/AbbottMobile'
+  commandLine 'gradle', 'update', '-b', 'buildm.gradle'
+}
+
+task clean(type: Exec) {
+  workingDir 'platforms/android/AbbottMobile'
+  commandLine 'gradle', 'clean', '-b', 'buildm.gradle'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
+

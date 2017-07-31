@@ -1,0 +1,29 @@
+.file-icon
+  position relative
+  height 2em
+  width 1.66666666666666em
+  background url('img/file-icon.png') no-repeat
+  background-size cover
+
+  &.note
+    background-image url('img/note-icon.png')
+    .file-type
+      display none
+
+  .file-type
+    display -webkit-box
+    position absolute
+    top 1.5em
+    left 0.8em
+    padding 0.05em 0.1em
+    box-sizing border-box
+    -webkit-box-align center
+    -webkit-box-pack center
+    font-size 0.6em
+    font-weight normal
+    text-transform uppercase
+    color #666
+    border 1px solid
+    min-width 2.4em
+    max-width 3.5em
+    overflow hidden

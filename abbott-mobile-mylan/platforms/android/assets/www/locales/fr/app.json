@@ -1,0 +1,706 @@
+{
+    "home": {
+        "Title": "$t(common:abbottMobileTitle)",
+        "LastSyncDate": "Dernière synchronisation:",
+        "Contacts": "Contacts",
+        "Media": "Médias",
+        "Organizations": "Établissements",
+        "Activities": "Activités",
+        "TourPlanning": "Organisation des tournées",
+        "Calendar": "Calendrier",
+        "TimeOffTerritory": "$t(common:names.TimeOffTerritory)",
+        "AlertPopup": {
+            "Caption": "Pas de connexion internet",
+            "Message": "S`il vous plaît vous connecter à Internet et essayez à nouveau"
+        },
+        "AlertLoadProgress":{
+            "Caption": "Downloading in progress",
+            "Message": "Presentation(s)/attachment(s) downloading process is in progress. Please wait for completion or cancel downloading before starting the synchronization."
+        },
+        "Info": "Tous les effets indésirables doivent être signalés immédiatement au service médical. Ne pas pénétrer dans les événements indésirables dans les CRM."
+    },
+    "tabbar": {
+        "Home": "Maison",
+        "Contacts": "Contacts",
+        "Activities": "Activités",
+        "TourPlanning": "Planification",
+        "Calendar": "Calendrier",
+        "TimeOffTerritory": "$t(common:names.TimeOffTerritory)",
+        "Organizations": "Établissements",
+        "Media": "Médias"
+    },
+    "helpdesk": {
+        "HeaderTitle": "Assistance",
+        "CallCenter": "Centre d`appel",
+        "ViewLastLog": "Voir le dernier LOG",
+        "SendLogToSupport": "Envoyer LOG au support",
+        "ConfirmationPopup": {
+            "Caption": "Effacer la base de données",
+            "Question": "Voulez-vous vraiment effacer toutes les données de la base?"
+        },
+        "NotSupportedPopup":{
+            "Caption": "Avertissement",
+            "Message": "Votre appareil ne prend pas en charge cette fonctionnalité."
+        },
+        "Settings": {
+            "Title": "Settings",
+            "ClearDatabase": "Effacer la base de données",
+            "ShowTouches": "Show Touches",
+            "Autosync": "Autosync",
+            "AutoSyncDuration": "Autosync Duration (min)"
+        },
+        "PhoneNumber": "0522423661",
+        "OSVersion": "Version OS",
+        "InfoPanel": {
+            "DeviceId": "ID de l`appareil:",
+            "Version": "Version:",
+            "Model": "Modèle:"
+        },
+        "LogScreen":{
+            "HeaderTitle": "DERNIÈRE LOG",
+            "AppVersion": "Version App",
+            "DeviceId": "ID de l`appareil",
+            "Info": "INFO",
+            "Error": "ERREUR",
+            "Warning": "AVERTISSEMENT"
+        },
+        "AutoSync":{
+            "HeaderTitle": "Auto synchronization",
+            "AvailableUpdates": "Available updates for synchronization",
+            "AutoSynchronizationLog": "Auto synchronization log",
+            "Errors": {
+                "Error": "Error",
+                "NoConnection": "Can not connect to the internet",
+                "InitLog": "Can not init log",
+                "LogSyncStart": "Can not log sync start",
+                "ActiveUser": "Can not find active user",
+                "IsUserExist": "Can not load active user data",
+                "Authenticate": "Can not authenticate",
+                "DownloadConfigurationData": "Can not download configuration data",
+                "ProcessDataForSync": "Can not process data for synchronization",
+                "UploadLocalEntitiesToServer": "Can not upload entities to server",
+                "RemoveEntitiesByIds": "Can not remove entities by id",
+                "DownloadAllModifiedEntitiesFromServer": "Can not download modified entities from server",
+                "DownloadCreatedEntitiesFromServer": "Can not download created entities from server",
+                "GetCollectionsForUpload": "Can not get collections for upload",
+                "ProcessCollectionsForUpload": "Can not process collections for upload",
+                "GetCollectionsForDownload": "Can not get collections for download",
+                "GetCollectionLastModifiedDateMap": "Can not get collections date map",
+                "RunAsyncCheckForModifiedDataOnServer": "Can not check modified data on server",
+                "ProcessModifiedData": "Can not process modified data",
+                "GetCollectionMapForUpload": "Can not get collection map for upload",
+                "UploadDeletedEntities": "Can not upload deleted entities",
+                "GetLocallyModifiedEntities": "Can not get locally modified entities",
+                "PrepareServerConfig": "Can not prepare server config",
+                "GetModifiedEntitiesFromServer": "Can not get modified entities from server",
+                "RemoveSandboxElements": "Can not remove sandbox elements",
+                "UploadCreatedEntities": "Can not upload created entities",
+                "RunAsyncCheckChangesByIdsOnServer": "Can not check changes by id",
+                "NotFullSynchronized": "Can't process data, please perform full synchronization",
+                "LoadPickList": "Can't load pick lists",
+                "UploadModifiedEntities": "Can not upload modified entities"
+            }
+        },
+        "ClearingDatabaseMessage": "Effacement de la base de données"
+    },
+    "tourPlanning": {
+        "HeaderTitle": "Planification",
+        "StartTime": "Heure de début:",
+        "CalculateBtn": "Calculer",
+        "VisitOrderPopupHeader": "Sélectionner la position",
+        "TimeSettingsPopup": {
+            "Header":"Réglages de l'heure",
+            "DateOfVisit":"Date de la visite",
+            "PlannedArrival":"Arrivée prévue",
+            "PlannedDeparture":"départ prévu",
+            "DurationPerVisit":"Durée par visite",
+            "BreakBetweenVisits":"Pause entre les visites",
+            "LunchStart":"déjeuner Démarrer",
+            "LunchEnd":"déjeuner Fin"
+        },
+        "ToastMessage":{
+            "NeedCalculate": "Vous devez faire calculer avant sauver.",
+            "ExistedAppointments": "Certains contacts ont déjà un rendez-vous planifié à cette date.",
+            "NoSelectedItems":"Il n'y a pas d'articles sélectionnés"
+        }
+    },
+    "organizations": {
+        "HeaderTitle": "Établissements"
+    },
+    "contacts": {
+        "HeaderTitle": "Contacts",
+        "FilterPopup": {
+            "TargetContacts": "Contacts ciblés",
+            "NonTargetContacts": "Contacts hors-cible"
+        }
+    },
+    "activities": {
+        "HeaderTitle": "Activités",
+        "FilterPopup": {
+            "Appointments": "Rendez-vous",
+            "AppointmentsToday": "Rendez-vous aujourd`hui",
+            "AppointmentsPast": "Rendez-vous Passés",
+            "AppointmentsTomorrow": "Rendez-vous demain",
+            "1To1Calls": "Visites 1:1",
+            "1To1CallsToday": "Visites 1:1 Aujourd'hui",
+            "PharmaEvents": "Manifestations scientifiques"
+        }
+    },
+    "scenarioDetails": {
+        "HeaderTitle": "Nouveau Scénario",
+        "EditHeaderTitle": "Modifier Scénario",
+        "NoSlidesForPreview": "Il n'y a pas de diapositives pour la prévisualisation",
+        "NoSlidesForSave": "Il n'y a pas de diapositives pour sauver"
+    },
+    "tots":{
+        "HeaderTitle": "$t(common:names.TimeOffTerritory)",
+        "FilterPopup": {
+            "All": "Tous",
+            "Open": "Ouvert",
+            "Submit": "$t(common:names.Submit)",
+            "Closed": "Fermé"
+        }
+    },
+    "sampleDelivery":{
+        "SampleDelivery": "Sample Delivery",
+        "Table":{
+            "ProductLot":"Product Lot",
+            "Remarks":"Remarks",
+            "MRApproved":"MR approved"
+        },
+        "Popup": {
+            "remainingInStock": "Remaining in stock",
+            "ToastMessage": "At least one sample item should be added",
+            "ToastMessageSuccess": "Sample Delivery section is updated"
+        }
+    },
+    "orderManagement":{
+        "OrderManagement": "Order Management",
+        "OrderCard":{
+            "Order": "Order",
+            "Total": "Total",
+            "SendEmail": "Send Email",
+            "Voided": "Voided",
+            "Type": "$t(card.GeneralInfoFields.Type)",
+            "Account": "Account:",
+            "BillingContact": "Billing Contact:",
+            "BillingAddress": "$t(card.Organization.GeneralInfoFields.BillingAddress)",
+            "ShipToAddress": "Ship To Address:",
+            "Comments": "Comments:",
+            "OrderDate": "Order Date:",
+            "Status": "$t(tradeModule.GeneralInfoFields.Status)",
+            "OrderTotalQuantity": "Order Total Quantity:",
+            "OrderListAmount": "Order List Amount:",
+            "OrderNetAmount": "Order Net Amount:",
+            "OrderTotalDiscount": "Order Total Discount (%):",
+            "OrderLines":"Lignes de commandes",
+            "SubmitApprove":"You cannot edit Order after submitting. Are you sure you want to proceed?",
+            "VoidApprove":"This action is not retrievable. Are you sure you want to proceed?"
+        }
+    },
+    "tradeModule":{
+        "SaveWarningTitle": "Module commerce",
+        "AreYouShureSaveAndExit": "Il ya des champs qui ne ont pas encore rempli. Êtes-vous sûr de vouloir les ignorer et procéder?",
+        "HeaderTitle": "$t(common:names.TradeModule)",
+        "GeneralInfoFields": {
+            "Promotion": "$t(common:names.Promotion):",
+            "Promotions": "$t(PromotionPopup.Header):",
+            "Customer": "$t(common:names.Customer):",
+            "PromotionStartDate": "$t(common:names.PromotionStartDate):",
+            "PromotionEndDate": "$t(common:names.PromotionEndDate):",
+            "ShipmentEndDate": "$t(common:names.ShipmentEndDate):",
+            "ShipmentStartDate": "$t(common:names.ShipmentStartDate):",
+            "Description": "$t(common:names.Description):",
+            "Contract": "$t(common:names.Contract):",
+            "NumberOfPharmacies": "$t(common:names.NumberOfPharmacies):",
+            "RecordType": "$t(common:names.RecordType):",
+            "Status": "$t(common:names.Status):",
+            "Objectives": "$t(common:names.Objectives):",
+            "Placeholder": "Tapez votre description",
+            "Of":"sur"
+        },
+        "PromoDetails": {
+            "Tactics": "Mécanique",
+            "PromotionTasks": "Tâches de promotion",
+            "SKUs": "Liées à UGS",
+            "Notes": "Notes et pièces jointes",
+            "Photos": "Photos"
+        },
+        "Tactics":{
+            "BorderValues": "Masquer les valeurs de la frontière",
+            "NoMechanics": "Il n'y a pas la mécanique de cette promotion"
+        },
+        "PromotionTasks":{
+            "NoPromotionTasks": "Il n'y a pas de tâches de promotion de cette promotion"
+        },
+        "Skus":{
+            "NoSkus": "Il n'y a pas de tâches liées à UGS pour cette promotion"
+        },
+        "Notes":{
+            "NoNotes": "Il n'y a pas de notes ou des pièces jointes de cette promotion"
+        },
+        "BusinessAccounts":{
+            "NoBusinessAccounts": "There are no business accounts for this promotion"
+        }
+    },
+    "scenarios":{
+        "HeaderTitle": "Programme dynamique",
+        "ConfirmationPopup": {
+            "DeleteItem": {
+                "Caption": "Supprimer Scénario"
+            }
+        }
+    },
+    "ordersHistory":{
+        "HeaderTitle": "Orders History"
+    },
+    "homeMenu": {
+        "Alarm": "Notification",
+        "Helpdesk": "Assistance",
+        "Language": "Langue",
+        "OrderHistorty": "Orders history",
+        "Lock": "Bloquer",
+        "Logout": "Déconnexion",
+        "DynamicAgenda": "Programme dynamique"
+    },
+    "createActivityPopup": {
+        "Caption": "Créer une activité",
+        "Appointment": "$t(common:names.Appointment)",
+        "CallReport": "$t(common:names.CallReport)"
+    },
+    "searchView": {
+        "Placeholder": "rechercher",
+        "SearchBtn": "Rechercher"
+    },
+    "commentView": {
+        "Placeholder": "Saisir un commentaire"
+    },
+    "alarmSettingsPopup": {
+        "Title": "Réglages de l`alarme:",
+        "Off": "Aucune",
+        "InFifteenMinutes": "dans 15 minutes",
+        "InThirtyMinutes": "dans 30 minutes",
+        "InOneHour": "dans 1 heure",
+        "InOneHourThirtyMinutes": "dans 1,5 heure",
+        "InTwoHours": "dans 2 heures"
+    },
+    "pin": {
+        "AlertCaption": "$t(common:abbottMobileTitle)",
+        "ErrorMessage": {
+            "PinWillBeReset": "Code PIN incorrect. Il va être réinitialisé. Pour accéder à Abbott Mobile, merci de saisir vos identifiants.",
+            "IncorrectPin": "Code PIN incorrect. Il vous reste __count__ essais.",
+            "PinsAreNotEqual": "Les codes PIN doivent être identiques. Réessayer.",
+            "PinLength": "Le code PIN doit contenir au moins __count__ chiffres. Réessayer."
+        },
+        "Placeholder": {
+            "Pin": "Code PIN",
+            "ConfirmPin": "Confirmer code PIN"
+        }
+    },
+    "synchronizationPopup": {
+        "SynchronizationStatus": "Etat de la synchronisation",
+        "SynchronizationCompleted": "La synchronisation est terminée avec succès.",
+        "Title": "Synchronisation:",
+        "Table": {
+            "Brick": "Briques",
+            "BuTeamPersonProfile": "Profils individuels BU/Equipe",
+            "CallReport": "$t(common:names.CallReport)",
+            "Contact": "$t(common:names.Contact)",
+            "Device": "Dispositifs",
+            "MarketingCycle": "Cycle Marketing",
+            "MarketingMessage": "Messages de marketing",
+            "Organization": "$t(common:names.Organization)",
+            "PEAbbottAttendee": "Participants Abbott à la manifestation",
+            "PEAttendee": "Participants à la manifestation",
+            "PharmaEvent": "Manifestations scientifiques",
+            "Product": "Produits",
+            "PEProduct": "Produits d'événements Pharma",
+            "Reference": "Références",
+            "TargetFrequency": "Fréquences de visite",
+            "Target": "Cibles",
+            "Tot": "$t(common:names.TimeOffTerritory)",
+            "User": "$t(common:names.User)",
+            "Presentation": "$t(common:names.Presentation)",
+            "CLMCallReportData": "CLM Appel Rapport de données",
+            "Promotion": "Promotion",
+            "PromotionAccount": "Compte de la Promotion",
+            "PromotionTaskAccount": "Compte Groupe de promotion",
+            "TaskAdjustment": "Ajustement Tâche",
+            "ProductItem": "Article de Produit",
+            "PromotionSku": "Promotion UGS",
+            "PromotionMechanic": "Promotion Mécanicien",
+            "MechanicEvaluationAccount": "Compte de L'évaluation Mécanicien",
+            "MechanicAdjustment": "Ajustement Mécanique",
+            "PromotionAttachment": "Promotion Pièce jointe",
+            "PromotionNote": "Promotion pièce Jointe",
+            "PhotoAdjustment": "Réglage de la Photo",
+            "PhotoAttachment": "Photo en pièce Jointe",
+            "ProductInPortfolio": "Produit en Portefeuille",
+            "ProfileProductInPortfolio": "Produit Profil de Portefeuille",
+            "PatientDisease": "La Maladie du Patient",
+            "SlideConfiguration": "Configuration de diapositives",
+            "PresentationSlide": "Présentation Diapositive",
+            "PortfolioPresentation": "Portefeuille Présentation",
+            "ProductPortfolioAssignment": "Produit Affectation de portefeuille",
+            "TourPlanningSortTemplate": "Tour Planning Sort Template fr",
+            "SampleStock": "Sample Stock",
+            "SampleDelivery": "Sample Delivery",
+            "Order": "Order",
+            "OrderLine": "OrderLine"
+        },
+        "PickList": "Listes de sélection",
+        "Uploading": "Téléchargement",
+        "Configuration": "Configuration",
+        "LogMessage": {
+            "SyncStarted": "Synchronisation a commencé.",
+            "RemovedRecordsCount": "__name__ removed records: __count__ ",
+            "ModifiedServerCount": "__name__ modified (remote): __count__ ",
+            "DeletedServerCount": "__name__ deleted (remote): __count__ ",
+            "CreatedServerCount": "__name__ created (remote): __count__ ",
+            "ModifiedClientCount": "__name__ modified (local): __count__ ",
+            "DeletedClientCount": "__name__ deleted (local): __count__ ",
+            "CreatedClientCount": "__name__ created (local): __count__ ",
+            "SyncStart": "Synchronisation a commencé. Étapes comptent: __count__",
+            "CheckDevice": "Vérifier l`appareil",
+            "Success": "Synchronisation terminée.",
+            "Error": "Synchronisation en cours.",
+            "SendErrorReport": "Sync a échoué. \n Voulez-vous envoyer le rapport de synchronisation?",
+            "ErrorUploading": "Erreur téléchargement __type__ entité: __entity__, message: __message__, code: __code__",
+            "WarningUploading": "__type__ entité: __entity__ entité n'a pas été téléchargé, car: __message__, code: __code__",
+            "DownloadOk": "__name__ reçu __count__ OK",
+            "DownloadFail": "__name__ recevoir FAIL",
+            "UploadOk": "__name__ expédié __count__ OK"
+        }
+    },
+    "pendingPopup": {
+        "PleaseWaitMessage": "Patienter..."
+    },
+    "signature": {
+        "HeaderTitle": "$t(common:names.Signature)"
+    },
+    "card":{
+        "ReferencesTableTitle": "Références:",
+        "InFieldActivitiesTableTitle": "Activités Terrain:",
+        "UsersHeaderTitle": "Utilisateurs",
+        "GeneralInfoFields": {
+            "JointVisitUserPlaceholder": "personne clé lors de la visite conjointe",
+            "SignatureTaken": "Signature prise:",
+            "Duration": "Durée (mins):",
+            "Name": "$t(common:names.Name):",
+            "Status": "$t(common:names.Status):",
+            "TargetCustomer": "$t(common:names.TargetCustomer):",
+            "Type": "$t(common:names.Type):",
+            "Priority": "$t(common:names.Priority):",
+            "Specialty": "$t(common:names.Specialty):",
+            "Description": "$t(common:names.Description):",
+            "Customer": "$t(common:names.Customer):",
+            "Organization": "$t(common:names.Organization):",
+            "User": "$t(common:names.User):",
+            "DateTime": "$t(common:names.DateTime):",
+            "JointVisit": "$t(common:names.JointVisit):",
+            "JointVisitUser": "$t(common:names.JointVisitUser):",
+            "CallComments": "$t(common:names.CallComments):",
+            "NextCallObjectives": "$t(common:names.NextCallObjectives):",
+            "Signature": "$t(common:names.Signature):",
+            "TypeOfVisit": "$t(common:names.TypeOfVisit):",
+            "StartDate": "$t(common:names.StartDate):",
+            "EndDate": "$t(common:names.EndDate):"
+        },
+        "DurationPopup": {
+            "Title": "Sélectionner la durée",
+            "TimeUnits": "minutes"
+        },
+        "ConfirmationPopup": {
+            "DeleteItem": {
+                "Question": "Vuolez-vous vraiment supprimer cet objet?"
+            },
+            "SaveChanges": {
+                "Caption": "Voulez-vous sauvegarder les modifications?"
+            }
+        },
+        "ToastMessage": {
+            "RequiredFieldsHeader": "Remplir les champs",
+            "RequiredJointVisit": "-$t(common:names.JointVisit)",
+            "RequiredJointVisitUser": "-$t(common:names.JointVisitUser)",
+            "RequiredSignature": "-$t(common:names.Signature)",
+            "RequiredTypeOfVisit": "-$t(common:names.TypeOfVisit)",
+            "RequiredDateTime": "-$t(common:names.DateTime)",
+            "RequiredDuration": "-$t(common:names.Duration)"
+        },
+        "Contact": {
+            "HeaderTitle": "$t(common:names.Contact):",
+            "GeneralInfoFields": {
+                "KOL": "KOL:",
+                "AbbottSpecialty": "Spécialité Abbott:",
+                "MobilePhone": "Téléphone portable:",
+                "Email": "Email:"
+            }
+        },
+        "Organization": {
+            "HeaderTitle": "$t(common:names.Organization):",
+            "TourPlanningBtn": "Organization Des Tournées",
+            "GeneralInfoFields": {
+                "BillingAddress": "Adresse:",
+                "JuridicGroup": "Groupe juridique:",
+                "GlobalPriority": "Priorité Mondiale:"
+            },
+            "ToastMessage": {
+                "HasNoTargetReferences": "L`organisation actuelle n`a pas de contacts ciblés."
+            }
+        },
+        "Appointment": {
+            "HeaderTitle": "$t(common:names.Appointment)",
+            "ConvertBtn": "Convertir 1:1",
+            "ToastMessage": {
+                "DateLessThanNow": "La date ne peut pas être inférieure à maintenant.",
+                "DateGreaterThanNow": "La date ne peut pas être supérieure à aujourd`hui.",
+                "DateTooFarInThePast": "La date est trop loin dans le passé."
+            },
+            "ConfirmationPopup": {
+                "ReplaceExistingAppointment": {
+                    "Caption": "$t(common:abbottMobileTitle)",
+                    "Question": "Un rendez-vous est déjà prévu avec ce contact à la date spécifiée.\nSouhaitez-vous conserver ce rendez-vous?"
+                },
+                "DeleteItem": {
+                    "Caption": "Supprimer le rendez-vous"
+                },
+                "SaveChangesBeforeConverting": {
+                    "Caption": "Souhaitez-vous sauvegarder les modifications avant de convertir?"
+                }
+            }
+        },
+        "CallReport": {
+            "HeaderTitle": "$t(common:names.CallReport)",
+            "ViewHeaderTitle": "Vue 1:1",
+            "ConvertHeaderTitle": "Convertir 1:1",
+            "Placeholder": "Tous les commentaires",
+            "DateApplyConfirmation":"Previously entered data on Call Report page may be affected after date changing. Proceed?",
+            "Alerts": {
+                "PresentationNotExist":{
+                    "caption": "Présentation n'existe pas",
+                    "message": "Produit sélectionné n'a pas de présentation"
+                },
+                "PresentationNotLoaded":{
+                    "caption": "Présentation non chargé",
+                    "message": "S'il vous plaît télécharger la présentation de produit"
+                }
+            },
+            "Portfolio":{
+                "PatientProfilesTitle":"Profils des patients",
+                "AddProfile":"Ajouter un profil des patients",
+                "SummaryTitle":"Résumé",
+                "PortfolioFeedback":"Portfolio Notations",
+                "PatientSupport":"Programme de soutien aux patients Commentaires",
+                "FullPortfolioReminder":"Présentation complète portefeuille / Rappel:",
+                "PatientSupportProgram":"Patient Support Program:",
+                "TypeFeedback":"Tapez vos commentaires",
+                "NoteForProduct":"Remarque pour le produit",
+                "PatientProfile":"Profil patient",
+                "PatientProduct":"Produit",
+                "ChoosePatientProfile":"Choisissez le profil des patients",
+                "ChooseProduct":"Choisissez un produit",
+                "Classification":"Classification",
+                "PromotionItem":"Promotion point",
+                "DefaultSelectMessage": "Message marketing",
+                "ClearDataConfirmation":{
+                    "Caption":"Warning",
+                    "Message":"All filled in data will be cleaned up. Proceed?"
+                },
+                "Classifications":{
+                    "Detailed":"Détaillé",
+                    "Reminder":"Rappel"
+                },
+                "GeneralInfo":{
+                  "Age": "Age",
+                  "Gender": "Genre",
+                  "GeneralHealth": "La santé générale",
+                  "OccupationSocialEnvironment": "Occupation / Environnement social",
+                  "BodyMassIndex": "L'indice de masse corporelle",
+                  "Diseases": "Maladies"
+                },
+                "ToastMessage":{
+                    "PatientProfileRequirement":"Profil du patient",
+                    "ProductForProfileRequirement":"Produit pour le profil",
+                    "ProductRequirement":"Produit",
+                    "ClassificationForProductRequirement":"Classification pour le produit",
+                    "NoteForProductRequirement": "Remarque pour le produit",
+                    "ProductMessageRequirement": "message de marketing",
+                    "PatientSupportProgramRequirement": "Programme de soutien aux patients",
+                    "PortfolioFeedbackRequirement": "Évaluations de portefeuille",
+                    "PatientSupportProgramCommentsRequirement": "Soutien des patients commentaires de programme",
+                    "FullPortfolioPresentationReminderRequirement": "Portefeuille complet de présentation de rappel",
+                    "NoActiveProductPortfolio":"Il n'y a pas de portefeuille de produit actif"
+                }
+            },
+            "GeneralInfoFields": {
+                "TargetPriority": "Priorité Cible:"
+            },
+            "Product": {
+                "MarketingMessage1": "Message marketing 1",
+                "MarketingMessage2": "Message marketing 2",
+                "MarketingMessage3": "Message marketing 3",
+                "PromotionalItem": "Article promotionnel"
+            },
+            "ToastMessage": {
+                "RequiredFirstProduct": "-Premier produit",
+				"RequiredFirstMessage": "-Premier message de marketing",
+                "RequiredCallComments": "-$t(common:names.CallComments)",
+                "RequiredNextCallObjectives": "-$t(common:names.NextCallObjectives)",
+                "NoPromosForOrganization": "Il n'y à pas de promotions pour l'organisation actuelle"
+            }
+        },
+        "Tot": {
+            "HeaderTitle": "$t(common:names.TimeOffTerritory)",
+            "AllDay": "Journée complète",
+            "FirstPart": "$t(common:names.FirstPart):",
+            "SecondPart": "$t(common:names.SecondPart):",
+            "ThirdPart": "$t(common:names.ThirdPart):",
+            "ForthPart": "$t(common:names.ForthPart):",
+            "Morning": "$t(common:names.Morning):",
+            "Afternoon": "$t(common:names.Afternoon):",
+            "Placeholder": "Saisir la description",
+            "ToastMessage": {
+                "ToastHeader": "Remplissez au moins un des champs obligatoires:",
+                "FirstPart": "$t(common:names.FirstPart)",
+                "SecondPart": "$t(common:names.SecondPart)",
+                "ThirdPart": "$t(common:names.ThirdPart)",
+                "ForthPart": "$t(common:names.ForthPart)",
+                "Morning": "$t(common:names.Morning)",
+                "Afternoon": "$t(common:names.Afternoon)",
+                "DateRange": "Dates non valide."
+            },
+            "ConfirmationPopup": {
+                "DeleteItem": {
+                    "Caption": "Supprimer l`activité hors terrain"
+                }
+            },
+            "UserDayOff": "est jour de congé. Se il vous plaît choisir une autre date appropriée.",
+            "UserDaysOff": "sont des jours fériés. Se il vous plaît choisir une autre date appropriée."
+        },
+        "PharmaEvent": {
+            "CreateCardHeaderTitle": "Nouvelle manifestation scientifique",
+            "HeaderTitle": "Manifestation scientifique",
+            "AttendeesHeaderTitle": "$t(common:names.Attendees)",
+            "ProductsPopupCaption": "Sélectionner les produits",
+            "EndDateLessStartError": "Date de fin ne peut pas être inférieure à la date de début",
+            "GeneralInfoFields": {
+                "Owner": "$t(common:names.Owner):",
+                "TypeOfEvent": "$t(common:names.TypeOfEvent):",
+                "Stage": "$t(common:names.Stage):",
+                "BusinessUnit": "Business unit:",
+                "EventName": "$t(common:names.EventName):",
+                "Location": "$t(common:names.Location):",
+                "Products": "$t(common:names.Products):",
+                "Speakers": "$t(common:names.Speakers):",
+                "Agenda": "$t(common:names.Agenda):",
+                "Objectives": "$t(common:names.Objectives):",
+                "Evaluation": "$t(common:names.Evaluation):",
+                "Attendees": "$t(common:names.Attendees):"
+            },
+            "Placeholders":{
+                "TypeName": "Saisir le nom",
+                "TypeLocation": "Saisir le lieu",
+                "AddProducts": "Ajouter des produits",
+                "TypeSpeakers": "Saisir les intervenants",
+                "TypeAgenda": "Saisir le programme",
+                "TypeObjectives": "Saisir les objectifs",
+                "TypeEvaluation": "Saisir une évaluation",
+                "AddAttendees": "Ajouter des participants"
+            },
+            "ToastMessage": {
+                "RequiredTypeOfEvent": "-$t(common:names.TypeOfEvent)",
+                "RequiredEventName": "-$t(common:names.EventName)",
+                "RequiredLocation": "-$t(common:names.Location)",
+                "RequiredProducts": "-$t(common:names.Products)",
+                "RequiredSpeakers": "-$t(common:names.Speakers)",
+                "RequiredAgenda": "-$t(common:names.Agenda)",
+                "RequiredObjectives": "-$t(common:names.Objectives)"
+            }
+        }
+    },
+    "patientProfilePopup": {
+        "Header": {
+            "Name": "Nom",
+            "Age": "Âge",
+            "Gender": "Sexe",
+            "GeneralHealth": "La Santé Générale",
+            "Occupation": "Occupation",
+            "BMI": "IMC",
+            "Diseases": "Maladies"
+        }
+    },
+    "PromotionPopup": {
+        "Header": "Promotions",
+        "GeneralInfoTitle": "La promotion du commerce",
+        "SKUs": "UGS",
+        "Tactics": "$t(tradeModule.PromoDetails.Tactics)",
+        "Tasks": "Tâches",
+        "Attachment": "$t(tradeModule.PromoDetails.Notes)",
+        "BusinessAccounts": "Business Accounts"
+    },
+    "Media": {
+        "HeaderTitle": "Médias",
+        "Version": "$t(helpdesk.InfoPanel.Version)",
+        "IsDownloaded": "est téléchargé",
+        "Of": "de",
+        "Total": "total",
+        "DownloadPresentationErrorCaption":"Erreur de téléchargement",
+        "DownloadPresentationErrorMessage":"Erreur lors du téléchargement de la présentation",
+        "Unzipping": "Unzipping..."
+    },
+    "AttachmentsPopup": {
+        "Unauthorized": "Séance d'autorisation a expiré. Se déconnecter et vous reconnecter s'il vous plaît.",
+        "Offline": "S'il vous plaît vous connecter à Internet et essayez à nouveau.",
+        "LoadFail": "Connexion Internet est perdue. S'il vous plaît vérifier votre connexion et essayez à nouveau.",
+        "Success": "L'attachement a été chargé avec succès: ",
+        "Error": "Défaut de charger la pièce jointe:",
+        "Deleted": "Cet attachement a été supprimé du serveur"
+    },
+    "PhotoAttachmentsPopup": {
+        "Unauthorized":{
+            "caption": "Photo download",
+            "message": "Authorization session expired. Logout and login again please."
+        },
+        "Offline": {
+            "caption": "Photo download",
+            "message": "Unable to download photo. Your device is offline."
+        },
+        "NoAttachment": {
+            "caption": "Photo download",
+            "message": "Current photo is missing."
+        },
+        "Success": "La photo a été chargé avec succès",
+        "Error": "Fail to load photo"
+    },
+    "TourPlanningFilter": {
+        "IncludeZero": "Inclure zéro régime appel",
+        "Keyword": "Mots-clés",
+        "Search": "Recherche",
+        "ShowSelected": "Afficher sélectionné",
+        "ClearFilter": "Supprimer les filtres",
+        "Calculate": "calculer",
+        "TemplateName": "Nom du modèle",
+        "DailyTemplate": "Modèle Daily",
+        "RenderTemplate": "Rendu modèle",
+        "DeleteTemplate": "Supprimer le modèle",
+        "SaveTemplate": "Enregistrer le modèle",
+        "SelectAndCalculate":"S'il vous plaît sélectionner un client et calculer la tournée avant d'enregistrer le modèle.",
+        "InputTemplateName":"Veuillez saisir la plaque A Tem N ah Mody.",
+        "OverwriteError":"S'il vous plaît sélectionner un modèle pour être écrasement.",
+        "ArrivalTimeError":"Heure d'arrivée ne doit pas être plus tard que le temps de départ.",
+        "LunchTimeError":"Déjeuner fin de pause doit être après le démarrage",
+        "TemplateSaved":"Nouveau modèle a été enregistré.",
+        "TemplateUpdated":"Modèle a été mis à jour.",
+        "DeleteError":"S'il vous plaît sélectionner un modèle à supprimer.",
+        "TemplateDeleted":"Modèle supprimé.",
+        "TemplateRenderError":"S'il vous plaît sélectionner un modèle d'être rendue.",
+        "TemplateAlreadyExistError":"Nombre de la plantilla ya existe."
+    },
+    "TourPlanningSortTemplate": {
+        "Title": "Sélectionnez modèle quotidienne"
+    },
+    "CalendarMonth":{
+        "More":"plus..."
+    }
+
+}

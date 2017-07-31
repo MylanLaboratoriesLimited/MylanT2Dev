@@ -1,0 +1,128 @@
+.helpdesk
+	color #323232
+	.wrapper
+		position relative
+		.helpdesk-container
+			background #f7f7f7
+			border-top: 1px solid #c1c1c1
+			display -webkit-box
+			position absolute
+			top 0
+			bottom 0
+			width 100%
+			.actions-panel
+				height 100%
+				width 34%
+				border-right 1px solid #c1c1c1
+				background #f1f1f1
+				display: -webkit-box
+				-webkit-box-orient vertical
+				padding: 2% 5%
+				box-sizing: border-box
+				-webkit-box-pack: justify
+				.action
+					height 21%
+					border-radius: 5px
+					text-align: center
+					color: white
+					.title
+						height: 40%
+						font-size: 1.1em
+						display: -webkit-box;
+						-webkit-box-orient: vertical
+						-webkit-box-align: center
+						-webkit-box-pack: center
+					.icon
+						height 60%
+						width 100%
+						background-repeat no-repeat
+						background-position center bottom
+						opacity 0.8
+					&.call
+						height 27%
+						background #30c230
+						&:active
+							background #34df34
+						.icon
+							background-image url('img/helpdesk/call-icon.png')
+							background-size: auto 85%
+					&.view-log
+						background rgba(52,170,220,0.8)
+						&:active
+							background #3493dc
+						.icon
+							background-image url('img/helpdesk/view-log-icon.png')
+							background-size: auto 65%
+					&.send-log
+						background rgba(54,183,172,0.8)
+						&:active
+							background #0ce3d1
+						.icon
+							background-image url('img/helpdesk/send-log-icon.png')
+							background-size: auto 55%
+					&.clear-data
+						background rgba(253,145,145,0.8)
+						&:active
+							background #fb7676
+						.icon
+							background-image url('img/helpdesk/clear-db-icon.png')
+							background-size: auto 75%
+					&:active
+						.icon
+							opacity 1
+			.main-area
+				height 100%
+				width 66%
+				padding 2% 3%
+				box-sizing border-box
+				.data-container
+					height 100%
+					overflow hidden
+					display: -webkit-box
+					-webkit-box-orient: vertical
+					-webkit-box-pack: justify
+					& > div
+						background white
+						border-radius 5px
+						padding-left 3%
+						box-sizing border-box
+					.device-info
+						height 30%
+						display: -webkit-box
+						-webkit-box-orient: vertical
+						-webkit-box-pack: justify
+						.info-item
+							height: 25%
+							display -webkit-box
+							-webkit-box-pack justify
+							-webkit-box-align: center
+							padding: 0 2%
+							font-size: 1.1em
+							border-bottom 1px solid #c1c1c1
+							.caption
+								color #333333
+							.value
+								color #87878c
+								text-align right
+							&:last-child
+								border-color transparent
+					.view-log
+						font-size: 1.1em
+						line-height: 130%
+						height: 67%
+						display none
+						.scroll-container
+							height 100%
+							.log-content
+								padding-top 2%
+								word-wrap break-word
+
+			&.view-log-active
+				.actions-panel
+					.view-log
+						background #3493dc
+						.icon
+							opacity 1
+				.data-container
+					.view-log
+						display block

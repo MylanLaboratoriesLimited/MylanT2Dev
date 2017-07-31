@@ -1,0 +1,26 @@
+.top-panel
+  h2(data-i18n="card.CallReport.Portfolio.SummaryTitle")
+.content
+  .portfolio-presentation
+    .general-info
+      .columns
+        .column
+          .info-row
+            .info-cell(data-i18n="card.CallReport.Portfolio.FullPortfolioReminder")
+            .info-cell.value
+              button.select-btn.full-portfolio-btn
+                span(data-i18n="common:defaultSelectValue")
+        .column
+          .info-row
+            .info-cell.support-program(data-i18n="card.CallReport.Portfolio.PatientSupportProgram")
+            .info-cell.value
+              input.check-box(type='checkbox')
+  .comments-group
+    .comment-block.left
+      h2.blue-header(data-i18n="card.CallReport.Portfolio.PortfolioFeedback")
+      textarea.portfolio-feedback.text-area(data-i18n="[data-placeholder]card.CallReport.Portfolio.TypeFeedback")
+    .comment-block.right
+      h2.blue-header(data-i18n="card.CallReport.Portfolio.PatientSupport")
+      textarea.patient-support.text-area(data-i18n="[data-placeholder]commentView.Placeholder")
+
+

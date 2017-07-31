@@ -1,0 +1,216 @@
+.popup
+  position absolute
+  width 100%
+  height 100%
+  background rgba(0, 0, 0, 0.5)
+  z-index 10
+  top 0
+  left 0
+
+  &.alert
+    header
+      -webkit-box-pack center
+
+    .content-container
+      text-align center
+
+  .popup-wrapper
+    width 100%
+    height 100%
+    display -webkit-box
+    -webkit-box-pack center
+    -webkit-box-align center
+
+  .popup-container
+    min-width 50%
+    max-width 80%
+    background #fff
+    border-radius 5px
+    z-index 11
+    -webkit-transform translate3d(0, 0, 0)
+    box-sizing border-box
+    max-height 80%
+    overflow hidden
+
+    header
+      display -webkit-box
+      -webkit-box-align center
+      -webkit-box-sizing border-box
+      background #efeff4
+      color #21b4f3
+      font 170% 'Roboto'
+      font-weight 500
+      padding 0 17px
+      width 100%
+      border-bottom 1px solid #ababae
+      height auto
+      min-height 2.7em
+      line-height 1.2em
+      word-break break-all
+      border-radius 5px 5px 0 0
+
+      .back
+        display inline-block
+
+    .content-container
+      font 150% 'Roboto'
+      font-weight 400
+      color #525253
+
+    .buttons-section
+      width 100%
+      padding 15px 10px 10px
+      display -webkit-box
+      -webkit-box-pack justify
+      border-radius 0 0 5px 5px
+      -webkit-box-align end
+      box-sizing border-box
+      background -webkit-linear-gradient(top, #f8f8f8 0%, #f6f6f6 100%)
+      background linear-gradient(to bottom, #f8f8f8 0%, #f6f6f6 100%)
+
+      .btn
+        background #21b4f3
+        color #fff
+        border-radius 4px
+        text-align center
+        display -webkit-box
+        -webkit-box-pack center
+        -webkit-box-align center
+        font 150% 'Roboto'
+        font-weight 300
+        padding 10px 40px
+        min-width 60px
+        &:active
+          opacity 0.8
+
+        &.no
+          background #fe5950
+
+  &.smaller
+    .popup-container
+      min-width 35%
+
+  &.alert
+    .content-container
+      padding 30px 20px
+
+    &.confirm
+      .buttons-section
+        -webkit-box-pack justify
+
+  &.single-button
+    .buttons-section
+      -webkit-box-pack center
+
+  &.list
+
+    .back
+      &:after
+      &:before
+        width 15px
+
+    ul
+      width auto
+    li
+      display -webkit-box
+      -webkit-box-align center
+      -webkit-box-pack justify
+      -webkit-box-sizing border-box
+      padding 0 17px
+      min-height 3em
+      border-bottom solid 1px #ababae
+      word-break break-all
+      &:active
+        background-color rgba(33, 180, 243, 0.15)
+
+      &:last-of-type
+        border-bottom none
+
+      label
+        display block
+        max-width 90%
+        pointer-events none
+
+       &.blocked
+        opacity 0.7
+        pointer-events none
+
+    &.no-checkbox
+      input
+        display none
+
+  &.sync
+    .popup-container
+      width 80%
+      .content-container
+        padding 6% 3% 3%
+
+  &.pending
+    .content-container
+      cbox()
+      padding 1em 0
+      .spin
+        width 53px
+        height 53px
+        background url("img/loader.png") 0 0 no-repeat
+        background-size 100% 100%
+        position relative
+        -webkit-animation rotate-spin 1s linear 0 infinite
+        margin-right 5%
+      .wait
+        font 110% 'Roboto'
+        color #626263
+
+
+
+@-webkit-keyframes rotate-spin
+  0%
+    -webkit-transform rotateZ(0)
+  8.32%
+    -webkit-transform rotateZ(0)
+  8.33%
+    -webkit-transform rotateZ(30deg)
+  16.65%
+    -webkit-transform rotateZ(30deg)
+  16.66%
+    -webkit-transform rotateZ(60deg)
+  24.98%
+    -webkit-transform rotateZ(60deg)
+  24.99%
+    -webkit-transform rotateZ(90deg)
+  33.31%
+    -webkit-transform rotateZ(90deg)
+  33.32%
+    -webkit-transform rotateZ(120deg)
+  41.64%
+    -webkit-transform rotateZ(120deg)
+  41.65%
+    -webkit-transform rotateZ(150deg)
+  49.97%
+    -webkit-transform rotateZ(150deg)
+  49.98%
+    -webkit-transform rotateZ(180deg)
+  58.3%
+    -webkit-transform rotateZ(180deg)
+  58.31%
+    -webkit-transform rotateZ(210deg)
+  66.63%
+    -webkit-transform rotateZ(210deg)
+  66.64%
+    -webkit-transform rotateZ(240deg)
+  74.96%
+    -webkit-transform rotateZ(240deg)
+  74.97%
+    -webkit-transform rotateZ(270deg)
+  83.29%
+    -webkit-transform rotateZ(270deg)
+  83.3%
+    -webkit-transform rotateZ(300deg)
+  91.62%
+    -webkit-transform rotateZ(300deg)
+  91.63%
+    -webkit-transform rotateZ(330deg)
+  99.9%
+    -webkit-transform rotateZ(330deg)
+  100%
+    -webkit-transform rotateZ(360deg)

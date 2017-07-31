@@ -1,0 +1,22 @@
+{
+	"alias": {
+		"rivets": "./components/rivets/dist/rivets.min.js",
+		"app": "./engine/js/app.js",
+		"settings": "./settings/app.json",
+		"slide": "./components/slide/index.js",
+		"chapter": "./components/chapter/index.js",
+		"extension": "./components/extension/index.js",
+		"touch": "./components/touch/index.js",
+		"utils": "./components/utils/index.js",
+		"translate": "./components/translate/index.js",
+		"structure": "./engine/js/structure-filter.js",
+		"structureJSON": "../structure.json",
+		"nav": "./components/nav/index.js",
+		"orientation-fix": "./components/orientation-fix/index.js",
+		"state": "./components/save-state/index.js",
+		"dom-parser": "./components/dom-parser/index.js",
+		"polyfills": "./components/polyfills/index.js",
+		"android-fixes": "./components/android-fixes/index.js"
+	},
+	"start": ["app"]
+}

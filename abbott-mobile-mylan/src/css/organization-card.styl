@@ -1,0 +1,58 @@
+.ios
+  .organization-card
+    header
+      .title
+        left 10%
+
+.organization-card
+  header
+    .ctrl-btn
+      width 10em
+
+  .wrapper
+    width 100%
+    height 100%
+    -webkit-box-sizing border-box
+    position relative
+    overflow auto
+    -webkit-overflow-scrolling touch
+    padding-top 10px
+    font-size 1.1em
+
+  .comment-block
+    display -webkit-box
+    -webkit-box-orient vertical
+    width 100%
+    -webkit-box-align center
+    .contact-card-description
+      width 97%
+
+  .references-table-wrapper,
+  .activities-table-wrapper
+    margin-top 2%
+
+  .card-table
+    &.references
+      th:last-of-type,
+      td:last-of-type
+        text-align left
+        padding-left 50px
+      col:last-of-type
+        width 70%
+
+    &.activity
+      col
+        &:nth-of-type(3)
+          width 9%
+        &:nth-of-type(4)
+          width 18%
+        &:nth-of-type(5)
+          width 20%
+        &:last-of-type
+          width 28%
+      tbody
+        td
+          &:nth-of-type(3)
+            text-align center
+          &:last-of-type
+            padding-left 15px

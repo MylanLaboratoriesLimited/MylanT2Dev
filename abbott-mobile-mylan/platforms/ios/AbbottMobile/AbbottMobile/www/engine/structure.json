@@ -1,0 +1,25 @@
+{
+	"slides": {
+		"cobalt": {
+			"name": "Cobalt",
+			"template": "app/cobalt.html"
+		},
+		"patientsDepression": {
+			"name": "",
+			"template": "../fevarin-cobalt/app/patientsDepression.html"
+		},
+		"sleepDisturbance": {
+			"name": "",
+			"template": "../fevarin-cobalt/app/sleepDisturbance.html"
+		}
+	},
+
+	"chapters": {
+		"main": {
+			"name": "Main chapter",
+			"content": ["patientsDepression", "sleepDisturbance"]
+		}
+	},
+
+	"storyboard": ["main"]
+}

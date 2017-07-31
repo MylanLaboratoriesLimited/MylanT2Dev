@@ -1,0 +1,47 @@
+button.select-btn.expand-btn
+  p.title
+    strong.profile-title
+    strong &#32;-&#32;
+    strong.product-title
+.table-wrapper
+  table.profile-table
+    colgroup
+      col
+      col
+    tr.general-block
+      td
+        .call-report-card-control-wrapper
+          button.call-report-card-patient-profile-list-btn.select-btn(data-i18n="card.CallReport.Portfolio.ChoosePatientProfile")
+      td
+        button.select-btn.choose-product(data-i18n="card.CallReport.Portfolio.ChooseProduct")
+    tr.expand-block
+      td
+        .call-report-card-contact-info-wrapper
+          p
+            span(data-i18n="card.CallReport.Portfolio.GeneralInfo.Age")
+            span.call-report-card-contact-info-age
+          p
+            span(data-i18n="card.CallReport.Portfolio.GeneralInfo.Gender")
+            span.call-report-card-contact-info-gender
+          p
+            span(data-i18n="card.CallReport.Portfolio.GeneralInfo.GeneralHealth")
+            span.call-report-card-contact-info-general-health
+          p
+            span(data-i18n="card.CallReport.Portfolio.GeneralInfo.OccupationSocialEnvironment")
+            span.call-report-card-contact-info-occupation
+          p
+            span(data-i18n="card.CallReport.Portfolio.GeneralInfo.BodyMassIndex")
+            span.call-report-card-contact-info-bmi
+          p
+            span(data-i18n="card.CallReport.Portfolio.GeneralInfo.Diseases")
+            span.call-report-card-contact-info-diseases
+      td
+        .product-message-block
+          button.select-btn.call-report-card-classification(data-i18n="card.CallReport.Portfolio.Classification")
+          textarea.call-report-card-product-comment.text-field-block(rows="1",data-i18n="[data-placeholder]card.CallReport.Portfolio.NoteForProduct",readonly)
+          button.call-report-card-message-list-btn.select-btn.message-1(data-i18n="card.CallReport.Product.MarketingMessage1")
+          button.call-report-card-message-list-btn.select-btn.message-2(data-i18n="card.CallReport.Product.MarketingMessage2")
+          button.call-report-card-message-list-btn.select-btn.message-3(data-i18n="card.CallReport.Product.MarketingMessage3")
+        .product-promotion-item
+          span(data-i18n="card.CallReport.Portfolio.PromotionItem")
+          input(type="checkbox").promotion-item.check-box

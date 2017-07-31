@@ -1,0 +1,705 @@
+{
+    "home": {
+        "Title": "$t(common:abbottMobileTitle)",
+        "LastSyncDate": "上次同步时间",
+        "Contacts": "客户",
+        "Media": "演示文件",
+        "Organizations": "医院",
+        "Activities": "辖区活动",
+        "TourPlanning": "批量拜访计划",
+        "Calendar": "歷",
+        "TimeOffTerritory": "$t(common:names.TimeOffTerritory)",
+        "AlertPopup": {
+            "Caption": "无法连接网络",
+            "Message": "请尝试重新连接网络"
+        },
+        "AlertLoadProgress":{
+            "Caption": "Downloading in progress",
+            "Message": "Presentation(s)/attachment(s) downloading process is in progress. Please wait for completion or cancel downloading before starting the synchronization."
+        },
+        "Info": "不良事件请立即反馈给医学部，不要记录在系统中！"
+    },
+    "tabbar": {
+        "Home": "主页",
+        "Contacts": "客户",
+        "Activities": "辖区活动",
+        "TourPlanning": "批量拜访计划",
+        "Calendar": "歷",
+        "TimeOffTerritory": "$t(common:names.TimeOffTerritory)",
+        "Organizations": "医院",
+        "Media": "演示文件"
+    },
+    "helpdesk": {
+        "HeaderTitle": "帮助中心",
+        "CallCenter": "呼叫中心",
+        "ViewLastLog": "最近同步记录",
+        "SendLogToSupport": "发送同步记录",
+        "ConfirmationPopup": {
+            "Caption": "清空数据库",
+            "Question": "确定要删除数据库中的所有数据吗？"
+        },
+        "NotSupportedPopup": {
+            "Caption": "警告",
+            "Message": "您的设备不支持此功能"
+        },
+        "Settings": {
+            "Title": "Settings",
+            "ClearDatabase": "清空数据库",
+            "ShowTouches": "Show Touches",
+            "Autosync": "Autosync",
+            "AutoSyncDuration": "Autosync Duration (min)"
+        },
+        "PhoneNumber": "60355663388",
+        "OSVersion": "系统版本",
+        "InfoPanel": {
+            "DeviceId": "设备编号",
+            "Version": "软件版本",
+            "Model": "模型"
+        },
+        "LogScreen": {
+            "HeaderTitle": "上次登陆日志",
+            "AppVersion": "应用版本",
+            "DeviceId": "设备编号",
+            "Info": "信息",
+            "Error": "错误",
+            "Warning": "警告"
+        },
+        "AutoSync":{
+            "HeaderTitle": "Auto synchronization",
+            "AvailableUpdates": "Available updates for synchronization",
+            "AutoSynchronizationLog": "Auto synchronization log",
+            "Errors": {
+                "Error": "Error",
+                "NoConnection": "Can not connect to the internet",
+                "InitLog": "Can not init log",
+                "LogSyncStart": "Can not log sync start",
+                "ActiveUser": "Can not find active user",
+                "IsUserExist": "Can not load active user data",
+                "Authenticate": "Can not authenticate",
+                "DownloadConfigurationData": "Can not download configuration data",
+                "ProcessDataForSync": "Can not process data for synchronization",
+                "UploadLocalEntitiesToServer": "Can not upload entities to server",
+                "RemoveEntitiesByIds": "Can not remove entities by id",
+                "DownloadAllModifiedEntitiesFromServer": "Can not download modified entities from server",
+                "DownloadCreatedEntitiesFromServer": "Can not download created entities from server",
+                "GetCollectionsForUpload": "Can not get collections for upload",
+                "ProcessCollectionsForUpload": "Can not process collections for upload",
+                "GetCollectionsForDownload": "Can not get collections for download",
+                "GetCollectionLastModifiedDateMap": "Can not get collections date map",
+                "RunAsyncCheckForModifiedDataOnServer": "Can not check modified data on server",
+                "ProcessModifiedData": "Can not process modified data",
+                "GetCollectionMapForUpload": "Can not get collection map for upload",
+                "UploadDeletedEntities": "Can not upload deleted entities",
+                "GetLocallyModifiedEntities": "Can not get locally modified entities",
+                "PrepareServerConfig": "Can not prepare server config",
+                "GetModifiedEntitiesFromServer": "Can not get modified entities from server",
+                "RemoveSandboxElements": "Can not remove sandbox elements",
+                "UploadCreatedEntities": "Can not upload created entities",
+                "RunAsyncCheckChangesByIdsOnServer": "Can not check changes by id",
+                "NotFullSynchronized": "Can't process data, please perform full synchronization",
+                "LoadPickList": "Can't load pick lists",
+                "UploadModifiedEntities": "Can not upload modified entities"
+            }
+        },
+        "ClearingDatabaseMessage": "清空数据库"
+    },
+    "tourPlanning": {
+        "HeaderTitle": "计划",
+        "StartTime": "开始时间",
+        "CalculateBtn": "规划行程",
+        "VisitOrderPopupHeader": "选择序号",
+        "TimeSettingsPopup": {
+            "Header":"时间设置",
+            "DateOfVisit":"访问日期",
+            "PlannedArrival":"计划抵达",
+            "PlannedDeparture":"计划出发",
+            "DurationPerVisit":"每次访问的持续时间",
+            "BreakBetweenVisits":"之间的互访中断",
+            "LunchStart":"午餐开始",
+            "LunchEnd":"午餐结束"
+        },
+        "ToastMessage": {
+            "NeedCalculate": "保存之前请先规划行程",
+            "ExistedAppointments": "此时间段已有计划拜访",
+            "NoSelectedItems":"有没有选择的项目"
+        }
+    },
+    "organizations": {
+        "HeaderTitle": "医院"
+    },
+    "contacts": {
+        "HeaderTitle": "客户",
+        "FilterPopup": {
+            "TargetContacts": "目标客户",
+            "NonTargetContacts": "非目标客户"
+        }
+    },
+    "activities": {
+        "HeaderTitle": "辖区活动",
+        "FilterPopup": {
+            "Appointments": "计划拜访",
+            "AppointmentsToday": "今天的计划",
+            "AppointmentsPast": "过去的计划",
+            "AppointmentsTomorrow": "明天的计划",
+            "1To1Calls": "面对面拜访",
+            "1To1CallsToday": "今天的面对面拜访",
+            "PharmaEvents": "雅培市场活动"
+        }
+    },
+    "scenarioDetails": {
+        "HeaderTitle": "新建演示模板",
+        "EditHeaderTitle": "编辑演示模板",
+        "NoSlidesForPreview": "没有可预览的内容",
+        "NoSlidesForSave": "没有可保存的内容"
+    },
+    "tots": {
+        "HeaderTitle": "$t(common:names.TimeOffTerritory)",
+        "FilterPopup": {
+            "All": "所有记录",
+            "Open": "可更改记录",
+            "Submit": "$t(common:names.Submit)",
+            "Closed": "已保存记录"
+        }
+    },
+    "sampleDelivery":{
+        "SampleDelivery": "样本传递",
+        "Table":{
+            "ProductLot":"产品池",
+            "Remarks":"评价",
+            "MRApproved":"审批"
+        },
+        "Popup": {
+            "remainingInStock": "Remaining in stock",
+            "ToastMessage": "至少添加一个样本",
+            "ToastMessageSuccess": "样本传递已更新"
+        }
+    },
+    "orderManagement":{
+        "OrderManagement": "订单管理",
+        "OrderCard":{
+            "Order": "订单",
+            "Total": "总计",
+            "SendEmail": "发送邮件",
+            "Voided": "Voided",
+            "Type": "$t(card.GeneralInfoFields.Type)",
+            "Account": "Account:",
+            "BillingContact": "付款联系人",
+            "BillingAddress": "$t(card.Organization.GeneralInfoFields.BillingAddress)",
+            "ShipToAddress": "送货地址",
+            "Comments": "备注",
+            "OrderDate": "订单日期",
+            "Status": "$t(tradeModule.GeneralInfoFields.Status)",
+            "OrderTotalQuantity": "订单总数",
+            "OrderListAmount": "Order List Amount:",
+            "OrderNetAmount": "Order Net Amount:",
+            "OrderTotalDiscount": "订单折扣",
+            "OrderLines":"訂單行",
+            "SubmitApprove":"提交后订单将无法修改，是否继续？",
+            "VoidApprove":"此操作无法撤消，是否继续？"
+        }
+    },
+    "tradeModule":{
+        "SaveWarningTitle": "贸易模式",
+        "AreYouShureSaveAndExit": "部分内容尚未填写，确定要继续吗？",
+        "HeaderTitle": "$t(common:names.TradeModule)",
+        "GeneralInfoFields": {
+            "Promotion": "$t(common:names.Promotion)",
+            "Promotions": "$t(PromotionPopup.Header)",
+            "Customer": "$t(common:names.Customer)",
+            "PromotionStartDate": "$t(common:names.PromotionStartDate)",
+            "PromotionEndDate": "$t(common:names.PromotionEndDate)",
+            "ShipmentEndDate": "$t(common:names.ShipmentEndDate)",
+            "ShipmentStartDate": "$t(common:names.ShipmentStartDate)",
+            "Description": "$t(common:names.Description)",
+            "Contract": "$t(common:names.Contract)",
+            "NumberOfPharmacies": "$t(common:names.NumberOfPharmacies)",
+            "RecordType": "$t(common:names.RecordType)",
+            "Status": "$t(common:names.Status)",
+            "Objectives": "$t(common:names.Objectives)",
+            "Placeholder": "输入您的描述",
+            "Of": "的"
+        },
+        "PromoDetails": {
+            "Tactics": "人员",
+            "PromotionTasks": "推广任务",
+            "SKUs": "关联SKU",
+            "Notes": "备注和附件",
+            "Photos": "图片"
+        },
+        "Tactics": {
+            "BorderValues": "隐藏目标价值",
+            "NoMechanics": "此次推广没有分配相关人员"
+        },
+        "PromotionTasks": {
+            "NoPromotionTasks": "没有推广任务"
+        },
+        "Skus": {
+            "NoSkus": "此次推广没有相对应的SKU"
+        },
+        "Notes": {
+            "NoNotes": "此次推广没有相关的备注和附件"
+        },
+        "BusinessAccounts":{
+            "NoBusinessAccounts": "There are no business accounts for this promotion"
+        }
+    },
+    "scenarios": {
+        "HeaderTitle": "自定义演示模板",
+        "ConfirmationPopup": {
+            "DeleteItem": {
+                "Caption": "删除模板"
+            }
+        }
+    },
+    "ordersHistory":{
+        "HeaderTitle": "订单历史"
+    },
+    "homeMenu": {
+        "Alarm": "提醒",
+        "Helpdesk": "帮助中心",
+        "Language": "语言",
+        "OrderHistorty": "订单历史",
+        "DynamicAgenda": "自定义演示模板",
+        "Lock": "锁定",
+        "Logout": "退出"
+    },
+    "createActivityPopup": {
+        "Caption": "创建活动",
+        "Appointment": "$t(common:names.Appointment)",
+        "CallReport": "$t(common:names.CallReport)"
+    },
+    "searchView": {
+        "Placeholder": "搜索",
+        "SearchBtn": "搜索"
+    },
+    "commentView": {
+        "Placeholder": "输入内容"
+    },
+    "alarmSettingsPopup": {
+        "Title": "提醒设置",
+        "Off": "关闭",
+        "InFifteenMinutes": "在15分钟内",
+        "InThirtyMinutes": "在30分钟内",
+        "InOneHour": "在1小时内",
+        "InOneHourThirtyMinutes": "在1.5小时内",
+        "InTwoHours": "在2小时内"
+    },
+    "pin": {
+        "AlertCaption": "$t(common:abbottMobileTitle)",
+        "ErrorMessage": {
+            "PinWillBeReset": "密码错误并将重置。你可以通过其他有效信息进入系统。",
+            "IncorrectPin": "密码不正确，您还有__count__次尝试机会",
+            "PinsAreNotEqual": "对不起密码不正确，请重新输入。",
+            "PinLength": "密码必须至少__count__位，请再次输入"
+        },
+        "Placeholder": {
+            "Pin": "密码",
+            "ConfirmPin": "密码确认"
+        }
+    },
+    "synchronizationPopup": {
+        "SynchronizationStatus": "同步进度",
+        "SynchronizationCompleted": "同步成功",
+        "Title": "同步",
+        "Table": {
+            "Brick": "区域",
+            "BuTeamPersonProfile": "BU/产品组医生分级",
+            "CallReport": "$t(common:names.CallReport)",
+            "Contact": "$t(common:names.Contact)",
+            "Device": "设备",
+            "MarketingCycle": "拜访周期",
+            "MarketingMessage": "关键信息",
+            "Organization": "$t(common:names.Organization)",
+            "PEAbbottAttendee": "参与雅培员工",
+            "PEAttendee": "参与客户",
+            "PharmaEvent": "雅培市场活动",
+            "Product": "产品",
+            "PEProduct": "製藥公司活動產品",
+            "Reference": "关联信息",
+            "TargetFrequency": "计划拜访次数",
+            "Target": "目标",
+            "Tot": "$t(common:names.TimeOffTerritory)",
+            "User": "$t(common:names.User)",
+            "Presentation": "$t(common:names.Presentation)",
+            "CLMCallReportData": "CLM拜访数据",
+            "Promotion": "推广",
+            "PromotionAccount": "推广账号",
+            "PromotionTaskAccount": "推广任务账户",
+            "TaskAdjustment": "任务调整",
+            "ProductItem": "产品项目",
+            "PromotionSku": "推广SKU",
+            "PromotionMechanic": "推广人员",
+            "MechanicEvaluationAccount": "人员评估",
+            "MechanicAdjustment": "人员调整",
+            "PhotoAdjustment": "图片调整",
+            "PromotionNote": "推广备注",
+            "PromotionAttachment": "推广附件",
+            "PhotoAttachment": "图片附件",
+            "ProductInPortfolio": "产品组合中的产品",
+            "ProfileProductInPortfolio": "产品组合中的产品档案",
+            "PatientDisease": "患者疾病",
+            "SlideConfiguration": "幻燈片配置",
+            "PresentationSlide": "演示幻燈片",
+            "PortfolioPresentation": "組合簡報",
+            "ProductPortfolioAssignment": "產品組合分配",
+            "TourPlanningSortTemplate": "批量拜访模板",
+            "SampleStock": "样品库",
+            "SampleDelivery": "样本传递",
+            "Order": "订单",
+            "OrderLine": "OrderLine"
+        },
+        "PickList": "选择列表",
+        "Uploading": "上传",
+        "Configuration": "配置",
+        "LogMessage": {
+            "SyncStarted": "同步开始",
+            "RemovedRecordsCount": "__name__ removed records: __count__ ",
+            "ModifiedServerCount": "__name__ modified (remote): __count__ ",
+            "DeletedServerCount": "__name__ deleted (remote): __count__ ",
+            "CreatedServerCount": "__name__ created (remote): __count__ ",
+            "ModifiedClientCount": "__name__ modified (local): __count__ ",
+            "DeletedClientCount": "__name__ deleted (local): __count__ ",
+            "CreatedClientCount": "__name__ created (local): __count__ ",
+            "SyncStart": "同步开始，第__count__步",
+            "CheckDevice": "检查设备",
+            "Success": "同步成功",
+            "Error": "同步出错",
+            "SendErrorReport": "同步失败。是否要将\n 发送给后台？",
+            "ErrorUploading": "错误__type__上传 实体：__entity__，信息：__message__，编号：__code__",
+            "WarningUploading": "__type__ 实体: __entity__ 未上传成功，因为: __message__, 编号: __code__",
+            "DownloadOk": "__name__已接收__count__",
+            "DownloadFail": "__name__接受失败",
+            "UploadOk": "__name__已发送__count__"
+        }
+    },
+    "pendingPopup": {
+        "PleaseWaitMessage": "请耐心等待"
+    },
+    "signature": {
+        "HeaderTitle": "$t(common:names.Signature)"
+    },
+    "card": {
+        "ReferencesTableTitle": "关联信息",
+        "InFieldActivitiesTableTitle": "辖区活动",
+        "UsersHeaderTitle": "用户",
+        "GeneralInfoFields": {
+            "JointVisitUserPlaceholder": "主要参与者",
+            "SignatureTaken": "获取签名",
+            "Duration": "持续时间(分钟)",
+            "Name": "$t(common:names.Name)",
+            "Status": "$t(common:names.Status)",
+            "TargetCustomer": "$t(common:names.TargetCustomer)",
+            "Type": "$t(common:names.Type)",
+            "Priority": "$t(common:names.Priority)",
+            "Specialty": "$t(common:names.Specialty)",
+            "Description": "$t(common:names.Description)",
+            "Customer": "$t(common:names.Customer)",
+            "Organization": "$t(common:names.Organization)",
+            "User": "$t(common:names.User)",
+            "DateTime": "$t(common:names.DateTime)",
+            "JointVisit": "$t(common:names.JointVisit)",
+            "JointVisitUser": "$t(common:names.JointVisitUser)",
+            "CallComments": "$t(common:names.CallComments)",
+            "NextCallObjectives": "$t(common:names.NextCallObjectives)",
+            "Signature": "$t(common:names.Signature)",
+            "TypeOfVisit": "$t(common:names.TypeOfVisit)",
+            "StartDate": "$t(common:names.StartDate)",
+            "EndDate": "$t(common:names.EndDate)"
+        },
+        "DurationPopup": {
+            "Title": "选择时长",
+            "TimeUnits": "分钟"
+        },
+        "ConfirmationPopup": {
+            "DeleteItem": {
+                "Question": "确定删除？"
+            },
+            "SaveChanges": {
+                "Caption": "是否保存更改的内容？"
+            }
+        },
+        "ToastMessage": {
+            "RequiredFieldsHeader": "请输入内容",
+            "RequiredJointVisit": "-$t(common:names.JointVisit)",
+            "RequiredJointVisitUser": "-$t(common:names.JointVisitUser)",
+            "RequiredSignature": "-$t(common:names.Signature)",
+            "RequiredTypeOfVisit": "-$t(common:names.TypeOfVisit)",
+            "RequiredDateTime": "-$t(common:names.DateTime)",
+            "RequiredDuration": "-$t(common:names.Duration)"
+        },
+        "Contact": {
+            "HeaderTitle": "$t(common:names.Contact)",
+            "GeneralInfoFields": {
+                "KOL": "KOL",
+                "AbbottSpecialty": "科室",
+                "MobilePhone": "手机",
+                "Email": "电子邮件"
+            }
+        },
+        "Organization": {
+            "HeaderTitle": "$t(common:names.Organization)",
+            "TourPlanningBtn": "批量拜访计划",
+            "GeneralInfoFields": {
+                "BillingAddress": "地址",
+                "JuridicGroup": "法人代表",
+                "GlobalPriority": "全球级别"
+            },
+            "ToastMessage": {
+                "HasNoTargetReferences": "当前医院没有目标客户"
+            }
+        },
+        "Appointment": {
+            "HeaderTitle": "$t(common:names.Appointment)",
+            "ConvertBtn": "Convert to 1:1",
+            "ToastMessage": {
+                "DateLessThanNow": "预约日期不能早于今天",
+                "DateGreaterThanNow": "拜访日期不能晚于今天",
+                "DateTooFarInThePast": "日期过于久远"
+            },
+            "ConfirmationPopup": {
+                "ReplaceExistingAppointment": {
+                    "Caption": "$t(common:abbottMobileTitle)",
+                    "Question": "在\n该时间已有计划，是否要用此计划替换？"
+                },
+                "DeleteItem": {
+                    "Caption": "删除计划拜访"
+                },
+                "SaveChangesBeforeConverting": {
+                    "Caption": "转化拜访之前是否要保存所做的修改？"
+                }
+            }
+        },
+        "CallReport": {
+            "HeaderTitle": "$t(common:names.CallReport)",
+            "ViewHeaderTitle": "拜访详情",
+            "ConvertHeaderTitle": "Convert to 1:1",
+            "Placeholder": "任何意见",
+            "DateApplyConfirmation":"数据更新后会影响到已保存的拜访数据，是否继续？",
+            "Alerts": {
+                "PresentationNotExist": {
+                    "caption": "演示文件不存在",
+                    "message": "选择的产品没有相关演示文件"
+                },
+                "PresentationNotLoaded": {
+                    "caption": "演示文件未载入",
+                    "message": "请下载产品的演示文件"
+                }
+            },
+            "Portfolio": {
+                "PatientProfilesTitle": "患者病例",
+                "AddProfile": "新增患者档案",
+                "SummaryTitle": "总结",
+                "PortfolioFeedback": "产品组合反馈",
+                "PatientSupport": "患者增值服务评价",
+                "FullPortfolioReminder": "全产品推广",
+                "PatientSupportProgram": "患者增值服务",
+                "TypeFeedback": "输入您的反馈",
+                "NoteForProduct": "产品反馈和分析",
+                "PatientProfile": "患者病例",
+                "PatientProduct": "产品",
+                "ChoosePatientProfile": "选择患者病例",
+                "ChooseProduct": "选择产品",
+                "Classification": "推广方式",
+                "PromotionItem": "推广项目",
+                "DefaultSelectMessage": "关键信息",
+                "ClearDataConfirmation": {
+                    "Caption": "警告",
+                    "Message": "所有填写的信息将被清空，是否继续？"
+                },
+                "Classifications": {
+                    "Detailed": "详细陈述",
+                    "Reminder": "简单提及"
+                },
+                "GeneralInfo": {
+                    "Age": "年龄",
+                    "Gender": "性别",
+                    "GeneralHealth": "健康状况",
+                    "OccupationSocialEnvironment": "工作/社交环境",
+                    "BodyMassIndex": "BMI",
+                    "Diseases": "疾病"
+                },
+                "ToastMessage": {
+                    "PatientProfileRequirement":"病人簡介",
+                    "ProductForProfileRequirement":"產品簡介為",
+                    "ProductRequirement":"產品",
+                    "ClassificationForProductRequirement":"推广方式",
+                    "NoteForProductRequirement": "注意產品",
+                    "ProductMessageRequirement": "營銷信息",
+                    "PatientSupportProgramRequirement": "病人支援計劃",
+                    "PortfolioFeedbackRequirement": "投資組合反饋",
+                    "PatientSupportProgramCommentsRequirement": "患者支持計劃的意見",
+                    "FullPortfolioPresentationReminderRequirement": "全系列演講提醒",
+                    "NoActiveProductPortfolio": "无有效的产品组合"
+                }
+            },
+            "GeneralInfoFields": {
+                "TargetPriority": "BU/产品组医生分级"
+            },
+            "Product": {
+                "MarketingMessage1": "关键信息1",
+                "MarketingMessage2": "关键信息2",
+                "MarketingMessage3": "关键信息3",
+                "PromotionalItem": "推广项目"
+            },
+            "ToastMessage": {
+                "RequiredFirstProduct": "-第一个产品",
+                "RequiredFirstMessage": "-第一个关键信息",
+                "RequiredCallComments": "-$t(common:names.CallComments)",
+                "RequiredNextCallObjectives": "-$t(common:names.NextCallObjectives)",
+                "NoPromosForOrganization": "当前医院没有推广计划"
+            }
+        },
+        "Tot": {
+            "HeaderTitle": "$t(common:names.TimeOffTerritory)",
+            "AllDay": "一整天",
+            "FirstPart": "$t(common:names.FirstPart)",
+            "SecondPart": "$t(common:names.SecondPart)",
+            "ThirdPart": "$t(common:names.ThirdPart)",
+            "ForthPart": "$t(common:names.ForthPart)",
+            "Morning": "$t(common:names.Morning)",
+            "Afternoon": "$t(common:names.Afternoon)",
+            "Placeholder": "类型描述",
+            "ToastMessage": {
+                "ToastHeader": "至少选择一项：",
+                "FirstPart": "$t(common:names.FirstPart)",
+                "SecondPart": "$t(common:names.SecondPart)",
+                "ThirdPart": "$t(common:names.ThirdPart)",
+                "ForthPart": "$t(common:names.ForthPart)",
+                "Morning": "$t(common:names.Morning)",
+                "Afternoon": "$t(common:names.Afternoon)",
+                "DateRange": "无效日期"
+            },
+            "ConfirmationPopup": {
+                "DeleteItem": {
+                    "Caption": "删除非辖区工作时间"
+                }
+            },
+            "UserDayOff": "\n是非辖区时间，请选择合适的日期",
+            "UserDaysOff": "\n是非辖区时间，请选择合适的日期"
+        },
+        "PharmaEvent": {
+            "CreateCardHeaderTitle": "新建雅培市场活动",
+            "HeaderTitle": "雅培市场活动",
+            "AttendeesHeaderTitle": "$t(common:names.Attendees)",
+            "ProductsPopupCaption": "选择产品",
+            "EndDateLessStartError": "结束日期不能早于开始日期",
+            "GeneralInfoFields": {
+                "Owner": "$t(common:names.Owner)",
+                "TypeOfEvent": "$t(common:names.TypeOfEvent)",
+                "Stage": "$t(common:names.Stage)",
+                "BusinessUnit": "BU",
+                "EventName": "$t(common:names.EventName)",
+                "Location": "$t(common:names.Location)",
+                "Products": "$t(common:names.Products)",
+                "Speakers": "$t(common:names.Speakers)",
+                "Agenda": "$t(common:names.Agenda)",
+                "Objectives": "$t(common:names.Objectives)",
+                "Evaluation": "$t(common:names.Evaluation)",
+                "Attendees": "$t(common:names.Attendees)"
+            },
+            "Placeholders": {
+                "TypeName": "输入名称",
+                "TypeLocation": "输入场地",
+                "AddProducts": "添加产品",
+                "TypeSpeakers": "输入讲者",
+                "TypeAgenda": "输入议程",
+                "TypeObjectives": "输入目的",
+                "TypeEvaluation": "输入评估",
+                "AddAttendees": "添加参与客户"
+            },
+            "ToastMessage": {
+                "RequiredTypeOfEvent": "-$t(common:names.TypeOfEvent)",
+                "RequiredEventName": "-$t(common:names.EventName)",
+                "RequiredLocation": "-$t(common:names.Location)",
+                "RequiredProducts": "-$t(common:names.Products)",
+                "RequiredSpeakers": "-$t(common:names.Speakers)",
+                "RequiredAgenda": "-$t(common:names.Agenda)",
+                "RequiredObjectives": "-$t(common:names.Objectives)"
+            }
+        }
+    },
+    "patientProfilePopup": {
+        "Header": {
+            "Name": "名称",
+            "Age": "年龄",
+            "Gender": "性别",
+            "GeneralHealth": "健康状况",
+            "Occupation": "职业",
+            "BMI": "BMI",
+            "Diseases": "疾病"
+        }
+    },
+    "PromotionPopup": {
+        "Header": "推广",
+        "GeneralInfoTitle": "OTC推广",
+        "SKUs": "SKU",
+        "Tactics": "$t(tradeModule.PromoDetails.Tactics)",
+        "Tasks": "任务",
+        "Attachment": "$t(tradeModule.PromoDetails.Notes)",
+        "BusinessAccounts": "Business Accounts"
+    },
+    "Media": {
+        "HeaderTitle": "演示文件",
+        "Version": "$t(helpdesk.InfoPanel.Version)",
+        "IsDownloaded": "下载",
+        "Of": "的",
+        "Total": "总",
+        "DownloadPresentationErrorCaption": "下载出错",
+        "DownloadPresentationErrorMessage": "下载演示文件时出错",
+        "Unzipping": "Unzipping..."
+    },
+    "AttachmentsPopup": {
+        "Unauthorized": "停留时间过长，请退出系统并重新登陆",
+        "Offline": "请连接网络并重试",
+        "LoadFail": "网络信号丢失。请检查网络连接并重试",
+        "Success": "附件载入成功",
+        "Error": "附件载入失败",
+        "Deleted": "此附件已从系统中删除"
+    },
+    "PhotoAttachmentsPopup": {
+        "Unauthorized": {
+            "caption": "图片下载",
+            "message": "停留时间过长，请退出系统并重新登陆"
+        },
+        "Offline": {
+            "caption": "图片下载",
+            "message": "您的设备处于离线状态，无法下载图片"
+        },
+        "NoAttachment": {
+            "caption": "图片下载",
+            "message": "当前图片丢失"
+        },
+        "Success": "图片载入成功",
+        "Error": "图片载入失败"
+    },
+    "TourPlanningFilter": {
+        "IncludeZero": "包括零計劃通話",
+        "Keyword": "關鍵字",
+        "Search": "搜",
+        "ShowSelected": "顯示選擇",
+        "ClearFilter": "清除筛选",
+        "Calculate": "算",
+        "TemplateName": "模板名稱",
+        "DailyTemplate": "每日模板",
+        "RenderTemplate": "渲染模板",
+        "DeleteTemplate": "刪除模板",
+        "SaveTemplate": "保存模板",
+        "SelectAndCalculate":"請選擇一個客戶並保存模板之前計算之旅",
+        "InputTemplateName":"請輸入模板名稱",
+        "OverwriteError":"請選擇一個模板被覆蓋",
+        "ArrivalTimeError":"到达时间应不晚于出发时间",
+        "LunchTimeError":"午休结束时间必须开始后",
+        "TemplateSaved":"新模板已保存",
+        "TemplateUpdated":"模板已更新",
+        "DeleteError":"请选择要删除的模板",
+        "TemplateDeleted":"模板中删除",
+        "TemplateRenderError":"请选择一个模板来呈现",
+        "TemplateAlreadyExistError":"模板名称已经存在"
+    },
+    "TourPlanningSortTemplate": {
+        "Title": "選擇日常模板"
+    },
+    "CalendarMonth":{
+        "More":"更多..."
+    }
+}

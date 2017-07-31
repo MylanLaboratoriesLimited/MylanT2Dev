@@ -1,0 +1,266 @@
+{
+	"slides": {
+		"frontpage": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/frontpage/index.html",
+			"major": 0
+		},
+		"advisoryCouncil": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/advisoryCouncil/index.html",
+			"major": 0
+		},
+		"specialists": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/specialists/index.html",
+			"major": 0
+		},
+		"clinicalMicrobiology": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/clinicalMicrobiology/index.html",
+			"major": 0
+		},
+		"numberOfPatients": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/numberOfPatients/index.html",
+			"major": 0
+		},
+		"childrenWithTonzillofarengit": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/childrenWithTonzillofarengit/index.html",
+			"major": 0
+		},
+		"childrenWithBronchitis": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/childrenWithBronchitis/index.html",
+			"major": 0
+		},
+		"speedSurpasses": {
+			"name": "SpeedSurpasses",
+			"template": "./../a1AN0000000gpzuMAA/slides/speedSurpasses/index.html",
+			"major": 0
+		},
+		"acuteTonsillitis": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/acuteTonsillitis/index.html",
+			"major": 0
+		},
+		"affectsTonzillit": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/affectsTonzillit/index.html",
+			"major": 0
+		},
+		"affectsPneumonia": {
+			"name": "AffectsPneumonia",
+			"template": "./../a1AN0000000gpzuMAA/slides/affectsPneumonia/index.html",
+			"major": 0
+		},
+		"affectsBronhitPopup": {
+			"name": "affectsBronhitPopup",
+			"template": "./../a1AN0000000gpzuMAA/slides/affectsBronhitPopup/index.html",
+			"major": 0
+		},
+		"affectsRinosinusitPopup": {
+			"name": "affectsRinosinusitPopup",
+			"template": "./../a1AN0000000gpzuMAA/slides/affectsRinosinusitPopup/index.html",
+			"major": 0
+		},
+		"childrenTreatmentBronhit": {
+			"name": "ChildrenTreatmentBronhit",
+			"template": "./../a1AN0000000gpzuMAA/slides/childrenTreatmentBronhit/index.html",
+			"major": 0
+		},
+		"childrenTreatmentRinosinusit": {
+			"name": "childrenTreatmentRinosinusit",
+			"template": "./../a1AN0000000gpzuMAA/slides/childrenTreatmentRinosinusit/index.html",
+			"major": 0
+		},
+		"klacidBronhit": {
+			"name": "KlacidBronhit",
+			"template": "./../a1AN0000000gpzuMAA/slides/klacidBronhit/index.html",
+			"major": 0
+		},
+		"klacidRinosinusit": {
+			"name": "klacidRinosinusit",
+			"template": "./../a1AN0000000gpzuMAA/slides/klacidRinosinusit/index.html",
+			"major": 0
+		},
+		"macrolipidsUsage": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/macrolipidsUsage/index.html",
+			"major": 0
+		},
+		"macrolipidsUsage2": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/macrolipidsUsage2/index.html",
+			"major": 0
+		},
+		"pediatricPatientsWithAcuteOtitis": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/pediatricPatientsWithAcuteOtitis/index.html",
+			"major": 0
+		},
+		"symptomsOtitisRegression": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/symptomsOtitisRegression/index.html",
+			"major": 0
+		},
+		"reasonRespiratoryInfections": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/reasonRespiratoryInfections/index.html",
+			"major": 0
+		},
+		"childrenWithPneumonia": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/childrenWithPneumonia/index.html",
+			"major": 0
+		},
+		"annualNumberOfVisits": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/annualNumberOfVisits/index.html",
+			"major": 0
+		},
+		"annualNumberOfVisitsPopup": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/annualNumberOfVisitsPopup/index.html",
+			"major": 0
+		},
+		"helpInAntibioticUse": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/helpInAntibioticUse/index.html",
+			"major": 0
+		},
+		"childrenWithAcuteSinusitis": {
+			"name": "",
+			"template": "./../a1AN0000000gpzuMAA/slides/childrenWithAcuteSinusitis/index.html",
+			"major": 0
+		},
+		"highConcentration": {
+			"name": "HighConcentration",
+			"template": "./../a1AN0000000gpzuMAA/slides/highConcentration/index.html",
+			"major": 0
+		},
+		"maxTonzillofarinitTreatment": {
+			"name": "maxTonzillofarinitTreatment",
+			"template": "./../a1AN0000000gpzuMAA/slides/maxTonzillofarinitTreatment/index.html",
+			"major": 0
+		},
+		"klacidForChildrenOfAnyAge2": {
+			"name": "klacidForChildrenOfAnyAge2",
+			"template": "./../a1AN0000000gpzuMAA/slides/klacidForChildrenOfAnyAge2/index.html",
+			"major": 0
+		},
+		"effectivenessOfTonzillofarinitTreatment": {
+			"name": "effectivenessOfTonzillofarinitTreatment",
+			"template": "./../a1AN0000000gpzuMAA/slides/effectivenessOfTonzillofarinitTreatment/index.html",
+			"major": 0
+		},
+		"numberOfAntibiotics": {
+			"name": "numberOfAntibiotics",
+			"template": "./../a1AN0000000gpzuMAA/slides/numberOfAntibiotics/index.html",
+			"major": 0
+		},
+		"numberOfDestination": {
+			"name": "NumberOfDestination",
+			"template": "./../a1AN0000000gpzuMAA/slides/numberOfDestination/index.html",
+			"major": 0
+		},
+		"makrolid": {
+			"name": "makrolid",
+			"template": "./../a1AN0000000gpzuMAA/slides/makrolid/index.html",
+			"major": 0
+		},
+		"directEffectMucin": {
+			"name": "directEffectMucin",
+			"template": "./../a1AN0000000gpzuMAA/slides/directEffectMucin/index.html",
+			"major": 0
+		},
+		"compareEfficacyAndSafetyOfClarithromycin": {
+			"name": "compareEfficacyAndSafetyOfClarithromycin",
+			"template": "./../a1AN0000000gpzuMAA/slides/compareEfficacyAndSafetyOfClarithromycin/index.html",
+			"major": 0
+		},
+		"potentialToDestroyTheBiofilmMatrix2": {
+			"name": "potentialToDestroyTheBiofilmMatrix2",
+			"template": "./../a1AN0000000gpzuMAA/slides/potentialToDestroyTheBiofilmMatrix2/index.html",
+			"major": 0
+		},
+		"easeOfUse": {
+			"name": "easeOfUse",
+			"template": "./../a1AN0000000gpzuMAA/slides/easeOfUse/index.html",
+			"major": 0
+		},
+		"clarithromycinTheHighestActivityOfMacrolides2": {
+			"name": "clarithromycinTheHighestActivityOfMacrolides2",
+			"template": "./../a1AN0000000gpzuMAA/slides/clarithromycinTheHighestActivityOfMacrolides2/index.html",
+			"major": 0
+		},
+		"powder": {
+			"name": "powder",
+			"template": "./../a1AN0000000gpzuMAA/slides/powder/index.html",
+			"major": 0
+		},
+		"resistanceData": {
+			"name": "resistanceData",
+			"template": "./../a1AN0000000gpzuMAA/slides/resistanceData/index.html",
+			"major": 0
+		},
+		"serumConcentration": {
+			"name": "serumConcentration",
+			"template": "./../a1AN0000000gpzuMAA/slides/serumConcentration/index.html",
+			"major": 0
+		},
+		"objections": {
+			"name": "objections",
+			"template": "./../a1AN0000000gpzuMAA/slides/objections/index.html",
+			"major": 0
+		},
+		"maxCareLittleParient": {
+			"name": "maxCareLittleParient",
+			"template": "./../a1AN0000000gpzuMAA/slides/maxCareLittleParient/index.html",
+			"major": 0
+		},
+		"resultsComparativeEffectivenessResearch": {
+			"name": "resultsComparativeEffectivenessResearch",
+			"template": "./../a1AN0000000gpzuMAA/slides/resultsComparativeEffectivenessResearch/index.html",
+			"major": 0
+		},
+		"twoGraphs": {
+			"name": "TwoGraphs",
+			"template": "./../a1AN0000000gpzuMAA/slides/twoGraphs/index.html",
+			"major": 0
+		},
+		"acuteHepatotoxicity": {
+			"name": "acuteHepatotoxicity",
+			"template": "./../a1AN0000000gpzuMAA/slides/acuteHepatotoxicity/index.html",
+			"major": 0
+		},
+		"standartOfMedHelp": {
+			"name": "StandartOfMedHelp",
+			"template": "./../a1AN0000000gpzuMAA/slides/standartOfMedHelp/index.html",
+			"major": 0
+		},
+		"AbbottCVM_KSA_006_Slide": {
+			"name": "006_Slide",
+			"template": "./../cardio-major-1/slides/AbbottCVM_KSA_006_Slide/index.html",
+			"major": 1
+		},
+		"AbbottCVM_KSA_007_Slide": {
+			"name": "007_Slide",
+			"template": "./../cardio-major-1/slides/AbbottCVM_KSA_007_Slide/index.html",
+			"major": 1
+		}
+	},
+	"chapters": {
+		"homepage": {
+			"name": "Домашняя страница",
+			"content": [
+				"frontpage", "AbbottCVM_KSA_006_Slide", "AbbottCVM_KSA_007_Slide", "numberOfAntibiotics","numberOfDestination","numberOfPatients"
+			]
+		}
+	},
+	"storyboard": [
+		"homepage"
+	]
+
+}

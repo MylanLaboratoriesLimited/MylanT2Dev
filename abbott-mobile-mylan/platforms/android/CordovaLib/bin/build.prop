@@ -1,0 +1,41 @@
+#Last build type
+#Fri, 15 Jan 2016 15:31:27 +0200
+
+#Last build type
+#Fri, 15 Jan 2016 15:15:10 +0200
+
+#Last build type
+#Mon, 11 Jan 2016 09:55:03 +0200
+
+#Last build type
+#Wed, 30 Dec 2015 18:58:02 +0200
+
+#Last build type
+#Wed, 30 Dec 2015 16:23:06 +0200
+
+#Last build type
+#Wed, 30 Dec 2015 14:50:39 +0200
+
+#Last build type
+#Tue, 29 Dec 2015 15:04:13 +0200
+
+#Last build type
+#Tue, 29 Dec 2015 14:10:46 +0200
+
+#Last build type
+#Tue, 29 Dec 2015 13:17:24 +0200
+
+#Last build type
+#Mon, 28 Dec 2015 18:35:09 +0200
+
+build.last.target=debug
+
+build.last.is.instrumented=false
+
+build.last.is.packaging.debug=true
+
+
+
+aging.debug=true
+
+build.last.is.signing.debug=true

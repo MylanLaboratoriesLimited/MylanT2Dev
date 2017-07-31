@@ -1,0 +1,47 @@
+.tots
+  header
+    .select-btn
+      min-width 7em
+
+  .tbody
+    .col
+       height 6.66666666666667em
+
+  .col
+    &:nth-of-type(1)
+    &:nth-of-type(2)
+      width 14%
+    &:nth-of-type(3)
+      width 10%
+    &:nth-of-type(4)
+    &:nth-of-type(5)
+      width 14%
+    &:nth-of-type(6)
+      width 34.5%
+
+  .all-day
+    border none
+    width 2em
+    height 2em
+    &.checked
+      background none
+    &:after
+      background #21b4f3
+
+  .events.list
+    display -webkit-box
+    -webkit-box-orient vertical
+    -webkit-box-pack justify
+    height 100%
+    box-sizing border-box
+    padding 2% 0
+
+    p
+      display -webkit-box
+      -webkit-box-orient vertical
+      text-overflow ellipsis
+      -webkit-line-clamp 1
+      overflow hidden
+      word-break break-all
+    &.half
+      height 50%

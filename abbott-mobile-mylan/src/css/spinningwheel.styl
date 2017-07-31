@@ -1,0 +1,114 @@
+#sw-wrapper
+  position absolute
+  left 25%
+  top 50% !important
+  margin-top -135px
+  width 50%
+  height 275px
+  font-family helvetica
+  text-align left
+  -webkit-transform none !important
+  z-index 12
+  background #f7f7f7
+  border-radius 10px
+  display -webkit-box
+  -webkit-box-orient vertical
+  &.date-picker
+    width 40%
+    left 30%
+
+#sw-header
+  height: 3.8em
+  padding: 0.7em 5%
+  box-sizing: border-box
+  background: #f7f7f7
+  border-radius: 10px
+
+#sw-cancel,
+#sw-done
+  font-size: 140%
+  color: #fff
+  min-width: 37%
+  height: 100%
+  border: none
+  text-align: center
+  border-radius: 5px
+
+#sw-cancel
+  float: left
+  background: #fe5950
+
+#sw-done
+  float: right
+  background: #21b4f3
+
+.sw-pressed
+  opacity 0.4
+
+#sw-slots-wrapper
+  height: 75%
+  color: #9b9c9c
+  display: -webkit-box
+  position: relative
+  margin: 5% 0 0
+
+#sw-slots
+  display: -webkit-box
+  -webkit-box-pack: justify
+  -webkit-box-align: center
+  width 100%
+  height 100%
+  overflow hidden
+  position relative
+  box-sizing: border-box
+
+#sw-slots
+  .sw-right
+    width 20%
+    &:first-child
+      width 50%
+  .sw-center
+    text-align center
+    width 100%
+  .sw-shrink
+    height 100%
+    width 5%
+    ul
+      padding 0
+      height: 100%
+      display: -webkit-box
+      -webkit-box-align: center
+
+#sw-slots
+  ul
+    padding 82px 0 0 0
+    margin 0
+    list-style none
+    li
+      padding 0
+      height 40px
+      font 180% 'Roboto'
+      line-height 40px
+      width: 100%
+      text-align: center
+
+#sw-frame
+  position absolute
+  z-index 11
+  left 0
+  right 0
+  top 0
+  height 100%
+  border-radius: 10px
+  background: -webkit-gradient(linear, left bottom, left top, from(#f7f7f7), color-stop(0.52, rgba(245, 245, 245, 0)), color-stop(0.48, rgba(245, 245, 245, 0)), to(#f7f7f7))
+  display -webkit-box
+  -webkit-box-align center
+  & > div
+    height 40px
+    width 100%
+    border-top 1px solid #000000
+    border-bottom 1px solid #000000
+
+#sw-slots
+  .sw-50percent
+    width: 50%

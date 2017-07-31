@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  AbbottMobile
+
+  Created by Alexander Voronov on 20/8/14.
+  Copyright (c) 2014 Qap, Inc. All rights reserved.
+*/
+
+"Reminder" = "Rappel";
+"You are having appointment at _time_ to _account_" = "Vous rencontrez des rendez-vous à %@\n de %@,\n%@";
+"View appointment" = "Voir nomination";
+
+"Phone" = "Phone";
+"Your device doesn't support this feature." = "Votre appareil ne prend pas en charge cette fonctionnalité.";
+
+"OK" = "OK";
+
+"Complete" = "Complète";
+"Close" = "Fermer";

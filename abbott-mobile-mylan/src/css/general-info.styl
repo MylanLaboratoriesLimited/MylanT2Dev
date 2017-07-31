@@ -1,0 +1,54 @@
+.general-info
+  font 95% 'Roboto'
+  margin-bottom 2%
+
+  .columns
+    display -webkit-box
+    -webkit-box-pack justify
+    -webkit-box-align start
+
+    &.with-separator
+      border-bottom 1px solid #c1c1c1
+
+    margin-bottom 2%
+
+  .column
+    width 49.5%
+
+    .info-row
+      width 100%
+      display -webkit-box
+      -webkit-box-sizing border-box
+      -webkit-box-align center
+      padding 5px 5px 5px 15px
+      min-height 41px
+
+      &:nth-of-type(odd)
+        background #efeff4
+
+    .info-cell
+      width 40%
+      padding-right 1%
+      font-weight 500
+      color 333
+
+      &.value
+        width 59%
+        font-weight 400
+        color #87878c
+        word-break break-all
+
+      &.hyperlink
+        color #21b4f3
+
+      &.calendar
+        width auto
+        padding-right 60px
+
+        &:after
+          top 50%
+          right 0
+          margin-top - 15px
+
+    .text-field-block
+      width 56%

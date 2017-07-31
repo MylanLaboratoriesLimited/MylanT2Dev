@@ -1,0 +1,292 @@
+.promotion-popup
+  &.show-note
+    .popup-container
+      .popup-content-holder
+        -webkit-transform translate3d(-100%, 0, 0)
+
+  .popup-container
+    width 50%
+    height 80%
+    // fix border when transition
+    -webkit-mask-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC')
+
+    .popup-content-holder
+      display -webkit-box
+      width 100%
+      height 100%
+      -webkit-transform translate3d(0, 0, 0)
+      -webkit-transition-property -webkit-transform
+      -webkit-transition-duration 300ms
+
+    header
+      display -webkit-box
+      font-size 1.2em
+      font-weight 500
+      padding 1em
+      -webkit-box-align center
+
+  .popup-main-content-holder
+    display -webkit-box
+    -webkit-box-orient vertical
+    width 100%
+    height 100%
+
+    header
+
+      h3
+        display -webkit-box
+        -webkit-box-flex 1
+        max-height 2em
+        -webkit-box-pack center
+
+        span
+          display: -webkit-box;
+          -webkit-box-orient vertical
+          overflow hidden
+          -webkit-line-clamp 2
+          -webkit-box-pack center
+
+  .note-holder
+    display -webkit-box
+    width 100%
+    height 100%
+    -webkit-box-orient vertical
+
+  .user-name
+    max-width 65%
+    word-break break-word
+
+  .promo
+    -webkit-box-flex 1
+
+  .content-container
+    -webkit-box-flex 1
+    display -webkit-box
+    -webkit-box-orient vertical
+
+  .general-info
+    margin 0 0.5em
+
+    h5
+      padding 0.5em
+      text-align center
+      font-size 18px
+      font-weight 500
+      color #626263
+
+    dl
+      display -webkit-box
+      font-size 15px
+      border-top 1px solid #8c8c90
+
+    dt
+    dd
+      display block
+      -webkit-box-flex 1
+      width 100%
+      color #626263
+      padding 0.5em 0
+
+    .lage-column
+      width 150%
+
+      span
+        display -webkit-box
+        -webkit-box-orient vertical
+        -webkit-line-clamp 1
+        -webkit-box-flex initial
+        overflow hidden
+
+        &:focus
+        &:active
+          outline none
+
+      .description
+        -webkit-line-clamp 2
+
+    dt:after
+      content ':'
+
+  .segment-control
+    margin 0.5em
+
+    button
+      min-width 4em
+      width auto
+
+  .tbody
+    border-top 1px solid rgba(0,0,0, 0.05)
+    border-bottom 1px solid rgba(0,0,0, 0.05)
+
+  .tbody-holder.empty-table
+    position  absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+
+    p
+      display -webkit-box
+      -webkit-box-align center
+      -webkit-box-pack center
+      font-size 0.8em
+      color #666
+      height 100%
+
+  .segments-holder
+    -webkit-box-flex 1
+
+    > *
+      display none
+
+      &.active
+        display block
+
+    .table-cell
+      color #626263
+      padding 0.5em 1em
+      font-size 15px
+
+      &:nth-of-type(odd)
+        background-color #eeeef3
+
+    .title
+      height initial
+      padding 0
+      text-align left
+      font-weight 400
+      font-size 1em
+      word-break break-word
+
+    .tbody
+      > div
+        height auto !important
+
+  footer
+    display -webkit-box
+    -webkit-box-align center
+    -webkit-box-pack center
+
+    .page-control
+      display -webkit-box
+
+      li
+        width 7px
+        height 7px
+        margin 14px 7px
+        border-radius 50%
+        background-color #85d6f8
+
+        &.active
+          background-color #21b4f3
+          -webkit-transform scale(1.3)
+
+  .note-holder
+    display -webkit-box
+    -webkit-box-orient vertical
+
+    .back
+      background transparent
+      border none
+      font-size 1em
+      padding-right 0
+      margin-right 0
+
+    header
+      padding 1em 0 1em 1em
+
+    h6
+      -webkit-box-flex 1
+      padding 0 1em
+      display -webkit-box
+      -webkit-box-align center
+      -webkit-box-pack center
+      -webkit-box-orient vertical
+      -webkit-line-clamp 2
+      overflow hidden
+      font-size 1.15em
+      height initial
+      line-height normal
+
+    .scroll-container
+      -webkit-box-flex 1
+      box-sizing border-box
+      padding 1em
+
+    .note-body
+      font-size 1.5em
+      color #666
+
+.notes-attachments-popup-table
+  .tbody
+    .table-cell
+      display -webkit-box
+      -webkit-box-align center
+      padding 0
+
+  .cell-container
+    height 3em
+    display -webkit-box
+    -webkit-box-align center
+    -webkit-box-pack center
+    position relative
+
+    &:first-of-type
+      width 10%
+    &:nth-of-type(2)
+      width 80%
+    &:nth-of-type(3)
+      width 10%
+
+    &:after
+      content ''
+      position absolute
+      top 15%
+      bottom 15%
+      left 100%
+      width 1px
+      background-color black
+      opacity 0.05
+
+  .name-bar
+    padding 0 1em
+    box-sizing border-box
+
+  .name
+    width 40%
+    -webkit-box-flex 1
+    display -webkit-box
+    -webkit-box-orient vertical
+    overflow hidden
+    -webkit-line-clamp 1
+
+  .progress-bar-holder
+    width 60%
+    -webkit-box-flex 1
+    display none
+
+    &.in-progress
+      display block
+
+  .progress-bar
+    display -webkit-box
+    -webkit-box-align center
+
+    .progress-fill-wrapper
+      -webkit-box-flex 1
+      height 1em
+      border 1px solid rgba(0,0,0, 0.05)
+
+    .progress-fill
+      background-color #21b4f3
+
+    .progress-value
+      width 2.5em
+      text-align right
+      margin 0 0 0 0.5em
+
+  .check-box
+    background-color transparent
+    border-color transparent
+    &:after
+      background #21b4f3

@@ -1,0 +1,21 @@
+.progress-bar
+  .progress-fill-wrapper
+    position relative
+    height 6px
+    overflow hidden
+    border-top 1px solid #c2c2c2
+    background-color #f7f7f7
+    .progress-fill
+      position absolute
+      top 0
+      left 0
+      width 1px
+      height 100%
+      background-color #21b4f3
+      -webkit-transition 100ms width linear 0
+      &.no-transition
+        -webkit-transition none
+  .progress-value
+    font 110% 'Roboto'
+    color #626263
+    margin-top 0.2em

@@ -1,0 +1,77 @@
+.pin-page
+
+  background white
+  cbox()
+  -webkit-box-orient vertical
+  z-index 100
+
+  p
+    position relative
+    width 50%
+
+    span
+      padding-left 1em
+      padding-top 0.1em
+      cbox()
+      position absolute
+      top 0
+      left 0
+      height 100%
+      color #8f8f94
+      font-size 1.3em
+      text-align right
+      opacity 0
+      pointer-events none
+
+  p.placeholder span
+    opacity 1
+
+  .pin
+    box-sizing border-box
+    padding 1em
+    width 100%
+    border 1px solid #b6b6ba
+    outline none
+    font-size 1.3em
+    color #black
+    -webkit-user-select auto
+    -webkit-text-security disc
+    -webkit-appearance none
+    border-radius 6px
+
+    &.new-pin
+      border-top-left-radius 6px
+      border-top-right-radius 6px
+      border-bottom-left-radius 0px
+      border-bottom-right-radius 0px
+      border-bottom-color white
+
+    &.confirm-pin
+      border-top-left-radius 0px
+      border-top-right-radius 0px
+      border-bottom-left-radius 6px
+      border-bottom-right-radius 6px
+
+    &:focus
+      outline 3px solid #F78F1C
+
+  .confirm
+    display -webkit-box
+    padding-top 1em
+    padding-bottom 0.8em
+    border none
+    border-radius 4px
+    background-image -webkit-linear-gradient(#36B0DF,  #1182B0)
+    color white
+    font-size 1.5em
+    outline none
+    width 50%
+    background #0b97d4
+    margin-top 1em
+    -webkit-box-pack center
+
+    &:active
+      opacity 0.8
+
+.pin-alert
+  z-index 101

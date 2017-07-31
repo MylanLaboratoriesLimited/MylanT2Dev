@@ -1,0 +1,98 @@
+.stage, .fullscreen-stage-screen
+  > header
+    height $header-height
+    padding 0 5px
+    background #F7F7F7
+    
+  > article
+    bottom $header-height
+    
+  > footer
+    height $header-height
+    background #F7F7F7
+
+// CUSTOM STYLES
+
+.viewport
+  position relative
+  
+  > *
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    
+    &:not(.active)
+      display none
+      
+.stage, .fullscreen-stage-screen
+  > header
+    position absolute
+    left 0
+    top 0
+    right 0
+
+  > article
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    
+  > footer
+    position absolute
+    left 0
+    bottom 0
+    right 0
+
+.stage.tabbar.fullscreen-panel-mode
+  > footer
+    display none
+    border-top 0
+
+  // .panel
+  //   bottom 0
+
+  //   > article
+  //     top 0
+
+.panel.fullscreen-panel-screen
+  bottom 0
+
+  > article
+    top 0
+
+.panel, .fullscreen-panel-screen
+  vbox()
+
+  > article
+    box-flex(1)
+
+    position absolute
+    top $header-height
+    left 0
+    bottom 0
+    right 0
+
+    overflow hidden
+    -webkit-overflow-scrolling touch
+
+  bottom $header-height
+  overflow hidden
+
+.fullscreen-stage-screen
+  > article
+    bottom 0
+    background white
+
+  > footer
+    display none
+
+  .panel, .fullscreen-panel-screen
+    bottom 0
+
+.stage.tabbar.fullscreen-stage-mode
+  > footer
+    display none
+    border-top 0

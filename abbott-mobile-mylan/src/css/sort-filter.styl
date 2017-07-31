@@ -1,0 +1,31 @@
+.sort-filter
+  padding-right 1.3em
+  padding-left 1.3em
+
+  span
+    position relative
+    display inline-block
+    &:after
+      position absolute
+      right -0.75em
+      top 50%
+      margin-top -0.3em
+      content ''
+      display block
+      width 0.6em
+      height 0.6em
+      border-left 2px solid white
+      border-top 2px solid white
+      -webkit-transform translate(70%, 20%) rotate(45deg)
+      -webkit-transform-origin 25% 25%
+      opacity 0.4
+
+
+  &.desc
+    span:after
+      -webkit-transform translate(70%, 20%) rotate(-135deg)
+
+  &.active.col
+    background-color #828282
+    span:after
+      opacity 1

@@ -1,0 +1,73 @@
+.scenario-details.panel
+  bottom 0
+.scenario-details>article
+  display -webkit-box
+.scenarios-side-view
+.scenarios-grid-view-wrapper
+  position relative
+  height 100%
+
+.scenarios-side-view
+  width 30%
+  background #f8f7f7
+  border-right 1px solid #c1c1c1
+  .sidebar-general
+    background #fff
+    height 100px
+    box-sizing border-box
+    font normal 1em HelveticaNeue
+    padding 0.8em
+    .scenario-name-wrapper
+      margin-bottom 1em
+      color #87878c
+      display -webkit-box
+      -webkit-box-align center
+      .name-caption
+        display -webkit-box
+        -webkit-box-align center
+        width 15%
+      .presentation-name
+        margin-left 2%
+        width 83%
+    .selected-presentation
+      width 100%
+      box-sizing border-box
+
+  .scenario-slides-list
+    .sidebar-slide-group
+      font normal 1em HelveticaNeue
+      .group-name
+        background #949498
+        color: #fff
+        padding 0.3em 0.8em
+        word-break break-all
+      .slides-list
+        .slide-item
+          height 80px
+          width 100%
+          display -webkit-box
+          -webkit-box-align center
+          box-sizing border-box
+          padding-left 0.8em
+          .slide-thumb
+            width 85px
+            height 63px
+            background-color #fff
+            background-size 100% 100%
+            border 1px solid #c1c1c1
+            border-radius 5px
+          .slide-name
+            color #87878c
+            width 185px
+            padding-left 0.8em
+            line-height 1em
+            word-break break-all
+          &:nth-of-type(even)
+            background #fff
+      &.hidden
+        display none
+
+.scenarios-grid-view-wrapper
+  width 70%
+
+

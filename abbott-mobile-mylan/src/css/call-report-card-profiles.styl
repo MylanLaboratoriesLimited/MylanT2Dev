@@ -1,0 +1,138 @@
+.ios
+  .profiles
+    .select-btn.expand-btn
+      &:after
+        -webkit-transition -webkit-transform linear 500ms
+    .table-wrapper
+      -webkit-transition height linear 500ms
+
+.card.call-report
+  &.view-mode
+    .call-report-empty-font-style
+      color #bdbdbd !important
+      font-style italic !important
+    .profiles
+      .select-btn.expand-btn
+        pointer-events auto !important
+        border-color #21b4f3
+        background-color #fff
+        color #21b4f3
+        &:after
+          border-color #21b4f3
+
+.profiles
+  padding 0.5em 0
+
+  .profile-item
+    padding 0.3em 0
+    border-bottom 1px solid #ddd
+
+    .title
+      display -webkit-box
+      -webkit-box-align center
+      -webkit-box-pack center
+
+    .select-btn
+      height 40px
+      margin-bottom 10px
+      text-align center
+      display table-cell
+      width 95%
+      padding 0 20px
+
+    .select-btn.expand-btn
+      height 3em
+      margin-top 0.7em
+      margin-bottom 0.7em
+      margin-left 2.5%
+      &:after
+        left 20px
+        margin-top -5px
+        -webkit-transform rotate(-45deg)
+
+    .call-report-card-contact-info-wrapper
+      display none
+      width 95%
+      float right
+      p
+        min-height 40px
+        display -webkit-box
+        -webkit-box-align center
+        padding-left 0.5em
+        &:nth-of-type(odd)
+          background #efeff4
+        span
+          &:first-of-type
+            font-weight bold
+
+            &:after
+              content ': '
+
+    &.expanded
+      .select-btn.expand-btn
+        &:after
+          -webkit-transform: rotate(45deg);
+
+    .table-wrapper
+      overflow hidden
+      height 0
+      .profile-table
+        width 100%
+        col
+          width 50%
+        thead th
+          background #999999
+          color #fff
+          font-size 110%
+          text-align left
+          padding-left 15px
+          height 42px
+        tbody
+          border-bottom 1px solid #ddd
+          tr
+            .td-content-wrapper
+              margin-right 10px
+            td
+              padding 0 10px
+              .call-report-card-product-list-btn
+                width 85%
+              .choose-product,
+              textarea
+                width 95%
+                min-height: 40px
+                -webkit-appearance none
+                margin-bottom 10px
+                padding: 8px 10px 2px 10px;
+              .call-report-card-control-wrapper
+                display -webkit-box
+                -webkit-box-align center
+                -webkit-box-pack end
+          .expand-block
+            td
+              vertical-align top
+              .product-promotion-item
+                display -webkit-box
+                .check-box
+                  margin-left 2em
+                  pointer-events auto
+
+        &.hide-expand
+          .general-block
+            margin-bottom 10px
+            button
+              width 100%
+        &.hide-comment .call-report-card-product-comment
+        &.hide-expand .call-report-card-expand-btn-wrapper
+        &.hide-promotion .product-promotion-item
+        &.hide-messages .product-message-block
+          display none
+
+    &.view-mode
+      .comment-block
+        p
+          min-height: 20px
+          padding-top: 5px
+          word-break: break-all
+
+
+

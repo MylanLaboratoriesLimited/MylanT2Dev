@@ -1,0 +1,10 @@
+{
+    "remoteAccessConsumerKey": "3MVG9Y6d_Btp4xp7ewXylZjH2nGTP7moo2DfchpCr5wuOwcpaenBT4oby4SyLhsRV9mcne.xQbKa6ybO6mcnr",
+    "oauthRedirectURI": "abbottmobile:///mobilesdk/detect/oauth/done",
+    "oauthScopes": ["api"],
+    "isLocal": true,
+    "startPage": "index.html",
+    "errorPage": "error.html",
+    "shouldAuthenticate": true,
+    "attemptOfflineLoad": true
+}

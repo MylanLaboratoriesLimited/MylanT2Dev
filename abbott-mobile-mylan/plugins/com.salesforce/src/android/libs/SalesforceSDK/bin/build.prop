@@ -1,0 +1,29 @@
+#Last build type
+#Fri, 15 Jan 2016 15:31:28 +0200
+
+build.last.target=debug
+
+build.last.is.instrumented=false
+
+build.last.is.packaging.debug=true
+
+
+aging.debug=true
+
+
+
+
+
+ging.debug=true
+
+
+
+
+
+
+
+ing.debug=true
+
+ng.debug=true
+
+build.last.is.signing.debug=true

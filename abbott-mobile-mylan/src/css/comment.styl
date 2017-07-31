@@ -1,0 +1,75 @@
+.comment
+  position absolute
+  top 0
+  left 0
+  background white
+  width 100%
+  height 100%
+  z-index 12
+  overflow hidden
+
+  .btnDone,
+  .btnCancel
+    position absolute
+    color white
+    top 30%
+    background: #565e64; /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#565e64), color-stop(50%,#535b61), color-stop(100%,#4b5258)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #565e64 0%,#535b61 50%,#4b5258 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom, #565e64 0%,#535b61 50%,#4b5258 100%); /* W3C */
+    width 4em
+    font-size 18px
+    font-family HelveticaNeue
+    text-align center
+    padding-top 1em
+    padding-bottom 1em
+    border-radius 2px
+    box-shadow 0px 0px 2px black
+    border-bottom solid 1px black
+
+  .btnDone
+    right 1em
+
+  .btnCancel
+    left 1em
+
+  textarea
+    position absolute
+    top 2px
+    left 5em
+    right 5em
+    bottom 0
+    -webkit-user-select: auto
+    border none
+    outline none
+    font-size 18px
+    font-family HelveticaNeue
+    margin-left 5px
+    margin-top 0
+    resize none
+    word-break break-all
+
+  .placeholder
+    position absolute
+    top 2px
+    left 5em
+    font-size 18px
+    font-family HelveticaNeue
+    z-index 9999999
+    color #C0C0C0
+    margin-left 10px
+
+body.android
+  .comment
+    textarea,
+    .placeholder
+      left 0
+
+    .btnCancel
+      display none
+
+@media screen and (max-height: 320px)
+  .comment
+    .btnDone,
+    .btnCancel
+        top 15%

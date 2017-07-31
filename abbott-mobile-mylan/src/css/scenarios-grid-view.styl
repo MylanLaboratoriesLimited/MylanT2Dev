@@ -1,0 +1,56 @@
+.scenarios-grid-view-cell
+  display inline-block
+  position relative
+  width 22.5%
+  padding 25% 0 0 0
+  margin 1%
+  background-color rgba(255, 255, 255, 0.7)
+
+.scenarios-grid-view-cell-content
+  position absolute
+  left 0
+  top 0
+  bottom 0
+  right 0
+  -webkit-transition -webkit-transform linear 300ms  
+
+.scenarios-grid-view-cell.zoomed
+  .scenarios-grid-view-cell-content
+    -webkit-transform scale3d(1.1, 1.1, 1)
+
+.scenarios-grid-view-cell-title-wrapper
+.scenarios-grid-view-cell-name-wrapper
+  height 20%
+  cbox()
+
+.scenarios-grid-view-cell-title,
+.scenarios-grid-view-cell-name
+  text-align center
+  font-size 1em
+  -webkit-line-clamp 1
+
+.scenarios-grid-view-cell-title
+  font-weight 500
+  color #21b4f3
+
+.scenarios-grid-view-cell-name
+  color #87878c
+
+.scenarios-grid-view-cell-icon
+  position relative
+  height 60%
+  background-color white
+  background-size contain
+  background-position center
+  background-repeat no-repeat
+  -webkit-box-shadow 0 0 1px gray
+
+.scenarios-grid-view-cell-remove
+  position absolute
+  right -5px
+  top -5px
+  width 1.7em
+  height 1.7em
+  background url("img/agenda/close-btn.png") center center no-repeat;
+  -webkit-background-size contain
+

@@ -1,0 +1,5 @@
+//include "ios"
+//include "android"
+
+//project(':ios').projectDir = new File(settingsDir, 'platforms/ios/AbbottMobile')
+//project(':android').projectDir = new File(settingsDir, 'platforms/android/AbbottMobile')

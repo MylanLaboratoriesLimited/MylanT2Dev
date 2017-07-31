@@ -1,0 +1,111 @@
+# view AndroidManifest.xml #generated:22
+-keep class com.artifex.mupdfviewer.MuPDFActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:11
+-keep class com.qapint.app.AbbottMobileApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.qapint.app.activities.AbbottMobile { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class com.qapint.app.services.notifications.NotificationServiceManager { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.salesforce.androidsdk.auth.AuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.salesforce.androidsdk.push.PushBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.salesforce.androidsdk.push.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.salesforce.androidsdk.push.PushService$RetryRegistrationAlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.salesforce.androidsdk.push.PushService$SFDCRegistrationRetryAlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.salesforce.androidsdk.push.PushService$UnregisterRetryAlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.salesforce.androidsdk.ui.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class com.salesforce.androidsdk.ui.ManageSpaceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.salesforce.androidsdk.ui.PasscodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.salesforce.androidsdk.ui.ServerPickerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.salesforce.androidsdk.ui.sfhybrid.SalesforceDroidGapActivity { <init>(...); }
+
+# onClick res/layout/buttons.xml #generated:330
+-keepclassmembers class * { *** OnAcceptButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:306
+-keepclassmembers class * { *** OnCancelAcceptButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:147
+-keepclassmembers class * { *** OnCancelAnnotButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:210
+-keepclassmembers class * { *** OnCancelDeleteButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:254
+-keepclassmembers class * { *** OnCancelMoreButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:96
+-keepclassmembers class * { *** OnCancelSearchButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:276
+-keepclassmembers class * { *** OnCopyTextButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:235
+-keepclassmembers class * { *** OnDeleteButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:288
+-keepclassmembers class * { *** OnEditAnnotButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:158
+-keepclassmembers class * { *** OnHighlightButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:191
+-keepclassmembers class * { *** OnInkButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:76
+-keepclassmembers class * { *** OnMoreButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:265
+-keepclassmembers class * { *** OnPrintButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:180
+-keepclassmembers class * { *** OnStrikeOutButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:169
+-keepclassmembers class * { *** OnUnderlineButtonClick(...); }
+
+# onClick xlarge-v4/res/layout-xlarge-v4/sf__login_header.xml #generated:32
+-keepclassmembers class * { *** onClearCookiesClick(...); }
+
+# onClick xlarge-v4/res/layout-xlarge-v4/sf__login_header.xml #generated:46
+-keepclassmembers class * { *** onPickServerClick(...); }
+
+# onClick xlarge-v4/res/layout-xlarge-v4/sf__login_header.xml #generated:20
+-keepclassmembers class * { *** onReloadClick(...); }
+
+# onClick xlarge-v4/res/layout-xlarge-v4/sf__server_picker_header.xml #generated:19
+-keepclassmembers class * { *** onResetClick(...); }
+
+# onClick res/layout/sf__server_picker_list.xml #generated:30
+-keepclassmembers class * { *** setCancelReturnValue(...); }
+
+# onClick res/layout/sf__server_picker_list.xml #generated:24
+-keepclassmembers class * { *** setPositiveReturnValue(...); }
+
+# onClick res/layout/sf__server_picker_list.xml #generated:12
+-keepclassmembers class * { *** showCustomUrlDialog(...); }
+

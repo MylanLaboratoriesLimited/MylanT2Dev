@@ -1,0 +1,4 @@
+{
+	"directory": "app/components",
+	"shorthand-resolver": "git@git.qapint.com:{{owner}}/{{package}}.git"
+}

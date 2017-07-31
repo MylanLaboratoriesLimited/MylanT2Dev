@@ -1,0 +1,54 @@
+.wrapper.flex-element.scroll-container
+  .scroll-content
+    .general-info
+      .columns
+        .column
+          .info-row
+            .info-cell(data-i18n="card.PharmaEvent.GeneralInfoFields.Owner")
+            .info-cell.value.owner
+          .info-row.with-select-button
+            .info-cell(data-i18n="card.PharmaEvent.GeneralInfoFields.TypeOfEvent")
+            .info-cell.value
+              button.select-btn
+                span.event-type(data-i18n="common:defaultSelectValue")
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.StartDate")
+            .info-cell.value.start-date.bit-button-pseudo.calendar
+        .column
+          .info-row
+            .info-cell(data-i18n="card.PharmaEvent.GeneralInfoFields.BusinessUnit")
+            .info-cell.value.business-unit
+          .info-row.with-select-button
+            .info-cell(data-i18n="card.PharmaEvent.GeneralInfoFields.Stage")
+            .info-cell.value
+              button.select-btn
+                span.stage(data-i18n="common:defaultSelectValue")
+          .info-row.appointments-card-date-time-wrapper
+            .info-cell(data-i18n="card.GeneralInfoFields.EndDate")
+            .info-cell.value.end-date.bit-button-pseudo.calendar
+      .columns.comments-data
+        .column
+          h2.blue-header(data-i18n="card.PharmaEvent.GeneralInfoFields.EventName")
+          textarea.text-area.event-name(rows="1",data-i18n="[data-placeholder]card.PharmaEvent.Placeholders.TypeName")
+
+          h2.blue-header(data-i18n="card.PharmaEvent.GeneralInfoFields.Products")
+          p.text-area.description.products
+
+          h2.blue-header(data-i18n="card.PharmaEvent.GeneralInfoFields.Agenda")
+          textarea.text-area.agenda(rows="1",data-i18n="[data-placeholder]card.PharmaEvent.Placeholders.TypeAgenda")
+
+          h2.blue-header(data-i18n="card.PharmaEvent.GeneralInfoFields.Evaluation")
+          textarea.text-area.evaluation(rows="1",data-i18n="[data-placeholder]card.PharmaEvent.Placeholders.TypeEvaluation")
+
+        .column
+          h2.blue-header(data-i18n="card.PharmaEvent.GeneralInfoFields.Location")
+          textarea.text-area.location(rows="1",data-i18n="[data-placeholder]card.PharmaEvent.Placeholders.TypeLocation")
+
+          h2.blue-header(data-i18n="card.PharmaEvent.GeneralInfoFields.Speakers")
+          textarea.text-area.speakers(rows="1",data-i18n="[data-placeholder]card.PharmaEvent.Placeholders.TypeSpeakers")
+
+          h2.blue-header(data-i18n="card.PharmaEvent.GeneralInfoFields.Objectives")
+          textarea.text-area.objectives(rows="1",data-i18n="[data-placeholder]card.PharmaEvent.Placeholders.TypeObjectives")
+
+          h2.blue-header(data-i18n="card.PharmaEvent.GeneralInfoFields.Attendees")
+          p.text-area.description.attendees

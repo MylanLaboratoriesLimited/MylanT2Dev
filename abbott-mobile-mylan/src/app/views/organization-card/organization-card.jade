@@ -1,0 +1,32 @@
+.wrapper.flex-element
+  .scroll-content
+    .general-info
+      .columns
+        .column
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.Name")
+            .info-cell.value.organization-card-name
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.Type")
+            .info-cell.value.organization-card-record-type
+          .info-row
+            .info-cell(data-i18n="card.Organization.GeneralInfoFields.BillingAddress")
+            .info-cell.value.organization-card-address.info-cell.value
+        .column
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.Specialty")
+            .info-cell.value.organization-card-speciality
+          .info-row
+            .info-cell(data-i18n="card.Organization.GeneralInfoFields.JuridicGroup")
+            .info-cell.value.organization-card-juridic-group
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.Status")
+            .info-cell.value.organization-card-status
+
+    .references-table-wrapper
+      h2.blue-header(data-i18n="card.ReferencesTableTitle")
+      div.references-table-container
+
+    .activities-table-wrapper
+      h2.blue-header(data-i18n="card.InFieldActivitiesTableTitle")
+      div.activities-table-container

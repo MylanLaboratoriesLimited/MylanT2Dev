@@ -1,0 +1,7 @@
+include "SmartStore"
+include "SalesforceSDK"
+
+project(':SmartStore').projectDir = new File(settingsDir, '../forcedroid/hybrid/SmartStore')
+project(':SalesforceSDK').projectDir = new File(settingsDir, '../forcedroid/native/SalesforceSDK')
+
+

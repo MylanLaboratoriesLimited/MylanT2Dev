@@ -1,0 +1,248 @@
+/* buttons with triangle */
+.select-btn
+  display -webkit-box
+  -webkit-box-align center
+  position relative
+  -webkit-appearance none
+  -webkit-border-radius 5px
+  border 1px solid #21b4f3
+  background white
+  color #21b4f3
+  padding 0 35px 0 10px
+  outline none
+  font 95% 'Roboto'
+  font-weight 400
+  height 28px
+  text-align left
+
+  span
+    display -webkit-box
+    -webkit-line-clamp 1
+    text-overflow ellipsis
+    overflow hidden
+    -webkit-box-orient vertical
+    word-break break-all
+
+  &:active
+    opacity 0.8
+
+  &:after
+    content ''
+    position absolute
+    right 10px
+    top 50%
+    margin-top - 9px
+    display block
+    width 10px
+    height 10px
+    border-right 2px solid #21b4f3
+    border-bottom 2px solid #21b4f3
+    -webkit-transform rotate(45deg)
+
+/* block like text field */
+.text-field-block
+  -webkit-box-sizing border-box
+  padding 3px 10px
+  min-height 30px
+  display -webkit-box
+  -webkit-box-align center
+  border 1px solid #b7b7bb
+  -webkit-border-radius 5px
+  font 95% 'Roboto'
+  font-weight 400
+  color #87878c
+  background #ffffff
+
+/* text area */
+.text-area
+  -webkit-appearance none
+  resize none
+  border 1px solid #b7b7bb
+  -webkit-border-radius 5px
+  border-radius 5px
+  padding 1em
+  margin-top 1.5%
+  width 100%
+  box-sizing border-box
+  min-height 10em
+  font inherit
+  font-weight 400
+  color #87878c
+  display block
+
+/* blue header */
+.blue-header
+  text-align left
+  font 130% 'Roboto'
+  font-weight 500
+  background-color #21b4f3
+  color white
+  display -webkit-box
+  -webkit-box-sizing border-box
+  -webkit-box-align center
+  padding 5px 5px 5px 15px
+  min-height 41px
+  width 100%
+
+/* hyperlink */
+.hyperlink
+  color #21b4f3
+  font 95% 'Roboto'
+  font-weight 400
+
+/* bit buttons */
+.bit-button-pseudo
+  position relative
+  &:active
+    opacity 0.8
+
+.bit-button-pseudo:after
+  position absolute
+  display block
+  content ''
+
+.bit-button
+.bit-button-pseudo:after
+  width 30px
+  height 30px
+  -webkit-border-radius 5px
+  background-position center center
+  background-repeat no-repeat
+
+.bit-button.calendar
+.bit-button-pseudo.calendar:after
+  background-color #21b4f3
+  background-image url('img/bit-buttons/calendar.png')
+  background-size 73.333333333333% 73.333333333333%
+
+.bit-button.info
+.bit-button-pseudo.info:after
+  background-color #21b4f3
+  background-image url('img/bit-buttons/info.png')
+  background-size 73.333333333333% 73.333333333333%
+
+.bit-button.phone
+.bit-button-pseudo.phone:after
+  background-color #21b4f3
+  background-image url('img/bit-buttons/phone.png')
+  background-size 13px 21px
+
+.bit-button.clock
+.bit-button-pseudo.clock:after
+  background-color #4cd964
+  background-image url('img/bit-buttons/clock.png')
+  background-size 17px 22px
+
+.bit-button.time
+.bit-button-pseudo.time:after
+  background-color #21b4f3
+  background-image url('img/bit-buttons/time.png')
+  background-size 73.333333333333% 73.333333333333%
+
+.check-box
+  display -webkit-box
+  box-sizing border-box
+  -webkit-box-pack center
+  -webkit-box-align center
+  font-size 100%
+  width 26px
+  height 26px
+  border solid 1px #949498
+  border-radius 50%
+  -webkit-appearance none
+  outline none
+  pointer-events none
+
+  &:after
+    content ''
+    display none
+    width 80%
+    height 60%
+    background white
+    -webkit-mask url('img/checkbox.png') center center no-repeat
+    -webkit-mask-size 100% 100%
+
+  &:checked
+  &.checked
+    background #21b4f3
+    border-color #21b4f3
+    &:after
+      display block
+
+  &.blocked
+    pointer-events none
+    label
+      opacity 0.7
+
+.ctrl-btn
+  position relative
+  -webkit-border-radius 4px
+  margin 0 5px
+  height 100%
+  cbox()
+  width 8em
+  background-color #21B4F3
+  color white
+  text-align center
+  text-transform capitalize
+
+  &:active
+    opacity 0.8
+
+.segment-control
+  display -webkit-box
+  padding 0
+  margin 0 0.5em
+  overflow hidden
+  border 1px solid #21b4f3
+  border-radius 0.3em
+
+  button
+    display block
+    -webkit-box-flex 1
+    width 100%
+    font-size 15px
+    font-weight normal
+    padding 0.5em 0
+    border none
+    background-color white
+    color #21b4f3
+
+    &:first-of-type
+      border-radius 0.35em 0 0 0.35em
+
+    &:last-of-type
+      border-radius 0 0.35em 0.35em 0
+
+    &.active
+      background-color #21b4f3
+      color white
+      border-radius none
+
+.cross
+  display block
+  position relative
+  width 2em
+  height 2em
+  padding 0
+  border 0
+  background transparent
+  font-size 100%
+  outline none
+
+  &:active
+    opacity 0.8
+
+  &:before
+  &:after
+    content ''
+    position absolute
+    top 0.2em
+    bottom 0.2em
+    left 50%
+    width 3px
+    background-color #21b4f3
+    -webkit-transform rotate(45deg)
+
+  &:after
+    -webkit-transform rotate(-45deg)

@@ -1,0 +1,17 @@
+{
+	"lang": "ru",
+	"name": "cobalt",
+	"abbottProduct": "cobalt",
+	"media": "./",
+	"mitouchPrefix": "cobalt",
+	"irepPrefix": "cobalt",
+	"irepCountryCode": "none",
+	"irepCustomSwipe": false,
+	"irepProductId": "",
+	"isCrossChapterSwipe": false,
+	"translations": "/i18n/",
+	"controllers": "/controllers/",
+	"components": "/",
+	"templates": "/templates/",
+	"modules": ["menu", "indicators"]
+}

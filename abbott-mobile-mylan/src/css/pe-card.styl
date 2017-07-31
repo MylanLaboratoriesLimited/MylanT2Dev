@@ -1,0 +1,48 @@
+.pe-card
+  overflow hidden
+
+  .general-info
+    padding-top 1em
+
+  .general-info .columns .column .info-row.with-select-button
+    min-height 6em
+
+  .text-area
+    min-height 1em
+    width 95%
+    margin 1em 0 2em 0
+
+  .description
+    min-height 3em
+
+  .column
+    display -webkit-box
+    -webkit-box-orient vertical
+
+  .column:first-of-type
+    -webkit-box-align end
+
+  .column:last-of-type
+    -webkit-box-align start
+
+.pe-card
+  .scroll-container
+    height 100%
+
+.pe-card-view
+  .text-area
+  .description
+  .select-btn
+    color #87878c
+
+  .general-info
+  .description
+  textarea
+    pointer-events none
+  .select-btn
+    border 1px solid #87878c
+    background-color #efeff4
+    pointer-events none
+    &:after
+      border-right 2px solid #87878c
+      border-bottom 2px solid #87878c

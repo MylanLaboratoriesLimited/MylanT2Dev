@@ -1,0 +1,89 @@
+.patient-profiles-popup
+  .popup-container
+    border 2px solid white
+    max-width 90%
+    width 90%
+    height 63%
+
+    .header-table
+      position absolute
+      left 0
+      right 0
+      top 0
+
+    .scroll-container
+      position absolute
+      left 0
+      right 0
+      top 2.15em
+      bottom 0
+
+      .scroll-content
+        border-top 1px solid rgba(0, 0, 0, 0.05)
+        border-bottom 1px solid rgba(0, 0, 0, 0.05)
+
+    table
+      overflow-x hidden
+
+      col
+        &:first-of-type
+          width 21%
+        &:nth-of-type(2)
+          width 5%
+        &:nth-of-type(3)
+          width 8%
+        &:nth-of-type(4)
+          width 25%
+        &:nth-of-type(5)
+          width 20%
+        &:nth-of-type(6)
+          width 7%
+        &:last-of-type
+          width 14%
+
+      th, td
+        padding-left 5px
+
+        &:first-of-type
+            font-weight bold
+            padding-left 10px
+
+        &:last-of-type
+          padding-right 10px
+
+      thead
+        th
+          text-align center
+          background #949498
+          color #fff
+          font-weight 500
+          height 2.4em
+          font-size 0.8em
+
+      tbody
+        .table-cell.selected
+          background-color rgba(33, 180, 243, 0.15)
+
+        td
+          text-align left
+          height 2em
+          font-size 0.7em
+
+          &:first-of-type
+            font-size 0.75em
+
+          &:nth-of-type(2),
+          &:nth-of-type(3),
+          &:nth-of-type(6)
+            text-align center
+
+          &:before
+            display block
+            content ''
+            position absolute
+            top 15%
+            bottom 15%
+            left 100%
+            width 1px
+            background-color #000
+            opacity 0.05

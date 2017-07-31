@@ -1,0 +1,47 @@
+.wrapper.flex-element
+  .scroll-content
+    .general-info
+      .columns
+        .column
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.Name")
+            .info-cell.value.contact-card-full-name
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.Status")
+            .info-cell.value.contact-card-status
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.TargetCustomer")
+            .info-cell.value.contact-card-target-customer
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.Type")
+            .info-cell.value.contact-card-record-type
+          .info-row
+            .info-cell(data-i18n="card.Contact.GeneralInfoFields.AbbottSpecialty")
+            .info-cell.value.contact-card-abbott-specialty
+        .column
+          .info-row
+            .info-cell(data-i18n="card.GeneralInfoFields.Priority")
+            .info-cell.value.contact-card-priority
+          .info-row
+            .info-cell.break-before(data-i18n="card.GeneralInfoFields.Specialty")
+            .info-cell.value.contact-card-specialty
+          .info-row
+            .info-cell(data-i18n="card.Contact.GeneralInfoFields.MobilePhone")
+            .info-cell.value.contact-card-mobile-phone
+          .info-row
+            .info-cell(data-i18n="card.Contact.GeneralInfoFields.Email")
+            .info-cell.value.contact-card-email
+          .info-row
+            .info-cell(data-i18n="card.Contact.GeneralInfoFields.KOL")
+            .info-cell.value.contact-card-kol
+      .comment-block
+        h2.blue-header(data-i18n="card.GeneralInfoFields.Description")
+        textarea.text-area.contact-card-description.disabled
+
+    .references-table-wrapper
+      h2.blue-header(data-i18n="card.ReferencesTableTitle")
+      .references-table-container
+
+    .activities-table-wrapper
+      h2.blue-header(data-i18n="card.InFieldActivitiesTableTitle")
+      .activities-table-container

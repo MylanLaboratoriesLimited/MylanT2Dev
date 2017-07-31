@@ -1,0 +1,72 @@
+.bottom-menu
+  display -webkit-box
+  position absolute
+  bottom 0
+  left 0
+  right 0
+  height 18.5%
+  transform translate3d(0,100%,0)
+  background-color #a2d4f5
+  transition 0.2s all linear
+  overflow hidden
+
+  li
+    transform translate3d(0,0,0)
+    -webkit-box-pack center
+    height 100%
+    box-sizing border-box
+    -webkit-box-flex 1
+    background-color #a2d4f5
+    text-align center
+    font-size 85%
+    line-height 1.4em
+    color #333
+    position relative
+
+    &:active
+      background-color #7fbedb
+      color white
+
+      div
+        background-color white
+
+
+    div
+      width 20%
+      padding-top 11%
+      padding-bottom 11%
+      -webkit-mask-image url("img/home/menu-icons.png")
+      -webkit-mask-repeat no-repeat
+      -webkit-mask-size cover
+      background-color #000
+      position absolute
+      top 20%
+      left 50%
+      -webkit-transform translate(-50%,0)
+
+      &.helpdesk
+        -webkit-mask-position-x 20%
+
+      &.language
+        -webkit-mask-position-x 40%
+
+      &.dynamicAgenda
+        -webkit-mask-position-x 60%
+
+      &.dynamicAgenda + span
+        white-space nowrap
+
+      &.lock
+        -webkit-mask-position-x 80%
+
+      &.logout
+        -webkit-mask-position-x 100%
+
+    span
+      position absolute
+      bottom 15%
+      left 50%
+      -webkit-transform translate(-50%,0)
+
+  &.open
+    transform translate3d(0,0,0)

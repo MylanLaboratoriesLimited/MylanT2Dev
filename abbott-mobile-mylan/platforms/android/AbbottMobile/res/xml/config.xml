@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugins>
+    <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+    <access origin="https://force.com" subdomains="true" />
+    <access origin="https://salesforce.com" subdomains="true" />
+    <access origin="*"/> <!-- allow local pages -->
+    <log level="DEBUG"/>
+    <preference name="classicRender" value="true" />
+    <preference name="fullscreen" value="true" />
+
+    <plugin name="App" value="org.apache.cordova.App"/>
+    <plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
+    <plugin name="Device" value="org.apache.cordova.Device"/>
+    <plugin name="Accelerometer" value="org.apache.cordova.AccelListener"/>
+    <plugin name="Compass" value="org.apache.cordova.CompassListener"/>
+    <plugin name="Media" value="org.apache.cordova.AudioHandler"/>
+    <plugin name="Camera" value="org.apache.cordova.CameraLauncher"/>
+    <plugin name="Contacts" value="org.apache.cordova.ContactManager"/>
+    <plugin name="File" value="org.apache.cordova.FileUtils"/>
+    <plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager"/>
+    <plugin name="Notification" value="org.apache.cordova.Notification"/>
+    <plugin name="Storage" value="org.apache.cordova.Storage"/>
+    <plugin name="Temperature" value="org.apache.cordova.TempListener"/>
+    <plugin name="Globalization" value="org.apache.cordova.Globalization" />
+    <plugin name="Capture" value="org.apache.cordova.Capture"/>
+    <plugin name="com.salesforce.oauth" value="com.salesforce.androidsdk.phonegap.SalesforceOAuthPlugin"/>
+    <plugin name="com.salesforce.sdkinfo" value="com.salesforce.androidsdk.phonegap.SDKInfoPlugin"/>
+    <plugin name="com.salesforce.smartstore" value="com.salesforce.androidsdk.smartstore.phonegap.SmartStorePlugin"/>
+    <plugin name="SBNotifier" value="com.qapint.app.phonegap.SBNotifier"/>
+    <plugin name="EmailComposer" value="com.qapint.app.phonegap.EmailComposer"/>
+    <plugin name="SoftKeyboard" value="com.qapint.app.phonegap.SoftKeyboard"/>
+    <plugin name="FileTransfer" value="com.qapint.app.phonegap.PresentationTransfer"/>
+    <plugin name="Zip" value="com.qapint.app.phonegap.Zip"/>
+    <plugin name="PresentationViewer" value="com.qapint.app.phonegap.PresentationViewer"/>
+    <plugin name="AttachmentsViewer" value="com.qapint.app.phonegap.AttachmentsViewer"/>
+    <plugin name="ImageResizer" value="com.qapint.app.phonegap.ImageResizePlugin" />
+</plugins>

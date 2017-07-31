@@ -1,0 +1,69 @@
+.skus
+  &.stack-page
+    div.navigation-panel
+      padding 0
+
+  .navigation-panel
+    padding 0
+    .page-control
+      position relative
+      height 34px
+      width 100%
+
+  .card-table
+    .name
+      white-space nowrap
+      -webkit-line-clamp 1
+      text-align center
+
+    &.header-table
+      position absolute
+      left 0
+      right 0
+      top 0
+      height 3.5em
+
+      thead
+        background-color #949498
+      th
+        color white
+        width 16%
+        &:first-of-type
+          width 20%
+
+  .scroll-container
+    position absolute
+    left 0
+    right 0
+    top 3.5em
+    bottom 0
+
+    .disabled
+      opacity 1
+      pointer-events none
+
+      input.placeholder-mode
+        color transparent !important
+
+      .btn-select
+        border-color rgba(0, 0, 0, 0.2)
+        background-color rgba(0, 0, 0, 0.04)
+        color #808080
+        &:after
+          border-color transparent
+
+    td
+      color #87878C
+      width 16%
+      &:first-of-type
+        width 20%
+
+      input
+        width 100%
+        box-sizing border-box
+        padding 0 5%
+        background none
+        border none
+        color #87878C
+        text-align center
+        outline none

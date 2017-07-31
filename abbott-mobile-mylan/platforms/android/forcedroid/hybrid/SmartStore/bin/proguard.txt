@@ -1,0 +1,51 @@
+# view AndroidManifest.xml #generated:17
+-keep class com.salesforce.androidsdk.auth.AuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.salesforce.androidsdk.push.PushBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.salesforce.androidsdk.push.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.salesforce.androidsdk.push.PushService$RetryRegistrationAlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.salesforce.androidsdk.push.PushService$SFDCRegistrationRetryAlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.salesforce.androidsdk.push.PushService$UnregisterRetryAlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:5
+-keep class com.salesforce.androidsdk.ui.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:11
+-keep class com.salesforce.androidsdk.ui.ManageSpaceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:8
+-keep class com.salesforce.androidsdk.ui.PasscodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.salesforce.androidsdk.ui.ServerPickerActivity { <init>(...); }
+
+# onClick xlarge-v4/res/layout-xlarge-v4/sf__login_header.xml #generated:32
+-keepclassmembers class * { *** onClearCookiesClick(...); }
+
+# onClick xlarge-v4/res/layout-xlarge-v4/sf__login_header.xml #generated:46
+-keepclassmembers class * { *** onPickServerClick(...); }
+
+# onClick xlarge-v4/res/layout-xlarge-v4/sf__login_header.xml #generated:20
+-keepclassmembers class * { *** onReloadClick(...); }
+
+# onClick xlarge-v4/res/layout-xlarge-v4/sf__server_picker_header.xml #generated:19
+-keepclassmembers class * { *** onResetClick(...); }
+
+# onClick res/layout/sf__server_picker_list.xml #generated:30
+-keepclassmembers class * { *** setCancelReturnValue(...); }
+
+# onClick res/layout/sf__server_picker_list.xml #generated:24
+-keepclassmembers class * { *** setPositiveReturnValue(...); }
+
+# onClick res/layout/sf__server_picker_list.xml #generated:12
+-keepclassmembers class * { *** showCustomUrlDialog(...); }
+

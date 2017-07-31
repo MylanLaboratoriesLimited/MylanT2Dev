@@ -1,0 +1,37 @@
+
+
+task updateMainProject(type: Exec) {
+  workingDir '.'
+  commandLine 'cmd', '/c', 'android', 'update', 'project', '-p', '.', '-t', 'android-19'
+}
+
+task updateSalesforceSDKProject(type: Exec) {
+  workingDir '../forcedroid/native/SalesforceSDK'
+  commandLine 'cmd', '/c', 'android', 'update', 'project', '-p', '.', '-t', 'android-19'
+}
+
+task updateSmartStoreProject(type: Exec) {
+  workingDir '../forcedroid/hybrid/SmartStore'
+  commandLine 'cmd', '/c', 'android', 'update', 'project', '-p', '.', '-t', 'android-19'
+}
+
+task update() {
+  dependsOn updateMainProject
+  dependsOn updateSalesforceSDKProject
+  dependsOn updateSmartStoreProject
+}
+
+task clean(type: Exec) {
+  workingDir '.'
+  commandLine 'cmd', '/c', 'ant', 'clean'
+}
+
+task build(type: Exec) {
+  workingDir '.'
+  commandLine 'cmd', '/c', 'ant', 'debug'
+}
+
+task install(type: Exec) {
+  workingDir '.'
+  commandLine 'cmd', '/c', 'ant', 'installd'
+}

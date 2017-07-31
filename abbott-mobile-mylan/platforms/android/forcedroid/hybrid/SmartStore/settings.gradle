@@ -1,0 +1,5 @@
+include "SalesforceSDK"
+
+project(':SalesforceSDK').projectDir = new File(settingsDir, '../../native/SalesforceSDK')
+
+

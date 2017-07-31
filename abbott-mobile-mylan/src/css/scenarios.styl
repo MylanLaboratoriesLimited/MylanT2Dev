@@ -1,0 +1,47 @@
+.fullscreen-panel-mode
+  .scenarios
+    bottom 0
+
+.scenarios
+  .ctrl-add-button
+    margin-right 15px
+  .col
+    &:nth-of-type(1)
+      width 80%
+    &:nth-of-type(2)
+    &:nth-of-type(3)
+      width 20%
+    &:nth-of-type(3)
+      position absolute
+      top 0
+      left 100%
+      border none
+    .ctrl-btn
+      height 80%
+      width 8em
+      &.delete
+        background-color #FE5950
+      &:active
+        position relative
+        z-index 3
+        box-shadow 0 0 6px white
+  &.table-view
+    .tbody-holder
+      top 0
+
+  .row
+    width 100%
+
+  .row
+    ::-webkit-scrollbar
+    ::-webkit-scrollbar-track
+    &::-webkit-scrollbar
+    &::-webkit-scrollbar-track
+      width 0
+      height 0
+      -webkit-border-radius 0
+
+  .cell-wrapper
+    position relative
+    display -webkit-box
+    width 100%

@@ -1,0 +1,105 @@
+// variables
+$row-height = 3.5em
+// end of variables
+
+.tables-holder
+  position absolute
+  top $header-height
+  right 0
+  bottom 0
+  left 0
+
+.table-view
+  display none
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  left 0
+  overflow hidden
+
+  &.active
+    display block
+
+  &.stack-page
+    .tbody-holder
+      top $row-height + $header-height
+
+  input
+    width 1.85714285714286em
+    height 1.85714285714286em
+
+  .thead .col
+    background #949498
+    color white
+    font-weight 500
+    -webkit-box-align center
+    -webkit-box-pack center
+    text-align center
+
+  .tbody-holder
+    position absolute
+    top $row-height
+    left 0
+    right 0
+    bottom 0
+
+  .tbody
+    font-size 93.333333333333%
+    font-weight normal
+    color #87878c
+    overflow hidden
+    border-top 1px solid #efeff4
+    border-bottom 1px solid #efeff4
+
+    .row
+      position relative
+
+      &:after
+        content ''
+        display none
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        left 0
+        background rgba(0, 0, 0, 0.2)
+        pointer-events none
+
+      &:active:after
+        display block
+
+      &:nth-of-type(even)
+        background-color #efeff4
+
+    .col
+      padding 0 1em
+      position relative
+
+      &:after
+        content ''
+        position absolute
+        top 15%
+        bottom 15%
+        left 100%
+        width 1px
+        background-color black
+        opacity 0.05
+
+  .row
+    display -webkit-box
+    width 100%
+
+  .col
+    height $row-height
+    display -webkit-box
+    box-sizing border-box
+    overflow initial
+
+  .v-centered
+    -webkit-box-align center
+
+  .h-centered
+    -webkit-box-pack center
+    > div
+      text-align center

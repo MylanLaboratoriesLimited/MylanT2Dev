@@ -1,0 +1,238 @@
+.fullscreen-panel-mode
+  .trade-module
+    bottom 0
+
+.android
+  .trade-module *
+    -webkit-transform none !important
+
+  .android-resized-wrapper
+    .scroll-container
+      overflow hidden !important
+
+.trade-module
+
+  .trade-scroll-wrapper
+    overflow auto
+    overflow-x hidden
+
+  .trade-scroll-wrapper
+  .trade-scroll-content
+    height 100%
+    display -webkit-box
+    -webkit-box-orient vertical
+    background-color white
+    &::-webkit-scrollbar
+      width 0
+
+  .promotion-screen
+    display -webkit-box
+    -webkit-box-orient vertical
+    -webkit-box-flex 1
+
+    .row:active:after
+      display none
+
+    &.full-screen-mode
+      .general-info
+        display none
+
+  .promotion-input
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    text-align center
+    border 0
+    background transparent
+    font-size 1.1em
+    color #87878c
+
+  .check-box
+    pointer-events auto
+    &:after
+      background url("img/checkbox.png") center center no-repeat;
+      background-size: 100% 100%;
+
+  .col:first-of-type .ellipsis
+    -webkit-box-align start
+
+  .ellipsis
+     -webkit-box-flex 1
+     -webkit-box-align center
+
+  .btn-select
+    display -webkit-inline-box
+    box-sizing border-box
+    max-width 100%
+    min-width 3em
+    padding 0 0.5em
+    height 2em
+    line-height 1.4em
+    -webkit-box-orient vertical
+    -webkit-line-clamp 1
+    -webkit-box-align center
+    border solid 1px #87878c
+    border-radius 6px
+    box-align center
+    box-pack center
+    overflow hidden
+
+  input[type='tel']
+  input[type='text']
+    width 100%
+    box-sizing border-box
+    word-break normal
+
+  article
+    display -webkit-box
+    -webkit-box-orient vertical
+
+  .trade-module-promotion-header
+    display -webkit-box
+    box-sizing border-box
+    padding 0 20px 0 15px
+    -webkit-box-align center
+    -webkit-transform translate3d(0, 0, 0)
+    width 100%
+    height 3.8em
+    overflow hidden
+    -webkit-box-flex 0
+    > span
+      font-size 1.8em
+      color #21b4f3
+
+    .navigation-promotions
+      display -webkit-box
+      -webkit-box-flex 1
+      -webkit-box-align center
+      -webkit-box-pack end
+      height 2em
+      color #21b4f3
+
+      > .ctrl-btn
+        margin-left 15px
+
+  .flex-element
+    -webkit-box-flex initial
+
+  .general-info
+    font-size 1.1em
+
+    .columns
+      margin-bottom 10px
+
+      .value
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
+
+      .trade-module-objectives, .trade-module-description
+        white-space normal
+        text-overflow auto
+        display -webkit-box
+        -webkit-box-orient vertical
+        -webkit-line-clamp 7
+
+  .promotion-name-wrapper
+    display -webkit-box
+    -webkit-box-flex 100
+    width 50%
+
+    .promotion-name
+      color #21B4F3
+      font-size 1.8em
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      width 90%
+
+  .description-header
+    font-weight 500
+    color #333
+    margin-left 1em
+    width 19%
+
+  .promotion-details
+    -webkit-box-flex 1
+    display -webkit-box
+    -webkit-box-orient vertical
+    margin-top 5px
+
+    .empty-tab
+      -webkit-box-pack center
+      -webkit-box-align center
+      font-size 1.4em
+
+    table
+      overflow-x hidden
+
+    tbody
+      th
+      td
+        position relative
+
+        &:after
+          content ''
+          display block
+          position absolute
+          top 15%
+          bottom 15%
+          left 100%
+          width 1px
+          background-color black
+          opacity 0.05
+
+    .content
+      display -webkit-box
+      -webkit-box-flex 1
+      position relative
+
+      .stack-page
+        background-color white
+
+        &.active
+          display -webkit-box
+          -webkit-box-orient vertical
+
+
+
+  .segmentation
+    display block
+    -webkit-box-flex 1
+  .notes
+    .check-box
+      background-color transparent
+      border-color transparent
+      &:after
+        background #21b4f3
+
+.trade-module.read-only-mode
+  input
+  textarea
+  .take-photo
+  td .value .btn-select
+  .main-data .btn-select
+    pointer-events none
+
+  input.placeholder-mode
+    color transparent !important
+
+  .btn-select
+    border-color rgba(0, 0, 0, 0.2)
+    background-color rgba(0, 0, 0, 0.04)
+    color #808080
+    &:after
+      border-color transparent
+
+  .navigation-panel
+    input
+      pointer-events auto
+  .take-photo
+    background-color #F0F0F0
+
+.promotion-pick-list .popup-container header
+  word-break break-word
+  -webkit-box-orient vertical
+  -webkit-line-clamp 4
+  -webkit-box-align start
+  -webkit-box-pack center
+  overflow hidden

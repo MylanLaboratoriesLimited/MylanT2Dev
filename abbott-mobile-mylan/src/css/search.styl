@@ -1,0 +1,61 @@
+.search
+    display -webkit-box
+    -webkit-box-align center
+    -webkit-box-pack justify
+    width 18em
+    font-size 100%
+
+    .input-holder
+       position relative
+       width 83.333333333%
+       line-height normal
+
+    input
+        height 2em
+        width 100%
+        box-sizing border-box
+        padding 0 0.5em 0 2em
+        font-size 100%
+        border-radius 0.53333333333em
+        background-color white
+        border 1px solid #b7b7bb
+        outline none
+        box-shadow none
+        -webkit-appearance none
+
+    .placeholder
+        display -webkit-box
+        position absolute
+        top 0
+        left 0
+        bottom 0
+        -webkit-box-align center
+        box-sizing border-box
+        margin 0
+        padding-left 2.2em
+        font-size 100%
+        pointer-events none
+        z-index 5
+        color #b7b7bb
+        text-transform capitalize
+
+        &:before
+        &:after
+            content ''
+            position absolute
+            top 0.5em
+            left 0.5em
+            height 0.6em
+            width 0.6em
+            border-radius 50%
+            border: 1px solid #b7b7bb
+
+        &:after
+            width 0
+            -webkit-transform translate(0.6em, 0.6em) rotate(-45deg)
+            border-radius 0
+            height 0.3em
+            -webkit-transform-origin 0 0
+
+#abbottMobile .search .placeholder.hidden
+    color transparent

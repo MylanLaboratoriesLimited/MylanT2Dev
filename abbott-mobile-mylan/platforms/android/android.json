@@ -1,0 +1,942 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"PushPlugin\"><param name=\"android-package\" value=\"com.plugin.gcm.PushPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"http://127.0.0.1*\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.force.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.salesforce.com\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.oauth\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.phonegap.SalesforceOAuthPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.sfaccountmanager\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.phonegap.SFAccountManagerPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.sdkinfo\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.phonegap.SDKInfoPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.smartstore\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.smartstore.phonegap.SmartStorePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.smartsync\"><param name=\"android-package\" value=\"com.salesforce.androidsdk.smartsync.phonegap.SmartSyncPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PresentationTransfer\"><param name=\"android-package\" value=\"com.qapint.cordova.presentationtransfer.PresentationTransfer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Globalization\"><param name=\"android-package\" value=\"org.apache.cordova.globalization.Globalization\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"PdfViewer\"><param name=\"android-package\" value=\"com.qapint.cordova.pdfviewer.PdfViewer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Zip\"><param name=\"android-package\" value=\"com.qapint.cordova.zip.Zip\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ImageResize\"><param name=\"android-package\" value=\"com.qapint.cordova.imageresize.ImageResize\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"android-package\" value=\"com.qapint.cordova.emailcomposer.EmailComposer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AttachmentsViewer\"><param name=\"android-package\" value=\"com.qapint.cordova.attachmentsviewer.AttachmentsViewer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SoftKeyboard\"><param name=\"android-package\" value=\"com.qapint.cordova.softkeyboard.SoftKeyboard\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PresentationViewer\"><param name=\"android-package\" value=\"com.qapint.cordova.presentationviewer.PresentationViewer\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<permission android:name=\"com.qapint.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.qapint.permission.C2D_MESSAGE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:exported=\"true\" android:name=\"com.plugin.gcm.PushHandlerActivity\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.plugin.gcm.CordovaGCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.qapint\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.plugin.gcm.GCMIntentService\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:label=\"@string/app_name\" android:name=\"com.artifex.mupdfviewer.MuPDFActivity\" android:theme=\"@android:style/Theme.Black.NoTitleBar.Fullscreen\"></activity>",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/strings.xml": {
+                "parents": {
+                    "/resources": [
+                        {
+                            "xml": "<string name=\"account_type\">com.qapint.login</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"app_package\">com.qapint</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"version\">1.5 (git build)</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"no_media_warning\">Storage media not present</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"no_media_hint\">Sharing the storage media with a PC can make it inaccessible</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"cancel\">Cancel</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"search_backwards\">Search backwards</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"search_forwards\">Search forwards</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"search_document\">Search document</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"picker_title_App_Ver_Dir\">%1$s %2$s: %3$s</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"outline_title\">Table of Contents</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"enter_password\">Enter password</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"text_not_found\">Text not found</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"searching_\">Searching…</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"toggle_links\">Highlight and enable links</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"no_further_occurrences_found\">No further occurrences found</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"select\">Select</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"search\">Search</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"copy\">Copy</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"strike_out\">Strike-out</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"delete\">Delete</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"highlight\">Highlight</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"underline\">Underline</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"edit_annotations\">Edit annotations</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"ink\">Ink</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"save\">Save</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"print\">Print</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"dismiss\">Dismiss</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"parent_directory\">[Up one level]</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"yes\">Yes</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"no\">No</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"entering_reflow_mode\">Entering reflow mode</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"leaving_reflow_mode\">Leaving reflow mode</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"print_failed\">Print failed</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"select_text\">Select text</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"copied_to_clipboard\">Copied to clipboard</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"no_text_selected\">No text selected</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"draw_annotation\">Draw annotation</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"nothing_to_save\">Nothing to save</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"document_has_changes_save_them_\">Document has changes. Save them?</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"cannot_open_document\">Cannot open document</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"cannot_open_document_Reason\">Cannot open document: %1$s</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"cannot_open_file_Path\">Cannot open file: %1$s</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"cannot_open_buffer\">Cannot open buffer</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"fill_out_text_field\">Fill out text field</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"okay\">Okay</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"choose_value\">Choose value</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"not_supported\">Not supported</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"copy_text_to_the_clipboard\">Copy text to the clipboard</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"more\">More</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"accept\">Accept</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"copy_text\">copy text</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"format_currently_not_supported\">Format currently not supported</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"toggle_reflow_mode\">Toggle reflow mode</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/colors.xml": {
+                "parents": {
+                    "/resources": [
+                        {
+                            "xml": "<color name=\"canvas\">#404040</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"toolbar\">#C0000000</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"page_indicator\">#C0202020</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"busy_indicator\">#C0202020</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"button_normal\">#00000000</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"button_pressed\">#FF2572AC</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"text_normal\">#FFFFFF</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"text_pressed\">#FFFFFF</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"text_border_normal\">#000000</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"text_border_pressed\">#2572AC</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"text_border_focused\">#000000</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"seek_thumb\">#2572AC</color>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<color name=\"seek_progress\">#FFFFFF</color>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/styles.xml": {
+                "parents": {
+                    "/resources": [
+                        {
+                            "xml": "<style name=\"AppBaseTheme\" parent=\"@android:style/Theme.NoTitleBar.Fullscreen\"><item name=\"android:windowBackground\">@drawable/tiled_background</item></style>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.PushPlugin": {
+            "PACKAGE_NAME": "com.qapint"
+        },
+        "com.salesforce": {
+            "PACKAGE_NAME": "com.qapint"
+        },
+        "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.presentation-transfer": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.pdf-viewer": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.zip": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.locale": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.image-resize": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.email-composer": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.phone-dialer": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.attachments-viewer": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.soft-keyboard": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "com.qapint.cordova.presentation-viewer": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.qapint.AbbottMobile.${PRODUCT_NAME:rfc1034identifier}"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.qapint"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.qapint"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.phonegap.plugins.PushPlugin/www/PushNotification.js",
+            "id": "com.phonegap.plugins.PushPlugin.PushNotification",
+            "pluginId": "com.phonegap.plugins.PushPlugin",
+            "clobbers": [
+                "PushNotification"
+            ]
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.oauth.js",
+            "id": "com.salesforce.plugin.oauth",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.sdkinfo.js",
+            "id": "com.salesforce.plugin.sdkinfo",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartstore.js",
+            "id": "com.salesforce.plugin.smartstore",
+            "pluginId": "com.salesforce",
+            "clobbers": [
+                "navigator.smartstore"
+            ]
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.sfaccountmanager.js",
+            "id": "com.salesforce.plugin.sfaccountmanager",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartsync.js",
+            "id": "com.salesforce.plugin.smartsync",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.bootstrap.js",
+            "id": "com.salesforce.util.bootstrap",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.event.js",
+            "id": "com.salesforce.util.event",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.exec.js",
+            "id": "com.salesforce.util.exec",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.logger.js",
+            "id": "com.salesforce.util.logger",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/com.salesforce/www/com.salesforce.util.push.js",
+            "id": "com.salesforce.util.push",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "file": "plugins/org.apache.cordova.file-transfer/www/FileTransferError.js",
+            "id": "org.apache.cordova.file-transfer.FileTransferError",
+            "pluginId": "org.apache.cordova.file-transfer",
+            "clobbers": [
+                "window.FileTransferError"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file-transfer/www/FileTransfer.js",
+            "id": "org.apache.cordova.file-transfer.FileTransfer",
+            "pluginId": "org.apache.cordova.file-transfer",
+            "clobbers": [
+                "window.FileTransfer"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.network-information/www/network.js",
+            "id": "org.apache.cordova.network-information.network",
+            "pluginId": "org.apache.cordova.network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.network-information/www/Connection.js",
+            "id": "org.apache.cordova.network-information.Connection",
+            "pluginId": "org.apache.cordova.network-information",
+            "clobbers": [
+                "Connection"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.presentation-transfer/www/PresentationTransfer.js",
+            "id": "com.qapint.cordova.presentation-transfer.PresentationTransfer",
+            "pluginId": "com.qapint.cordova.presentation-transfer",
+            "clobbers": [
+                "window.PresentationTransfer"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.pdf-viewer/www/pdf-viewer.js",
+            "id": "com.qapint.cordova.pdf-viewer.PdfViewer",
+            "pluginId": "com.qapint.cordova.pdf-viewer",
+            "clobbers": [
+                "window.PdfViewer"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.zip/www/zip.js",
+            "id": "com.qapint.cordova.zip.Zip",
+            "pluginId": "com.qapint.cordova.zip",
+            "clobbers": [
+                "window.Zip"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.locale/www/locale.js",
+            "id": "com.qapint.cordova.locale.Locale",
+            "pluginId": "com.qapint.cordova.locale",
+            "clobbers": [
+                "window.LocaleSwitcher"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.image-resize/www/image-resize.js",
+            "id": "com.qapint.cordova.image-resize.ImageResize",
+            "pluginId": "com.qapint.cordova.image-resize",
+            "clobbers": [
+                "window.ImageResize"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.email-composer/www/email-composer.js",
+            "id": "com.qapint.cordova.email-composer.EmailComposer",
+            "pluginId": "com.qapint.cordova.email-composer",
+            "clobbers": [
+                "window.EmailComposer"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.phone-dialer/www/android/phone-dialer.js",
+            "id": "com.qapint.cordova.phone-dialer.PhoneDialer",
+            "pluginId": "com.qapint.cordova.phone-dialer",
+            "clobbers": [
+                "window.PhoneDialer"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.camera/www/CameraConstants.js",
+            "id": "org.apache.cordova.camera.Camera",
+            "pluginId": "org.apache.cordova.camera",
+            "clobbers": [
+                "Camera"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js",
+            "id": "org.apache.cordova.camera.CameraPopoverOptions",
+            "pluginId": "org.apache.cordova.camera",
+            "clobbers": [
+                "CameraPopoverOptions"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.camera/www/Camera.js",
+            "id": "org.apache.cordova.camera.camera",
+            "pluginId": "org.apache.cordova.camera",
+            "clobbers": [
+                "navigator.camera"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js",
+            "id": "org.apache.cordova.camera.CameraPopoverHandle",
+            "pluginId": "org.apache.cordova.camera",
+            "clobbers": [
+                "CameraPopoverHandle"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.attachments-viewer/www/attachments-viewer.js",
+            "id": "com.qapint.cordova.attachments-viewer.AttachmentsViewer",
+            "pluginId": "com.qapint.cordova.attachments-viewer",
+            "clobbers": [
+                "window.AttachmentsViewer"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.soft-keyboard/www/soft-keyboard.js",
+            "id": "com.qapint.cordova.soft-keyboard.SoftKeyboard",
+            "pluginId": "com.qapint.cordova.soft-keyboard",
+            "clobbers": [
+                "window.SoftKeyboard"
+            ]
+        },
+        {
+            "file": "plugins/com.qapint.cordova.presentation-viewer/www/presentation-viewer.js",
+            "id": "com.qapint.cordova.presentation-viewer.PresentationViewer",
+            "pluginId": "com.qapint.cordova.presentation-viewer",
+            "clobbers": [
+                "window.PresentationViewer"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
+            "id": "cordova-plugin-globalization.GlobalizationError",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "window.GlobalizationError"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-globalization/www/globalization.js",
+            "id": "cordova-plugin-globalization.globalization",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "navigator.globalization"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.device/www/device.js",
+            "id": "org.apache.cordova.device.device",
+            "pluginId": "org.apache.cordova.device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
+            "id": "org.apache.cordova.file.DirectoryEntry",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.DirectoryEntry"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/DirectoryReader.js",
+            "id": "org.apache.cordova.file.DirectoryReader",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.DirectoryReader"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/Entry.js",
+            "id": "org.apache.cordova.file.Entry",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.Entry"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/File.js",
+            "id": "org.apache.cordova.file.File",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.File"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileEntry.js",
+            "id": "org.apache.cordova.file.FileEntry",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.FileEntry"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileError.js",
+            "id": "org.apache.cordova.file.FileError",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.FileError"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileReader.js",
+            "id": "org.apache.cordova.file.FileReader",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.FileReader"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileSystem.js",
+            "id": "org.apache.cordova.file.FileSystem",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.FileSystem"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileUploadOptions.js",
+            "id": "org.apache.cordova.file.FileUploadOptions",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.FileUploadOptions"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileUploadResult.js",
+            "id": "org.apache.cordova.file.FileUploadResult",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.FileUploadResult"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/FileWriter.js",
+            "id": "org.apache.cordova.file.FileWriter",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.FileWriter"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/Flags.js",
+            "id": "org.apache.cordova.file.Flags",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.Flags"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/LocalFileSystem.js",
+            "id": "org.apache.cordova.file.LocalFileSystem",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.LocalFileSystem"
+            ],
+            "merges": [
+                "window"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/Metadata.js",
+            "id": "org.apache.cordova.file.Metadata",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.Metadata"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/ProgressEvent.js",
+            "id": "org.apache.cordova.file.ProgressEvent",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.ProgressEvent"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/fileSystems.js",
+            "id": "org.apache.cordova.file.fileSystems",
+            "pluginId": "org.apache.cordova.file"
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/requestFileSystem.js",
+            "id": "org.apache.cordova.file.requestFileSystem",
+            "pluginId": "org.apache.cordova.file",
+            "clobbers": [
+                "window.requestFileSystem"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js",
+            "id": "org.apache.cordova.file.resolveLocalFileSystemURI",
+            "pluginId": "org.apache.cordova.file",
+            "merges": [
+                "window"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/android/FileSystem.js",
+            "id": "org.apache.cordova.file.androidFileSystem",
+            "pluginId": "org.apache.cordova.file",
+            "merges": [
+                "FileSystem"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/fileSystems-roots.js",
+            "id": "org.apache.cordova.file.fileSystems-roots",
+            "pluginId": "org.apache.cordova.file",
+            "runs": true
+        },
+        {
+            "file": "plugins/org.apache.cordova.file/www/fileSystemPaths.js",
+            "id": "org.apache.cordova.file.fileSystemPaths",
+            "pluginId": "org.apache.cordova.file",
+            "merges": [
+                "cordova"
+            ],
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "com.phonegap.plugins.PushPlugin": "2.2.1",
+        "com.salesforce": "3.3.2",
+        "org.apache.cordova.file-transfer": "0.5.0",
+        "org.apache.cordova.network-information": "0.2.15",
+        "com.qapint.cordova.presentation-transfer": "1.0.0",
+        "com.qapint.cordova.pdf-viewer": "1.0.0",
+        "com.qapint.cordova.zip": "1.0.1",
+        "com.qapint.cordova.locale": "1.0.0",
+        "com.qapint.cordova.image-resize": "1.0.0",
+        "com.qapint.cordova.email-composer": "1.0.0",
+        "com.qapint.cordova.phone-dialer": "1.0.0",
+        "org.apache.cordova.camera": "0.3.6",
+        "com.qapint.cordova.attachments-viewer": "1.0.0",
+        "com.qapint.cordova.soft-keyboard": "1.0.0",
+        "com.qapint.cordova.presentation-viewer": "1.0.1",
+        "cordova-plugin-globalization": "1.0.2",
+        "org.apache.cordova.device": "0.3.0",
+        "org.apache.cordova.file": "1.3.3"
+    }
+}

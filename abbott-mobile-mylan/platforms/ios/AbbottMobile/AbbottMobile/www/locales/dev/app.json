@@ -1,0 +1,535 @@
+{
+    "home": {
+        "Title": "$t(common:abbottMobileTitle)",
+        "LastSyncDate": "Last synchronized:",
+        "Contacts": "Contacts",
+        "Media": "Media",
+        "Organizations": "Organizations",
+        "Activities": "Activities",
+        "TourPlanning": "Tour Planning",
+        "TimeOffTerritory": "$t(common:names.TimeOffTerritory)",
+        "AlertPopup": {
+            "Caption": "No Internet connection",
+            "Message": "Please connect to the Internet and try again"
+        },
+        "Info": "All Adverse Events must be reported immediately to the Medical Department. Do not enter any Adverse Events in CRM."
+    },
+    "tabbar": {
+        "Home": "Home",
+        "Contacts": "Contacts",
+        "Activities": "Activities",
+        "TourPlanning": "Tour Planning",
+        "TimeOffTerritory": "$t(common:names.TimeOffTerritory)",
+        "Organizations": "Organizations",
+        "Media": "Media"
+    },
+    "helpdesk": {
+        "HeaderTitle": "Helpdesk",
+        "CallCenter": "Call Center",
+        "ClearDatabase": "Clear Database",
+        "ViewLastLog": "View Last LOG",
+        "SendLogToSupport": "Send LOG to Support",
+        "ConfirmationPopup": {
+            "Caption": "Clear Database",
+            "Question": "Are you sure you want to delete all info from database?"
+        },
+        "NotSupportedPopup":{
+            "Caption": "Warning",
+            "Message": "Your device doesn't support this feature."
+        },
+        "PhoneNumber": "60355663388",
+        "OSVersion": "OS version",
+        "InfoPanel": {
+            "DeviceId": "Device ID",
+            "Version": "Version",
+            "Model": "Model"
+        },
+        "LogScreen":{
+            "HeaderTitle": "LAST LOG",
+            "AppVersion": "App version",
+            "DeviceId": "Device id",
+            "Info": "INFO",
+            "Error": "ERROR",
+            "Warning": "WARNING"
+        },
+        "ClearingDatabaseMessage": "Clearing database"
+    },
+    "tourPlanning": {
+        "HeaderTitle": "Planning",
+        "StartTime": "Start Time:",
+        "CalculateBtn": "Calculate",
+        "VisitOrderPopupHeader": "Select order number",
+        "ToastMessage":{
+            "NeedCalculate": "You need to do calculate before save.",
+            "ExistedAppointments": "Some references already have appointments on this date."
+        }
+    },
+    "organizations": {
+        "HeaderTitle": "Organizations"
+    },
+    "contacts": {
+        "HeaderTitle": "Contacts",
+        "FilterPopup": {
+            "TargetContacts": "Target Contacts",
+            "NonTargetContacts": "Non-target Contacts"
+        }
+    },
+    "activities": {
+        "HeaderTitle": "Activities",
+        "FilterPopup": {
+            "Appointments": "Appointments",
+            "AppointmentsToday": "Appointments Today",
+            "AppointmentsPast": "Appointments Past",
+            "AppointmentsTomorrow": "Appointments Tomorrow",
+            "1To1Calls": "1:1 Calls",
+            "1To1CallsToday": "1:1 Calls Today",
+            "PharmaEvents": "Pharma Events"
+        }
+    },
+    "scenarioDetails": {
+        "HeaderTitle": "New Scenario",
+        "EditHeaderTitle": "Edit Scenario",
+        "NoSlidesForPreview": "There are no slides for preview",
+        "NoSlidesForSave": "There are no slides for save"
+    },
+    "tots":{
+        "HeaderTitle": "$t(common:names.TimeOffTerritory)",
+        "FilterPopup": {
+            "All": "All",
+            "Open": "Open",
+            "Submit": "Submit",
+            "Closed": "Closed"
+        }
+    },
+    "tradeModule":{
+        "SaveWarningTitle": "Trade Module",
+        "AreYouShureSaveAndExit": "There are fields that were not filled in yet. Are you sure you want to skip them and proceed?",
+        "HeaderTitle": "$t(common:names.TradeModule)",
+        "GeneralInfoFields": {
+            "Promotion": "$t(common:names.Promotion):",
+            "Customer": "$t(common:names.Customer):",
+            "PromotionStartDate": "$t(common:names.PromotionStartDate):",
+            "PromotionEndDate": "$t(common:names.PromotionEndDate):",
+            "ShipmentEndDate": "$t(common:names.ShipmentEndDate):",
+            "ShipmentStartDate": "$t(common:names.ShipmentStartDate):",
+            "Description": "$t(common:names.Description):",
+            "Contract": "$t(common:names.Contract):",
+            "NumberOfPharmacies": "$t(common:names.NumberOfPharmacies):",
+            "RecordType": "$t(common:names.RecordType):",
+            "Status": "$t(common:names.Status):",
+            "Objectives": "$t(common:names.Objectives):",
+            "Placeholder": "Type your description",
+            "Of":"of"
+        },
+        "PromoDetails": {
+            "Tactics": "Mechanics",
+            "PromotionTasks": "Promotion tasks",
+            "SKUs": "Related to SKUs",
+            "Notes": "Notes & Attachments",
+            "Photos": "Photos"
+        },
+        "Tactics":{
+            "BorderValues": "Hide target values",
+            "NoMechanics": "There are no mechanics for this promotion"
+        },
+        "PromotionTasks":{
+            "NoPromotionTasks": "There are no promotion tasks for this promotion"
+        },
+        "Skus":{
+            "NoSkus": "There are no tasks related to SKUs for this promotion"
+        },
+        "Notes":{
+            "NoNotes": "There are no notes or attachments for this promotion"
+        }
+    },
+    "scenarios":{
+        "HeaderTitle": "Dynamic Agenda",
+        "ConfirmationPopup": {
+            "DeleteItem": {
+                "Caption": "Delete Scenario"
+            }
+        }
+    },
+    "homeMenu": {
+        "Alarm": "Alarm",
+        "Helpdesk": "Helpdesk",
+        "Language": "Language",
+        "DynamicAgenda": "Dynamic agenda",
+        "Lock": "Lock",
+        "Logout": "Logout"
+    },
+    "createActivityPopup": {
+        "Caption": "Create activity",
+        "Appointment": "$t(common:names.Appointment)",
+        "CallReport": "$t(common:names.CallReport)"
+    },
+    "searchView": {
+        "Placeholder": "search",
+        "SearchBtn": "Search"
+    },
+    "commentView": {
+        "Placeholder": "Type comment"
+    },
+    "alarmSettingsPopup": {
+        "Title": "Alarm settings:",
+        "Off": "Off",
+        "InFifteenMinutes": "in 15 minutes",
+        "InThirtyMinutes": "in 30 minutes",
+        "InOneHour": "in 1 hour",
+        "InOneHourThirtyMinutes": "in 1.5 hour",
+        "InTwoHours": "in 2 hours"
+    },
+    "pin": {
+        "AlertCaption": "$t(common:abbottMobileTitle)",
+        "ErrorMessage": {
+            "PinWillBeReset": "PIN is incorrect and will be reset. You can get access to Abbott Mobile via entering credentials.",
+            "IncorrectPin": "PIN is incorrect. You have __count__ attempts remaining.",
+            "PinsAreNotEqual": "Sorry your PINs are not equal. Please try again.",
+            "PinLength": "PIN must be at least __count__ digits long. Please try again."
+        },
+        "Placeholder": {
+            "Pin": "PIN",
+            "ConfirmPin": "Confirm PIN"
+        }
+    },
+    "synchronizationPopup": {
+        "SynchronizationStatus": "Synchronization status",
+        "SynchronizationCompleted": "Synchronization is completed successfully.",
+        "Title": "Synchronization:",
+        "Table": {
+            "Brick": "Brick",
+            "BuTeamPersonProfile": "Bu Team Person Profile",
+            "CallReport": "$t(common:names.CallReport)",
+            "Contact": "$t(common:names.Contact)",
+            "Device": "Device",
+            "MarketingCycle": "Marketing Cycle",
+            "MarketingMessage": "Marketing Message",
+            "Organization": "$t(common:names.Organization)",
+            "PEAbbottAttendee": "PE Abbott Attendee",
+            "PEAttendee": "PE Attendee",
+            "PharmaEvent": "Pharma Event",
+            "Product": "Product",
+            "Reference": "Reference",
+            "TargetFrequency": "Target Frequency",
+            "Target": "Target",
+            "Tot": "$t(common:names.TimeOffTerritory)",
+            "User": "$t(common:names.User)",
+            "Presentation": "$t(common:names.Presentation)",
+            "CLMCallReportData": "CLM Call Report Data",
+            "Promotion": "Promotion",
+            "PromotionAccount": "Promotion Account",
+            "PromotionTaskAccount": "Promotion Task Account",
+            "TaskAdjustment": "Task Adjustment",
+            "ProductItem": "Product Item",
+            "PromotionSku": "Promotion SKU",
+            "PromotionMechanic": "Promotion Mechanic",
+            "MechanicEvaluationAccount": "Mechanic Evaluation Account",
+            "MechanicAdjustment": "Mechanic Adjustment",
+            "PhotoAdjustment": "Photo Adjustment",
+            "PromotionNote": "Promotion Note",
+            "PromotionAttachment": "Promotion Attachment",
+            "PhotoAttachment": "Photo Attachment",
+            "ProductInPortfolio": "Product In Portfolio",
+            "ProfileProductInPortfolio": "Profile Product In Portfolio",
+            "PatientDisease": "Patient Disease"
+        },
+        "PickList": "PickList",
+        "Uploading": "Uploading",
+        "Configuration": "Configuration",
+        "LogMessage": {
+            "SyncStart": "Synchronization started. Steps count: __count__",
+            "CheckDevice": "Check device",
+            "Success": "Synchronization finished successfully.",
+            "Error": "Synchronization finished with error.",
+            "SendErrorReport": "Sync Failed. \n Would you like send sync report?",
+            "ErrorUploading": "Error uploading __type__ entity: __entity__, message: __message__, code: __code__",
+            "WarningUploading": "__type__ entity: __entity__ wasn't uploaded because: __message__, code: __code__",
+            "DownloadOk": "__name__ received __count__ OK",
+            "DownloadFail": "__name__ receiving FAIL",
+            "UploadOk": "__name__ sent __count__ OK"
+        }
+    },
+    "pendingPopup": {
+        "PleaseWaitMessage": "Please wait..."
+    },
+    "signature": {
+        "HeaderTitle": "$t(common:names.Signature)"
+    },
+    "card":{
+        "ReferencesTableTitle": "References:",
+        "InFieldActivitiesTableTitle": "In-Field Activities:",
+        "UsersHeaderTitle": "Users",
+        "GeneralInfoFields": {
+            "JointVisitUserPlaceholder": "key person during joint visit",
+            "SignatureTaken": "Signature taken:",
+            "Duration": "Duration (mins):",
+            "Name": "$t(common:names.Name):",
+            "Status": "$t(common:names.Status):",
+            "TargetCustomer": "$t(common:names.TargetCustomer):",
+            "Type": "$t(common:names.Type):",
+            "Priority": "$t(common:names.Priority):",
+            "Specialty": "$t(common:names.Specialty):",
+            "Description": "$t(common:names.Description):",
+            "Customer": "$t(common:names.Customer):",
+            "Organization": "$t(common:names.Organization):",
+            "User": "$t(common:names.User):",
+            "DateTime": "$t(common:names.DateTime):",
+            "JointVisit": "$t(common:names.JointVisit):",
+            "JointVisitUser": "$t(common:names.JointVisitUser):",
+            "CallComments": "$t(common:names.CallComments):",
+            "NextCallObjectives": "$t(common:names.NextCallObjectives):",
+            "Signature": "$t(common:names.Signature):",
+            "TypeOfVisit": "$t(common:names.TypeOfVisit):",
+            "StartDate": "$t(common:names.StartDate):",
+            "EndDate": "$t(common:names.EndDate):"
+        },
+        "DurationPopup": {
+            "Title": "Select duration",
+            "TimeUnits": "minutes"
+        },
+        "ConfirmationPopup": {
+            "DeleteItem": {
+                "Question": "Are you sure you want to delete this item?"
+            },
+            "SaveChanges": {
+                "Caption": "Would you like to save changes?"
+            }
+        },
+        "ToastMessage": {
+            "RequiredFieldsHeader": "Fill required fields",
+            "RequiredJointVisit": "-$t(common:names.JointVisit)",
+            "RequiredJointVisitUser": "-$t(common:names.JointVisitUser)",
+            "RequiredSignature": "-$t(common:names.Signature)"
+        },
+        "Contact": {
+            "HeaderTitle": "$t(common:names.Contact):",
+            "GeneralInfoFields": {
+                "KOL": "KOL:",
+                "AbbottSpecialty": "Abbott Specialty:",
+                "MobilePhone": "Mobile Phone:",
+                "Email": "Email:"
+            }
+        },
+        "Organization": {
+            "HeaderTitle": "$t(common:names.Organization):",
+            "TourPlanningBtn": "Tour planning",
+            "GeneralInfoFields": {
+                "BillingAddress": "Billing Address:",
+                "JuridicGroup": "Juridic Group:",
+                "GlobalPriority": "Global Priority:"
+            },
+            "ToastMessage": {
+                "HasNoTargetReferences": "Current organization has no target contacts."
+            }
+        },
+        "Appointment": {
+            "HeaderTitle": "$t(common:names.Appointment)",
+            "ConvertBtn": "Convert 1:1",
+            "ToastMessage": {
+                "DateLessThanNow": "Date can not be less than now",
+                "DateGreaterThanNow": "Date can not be greater than now.",
+                "DateTooFarInThePast": "Date is too far in the past."
+            },
+            "ConfirmationPopup": {
+                "ReplaceExistingAppointment": {
+                    "Caption": "$t(common:abbottMobileTitle)",
+                    "Question": "You already have an appointment to this contact for \n specified date. Do you want to replace that one?"
+                },
+                "DeleteItem": {
+                    "Caption": "Delete Appointment"
+                },
+                "SaveChangesBeforeConverting": {
+                    "Caption": "Do you want to save changes before converting?"
+                }
+            }
+        },
+        "CallReport": {
+            "HeaderTitle": "$t(common:names.CallReport)",
+            "ViewHeaderTitle": "1:1 View",
+            "ConvertHeaderTitle": "Convert 1:1",
+            "Alerts": {
+                "PresentationNotExist":{
+                    "caption": "Presentation doesn't exist",
+                    "message": "Selected product have no presentations to open"
+                },
+                "PresentationNotLoaded":{
+                    "caption": "Presentation not loaded",
+                    "message": "Please download presentation for product"
+                }
+            },
+            "Portfolio":{
+                "PatientProfilesTitle":"Patient Profiles",
+                "AddProfile":"Add Patient Profile",
+                "SummaryTitle":"Summary",
+                "PortfolioFeedback":"Portfolio Feedback",
+                "PatientSupport":"Patient Support Program Comments",
+                "FullPortfolioReminder":"Full Portfolio Presentation/Reminder:",
+                "PatientSupportProgram":"Patient Support Program:",
+                "TypeFeedback":"Type your feedback",
+                "NoteForProduct":"Note for product",
+                "PatientProfile":"Patient Profile",
+                "PatientProduct":"Product",
+                "ChoosePatientProfile":"Choose Patient Profile",
+                "ChooseProduct":"Choose Product",
+                "Classification":"Classification",
+                "PromotionItem":"Promotion Item",
+                "DefaultSelectMessage": "Marketing message",
+                "ClearDataConfirmation":{
+                    "Caption":"Warning",
+                    "Message":"All filled in data will be cleaned up. Proceed?"
+                },
+                "Classifications":{
+                    "Detailed":"Detailed",
+                    "Reminder":"Reminder"
+                },
+                "GeneralInfo":{
+                  "Age": "Age",
+                  "Gender": "Gender",
+                  "GeneralHealth": "General Health",
+                  "OccupationSocialEnvironment": "Occupation/Social environment",
+                  "BodyMassIndex": "BMI",
+                  "Diseases": "Diseases"
+                },
+                "ToastMessage":{
+                    "PatientProfileRequirement":"-First patient profile",
+                    "ProductForProfileRequirement":"-Product for choosen patient profile",
+                    "ClassificationForProductRequirement":"-Classification for choosen product",
+                    "NoActiveProductPortfolio":"There is no active Product Portfolio"
+                },
+                "DateApplyConfirmation":"After changing of the date all Patient Profiles' data will be cleaned up. Proceed?"
+            },
+            "GeneralInfoFields": {
+                "TargetPriority": "Target Priority:"
+            },
+            "Product": {
+                "MarketingMessage1": "Marketing Message 1",
+                "MarketingMessage2": "Marketing Message 2",
+                "MarketingMessage3": "Marketing Message 3",
+                "PromotionalItem": "Promotional Item"
+            },
+            "ToastMessage": {
+                "RequiredFirstProduct": "-First product",
+				"RequiredFirstMessage": "-First marketing message",
+                "RequiredCallComments": "-$t(common:names.CallComments)",
+                "RequiredNextCallObjectives": "-$t(common:names.NextCallObjectives)",
+                "NoPromosForOrganization": "There are no promotions for current Organization"
+            }
+        },
+        "Tot": {
+            "HeaderTitle": "$t(common:names.TimeOffTerritory)",
+            "AllDay": "All Day",
+            "FirstPart": "$t(common:names.FirstPart):",
+            "SecondPart": "$t(common:names.SecondPart):",
+            "ThirdPart": "$t(common:names.ThirdPart):",
+            "ForthPart": "$t(common:names.ForthPart):",
+            "Morning": "$t(common:names.Morning):",
+            "Afternoon": "$t(common:names.Afternoon):",
+            "Placeholder": "Type description",
+            "ToastMessage": {
+                "ToastHeader": "Fill in at least one of the required fields:",
+                "FirstPart": "$t(common:names.FirstPart)",
+                "SecondPart": "$t(common:names.SecondPart)",
+                "ThirdPart": "$t(common:names.ThirdPart)",
+                "ForthPart": "$t(common:names.ForthPart)",
+                "Morning": "$t(common:names.Morning)",
+                "Afternoon": "$t(common:names.Afternoon)",
+                "DateRange": "Not valid date range."
+            },
+            "ConfirmationPopup": {
+                "DeleteItem": {
+                    "Caption": "Delete Time-off-territory"
+                }
+            },
+            "UserDayOff": "is day off. Please choose another appropriate date.",
+            "UserDaysOff": "are days off. Please choose another appropriate date."
+        },
+        "PharmaEvent": {
+            "CreateCardHeaderTitle": "New pharma event",
+            "HeaderTitle": "Pharma evenT",
+            "AttendeesHeaderTitle": "$t(common:names.Attendees)",
+            "ProductsPopupCaption": "Select Products",
+            "EndDateLessStartError": "End date cannot be less than Start date",
+            "GeneralInfoFields": {
+                "Owner": "$t(common:names.Owner):",
+                "TypeOfEvent": "$t(common:names.TypeOfEvent):",
+                "Stage": "$t(common:names.Stage):",
+                "BusinessUnit": "Business unit:",
+                "EventName": "$t(common:names.EventName):",
+                "Location": "$t(common:names.Location):",
+                "Products": "$t(common:names.Products):",
+                "Speakers": "$t(common:names.Speakers):",
+                "Agenda": "$t(common:names.Agenda):",
+                "Objectives": "$t(common:names.Objectives):",
+                "Evaluation": "$t(common:names.Evaluation):",
+                "Attendees": "$t(common:names.Attendees):"
+            },
+            "Placeholders":{
+                "TypeName": "Type name",
+                "TypeLocation": "Type location",
+                "AddProducts": "Add Products",
+                "TypeSpeakers": "Type Speakers",
+                "TypeAgenda": "Type Agenda",
+                "TypeObjectives": "Type Objectives",
+                "TypeEvaluation": "Type Evaluation",
+                "AddAttendees": "Add Attendees"
+            },
+            "ToastMessage": {
+                "RequiredTypeOfEvent": "-$t(common:names.TypeOfEvent)",
+                "RequiredEventName": "-$t(common:names.EventName)",
+                "RequiredLocation": "-$t(common:names.Location)",
+                "RequiredProducts": "-$t(common:names.Products)",
+                "RequiredSpeakers": "-$t(common:names.Speakers)",
+                "RequiredAgenda": "-$t(common:names.Agenda)",
+                "RequiredObjectives": "-$t(common:names.Objectives)"
+            }
+        }
+    },
+    "patientProfilePopup": {
+        "Header": {
+            "Name": "Name",
+            "Age": "Age",
+            "Gender": "Gender",
+            "GeneralHealth": "General Health",
+            "Occupation": "Occupation",
+            "BMI": "BMI",
+            "Diseases": "Diseases"
+        }
+    },
+    "PromotionPopup": {
+        "Header": "Propmotions",
+        "GeneralInfoTitle": "Trade Promotion",
+        "SKUs": "SKUs",
+        "Tactics": "$t(tradeModule.PromoDetails.Tactics)",
+        "Tasks": "Tasks",
+        "Attachment": "$t(tradeModule.PromoDetails.Notes)"
+    },
+    "Media": {
+        "HeaderTitle": "Media",
+        "DownloadPresentationErrorCaption":"Downloading error",
+        "DownloadPresentationErrorMessage":"Error while downloading presentation"
+    },
+    "AttachmentsPopup": {
+        "Unauthorized": "Authorization session expired. Logout and login again please.",
+        "Offline": "Please connect to the Internet and try again.",
+        "LoadFail": "Internet connection is lost. Please check your connection and try again.",
+        "Success": "Attachment was successfully loaded: ",
+        "Error": "Fail to load attachment:",
+        "Deleted": "This attachment has been deleted from the server"
+    },
+    "PhotoAttachmentsPopup": {
+        "Unauthorized": {
+            "caption": "Photo download",
+            "message": "Authorization session expired. Logout and login again please."
+        },
+        "Offline": {
+            "caption": "Photo download",
+            "message": "Unable to download photo. Your device is offline."
+        },
+        "NoAttachment": {
+            "caption": "Photo download",
+            "message": "Current photo is missing."
+        },
+        "Success": "Photo was successfully loaded",
+        "Error": "Failed to load photo"
+    }
+}

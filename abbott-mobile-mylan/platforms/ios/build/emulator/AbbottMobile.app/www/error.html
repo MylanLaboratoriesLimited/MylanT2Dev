@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <meta name="format-detection" content="telephone=no">
+    <title>Abbott Mobile</title>
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-height, height=device-width, user-scalable=no"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+      <style>
+          body{
+              margin: 0;
+              padding: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              display: -webkit-box;
+              -webkit-box-align: center;
+              background: #4e7eca;
+              -webkit-box-pack: center;
+              width: 100%;
+          }
+          h1{
+              margin: 0;
+              padding: 0 40px;
+              font-family: Helvetica;
+              height: 80px;
+              text-align: center;
+              color:#fff;
+              font-weight: normal;
+              font-size: 28px;
+          }
+      </style>
+      <script>
+          document.ontouchmove=function(event){
+              event.preventDefault();
+          };
+      </script>
+  </head>
+  <body>
+    <h1>
+        Error: Internet connection was lost.<br/>Please try to relaunch the application with better wifi connection.
+    </h1>
+  </body>
+</html>

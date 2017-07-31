@@ -1,0 +1,27 @@
+dependencies: \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Plugins/NotificationAlarm/NotificationAlarm.m \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Plugins/NotificationAlarm/NotificationAlarm.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Plugins/NotificationAlarm/Notification.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Plugins/NotificationAlarm/NotificationServiceManager.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Classes/LocalizationSystem/LocalizationSystem.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Dependencies/Underscore/Underscore.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Dependencies/Underscore/USConstants.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Dependencies/Underscore/USArrayWrapper.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Dependencies/Underscore/USDictionaryWrapper.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Dependencies/Underscore/Underscore+Functional.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Classes/CallReport.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Classes/Entity.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Classes/CallReportsController.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Classes/EntitiesController.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Classes/Parseable.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Plugins/SFSmartStore.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Plugins/SFQuerySpec.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Classes/Setting.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Classes/SettingsController.h \
+  /Users/admin/Documents/abbott-mobile/platforms/ios/AbbottMobile/Classes/Constants.h

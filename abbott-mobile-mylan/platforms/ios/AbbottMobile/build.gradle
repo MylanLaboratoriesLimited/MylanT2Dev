@@ -1,0 +1,31 @@
+ext {
+    name = "AbbottMobile"
+    projectName = "${name}.xcodeproj"
+    scheme = "${name}"
+    ipaName = "${scheme}"
+    archivePath = "${projectDir}/build/sym/${ipaName}"
+    appPath = "${archivePath}.xcarchive/Products/Applications/${ipaName}.app"
+    ipaPath = "${archivePath}.ipa"
+}
+
+task clear(type: Delete) {
+  delete 'build'
+}
+
+task clean(type: Exec, dependsOn: clear) {
+  commandLine 'xctool', '-project', projectName, '-scheme', scheme, 'clean'
+}
+
+task archive(type: Exec) {
+  commandLine 'xctool', '-project', projectName,
+                        '-scheme', scheme,
+                        '-sdk', 'iphoneos',
+                        '-configuration', 'Distribution',
+                        'archive', '-archivePath', archivePath
+}
+
+task ipa(type: Exec, dependsOn: archive) {
+  commandLine 'xcrun', '-sdk', 'iphoneos', 'PackageApplication',
+                        '-v', appPath,
+                        '-o', ipaPath
+}

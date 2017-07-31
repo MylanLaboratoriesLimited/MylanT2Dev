@@ -1,0 +1,44 @@
+.card
+  .wrapper
+    width 100%
+    height 100%
+    -webkit-box-sizing border-box
+    position relative
+    overflow auto
+    -webkit-overflow-scrolling touch
+    padding-top 10px
+    font-size 1.1em
+
+  .comment-block
+    display -webkit-box
+    -webkit-box-orient vertical
+    width 100%
+    -webkit-box-align center
+    .call-comments,
+    .call-objectives
+      width 97%
+      word-break break-all
+
+  .header
+    width auto
+    padding-left 1.5%
+
+  .scroll-content
+    padding-bottom 15px
+
+  &.view-mode
+    .text-area
+      background rgba(0, 0, 0, 0.015)
+    .select-btn,
+    .check-box,
+    .text-area,
+    .text-field-block
+      pointer-events none !important
+    .select-btn,
+    .text-field-block
+      border-color rgba(0, 0, 0, 0.2)
+      background-color rgba(0, 0, 0, 0.04)
+      color #808080
+      &:after
+        border-color transparent
+

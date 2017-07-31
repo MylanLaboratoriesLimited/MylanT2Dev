@@ -1,0 +1,87 @@
+.card-table
+  width 100%
+  table-layout fixed
+  border-collapse collapse
+
+  td
+  th
+    height $row-height
+  thead
+    background-color #f7f7f7
+    th
+      font 95% 'Roboto'
+      font-weight 500
+      color #333
+      text-align center
+      border-bottom 1px solid #c1c1c1
+  tbody
+    tr
+      &:nth-of-type(even)
+        background #efeff4
+      &:nth-of-type(odd):last-of-type
+        border-bottom 1px solid #c1c1c1
+      &:active td:after
+        display block
+
+    td
+      position relative
+      font 95% 'Roboto'
+      font-weight 400
+      color #87878c
+      padding 2px 5px
+      .centered
+        margin 0 auto
+
+      &:after
+        content ''
+        display none
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        left 0
+        background rgba(0, 0, 0, 0.2)
+        pointer-events none
+
+  &.references
+    .primary
+      .check-box
+        border none
+        &:checked
+        &.checked
+          background none
+        &:after
+          background #21b4f3
+    colgroup
+      col
+        &:last-of-type
+          width 55%
+    tbody
+      td
+        &:first-of-type
+          color #333
+        &:not(.visible)
+          .bit-button
+            opacity 0
+        &:active
+          .bit-button
+            position relative
+            z-index 3
+            box-shadow 0 0 6px white
+
+  &.activity
+    col
+      &:first-of-type
+        width 14%
+      &:nth-of-type(2)
+        width 11%
+      &:nth-of-type(3)
+        width 7%
+      &:last-of-type
+        width 50%
+    tbody
+      td
+        text-align center
+        &:last-of-type
+          text-align left
+          padding-left 20px
