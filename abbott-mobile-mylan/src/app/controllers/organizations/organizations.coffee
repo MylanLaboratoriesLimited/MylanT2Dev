@@ -44,7 +44,7 @@ class Organizations extends RootPanelScreen
     [
       new SortingTableHeaderItem Locale.value('common:names.AccountName'), model.sfdc.name
       new SortingTableHeaderItem Locale.value('common:names.AccountRecordType'), model.sfdc.recordType
-      new SortingTableHeaderItem Locale.value('common:names.Specialty'), model.sfdc.specialty1
+      #new SortingTableHeaderItem Locale.value('common:names.Specialty'), model.sfdc.specialty1
       new SortingTableHeaderItem Locale.value('common:names.GlobalPriority'), model.sfdc.globalPriority
       new SortingTableHeaderItem Locale.value('common:names.City'), model.sfdc.city
       new SortingTableHeaderItem Locale.value('common:names.BillingAddress'), model.sfdc.address
